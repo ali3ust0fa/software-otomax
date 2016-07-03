@@ -1,0 +1,157 @@
+<!DOCTYPE hmtl>
+<html>
+    <head>
+        <title>Instalasi Software OtomaX</title>
+        <link rel="stylesheet" type="text/css" href="styles/global.css" />
+        <style>
+        
+        </style>
+    </head>
+    <body>
+        <div id="split-header">
+            <marquee style="padding:6px;">Selamat Datang di Virtual Office M.A.M (Reseller OtomaX Original Indonesia), melayani: Pembelian Baru, Upgrade, Iuran, Ganti SIMCard, Balik Nama dan Support Premium OtomaX</marquee>
+        </div>
+        
+        <div id="header">
+            <div>
+                 <img src="images/logo_otomax.png" >
+            </div>
+        </div>
+        
+        <div id="sidebar">
+            <ul class="nav">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="download.html">Download</a></li>
+                <li><a href="price-plan.html">Price & Plan</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+                <li><a href="change-log.html">Change Log</a></li>
+                <li><a href="purchase.html">Purchase</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </div>
+        
+        <div id="content">
+            <h1>Instalasi Software OtomaX</h1>
+            
+            <h2>Install Driver HandPhone atau Modem</h2>
+            <p>Sebelum menginstall Software OtomaX sebaiknya install driver HandPhone atau Modem dahulu.</p>
+            <ul>
+                <li>Siapkan file driver HandPhone atau Modem yang akan digunakan, kalau menggunakan HP Siemens C55/M55 atau Modem Wavecom dapat mendownloadnya <a href="download.html">disini</a>.</li>
+                <li>Extraxt file PL2303_Prolific_DriverInstaller_v1.12.0.zip, dan kemudian klik 2x pada file bernama PL2303_Prolific_DriverInstaller_v1.12.0.exe. <br><br>
+                    <img src="images/driver1.png">
+                </li>
+                <li>Klik <b>Yes</b>. <br><br>
+                    <img src="images/driver2.png">
+                </li>
+                <li>Klik <b>Next</b>. <br><br>
+                    <img src="images/driver3.png">
+                </li>
+                <li>Klik <b>Finish</b>. <br><br>
+                    <img src="images/driver4.png">
+                </li>
+            </ul>
+            
+            <h2>Install Software OtomaX</h2>
+            <p>Tata cara menginstall Software OtomaX ialah sebagai berikut:</p>
+            <ul>
+                <li>Cari file OtomaX Free Edition yang telah Anda download. Bila belum silahkan download dahulu <a href="download.html">disini</a>.</li>
+                <li>Extraxt file Free_Edition_3.6.6.zip (bila menggunakan versi 3.6.6), dan kemudian copy ke folder <b>OtomaX</b> yang telah dibuat sebelumnya (lihat <a href="mengatur-lokasi-instalasi.html" target="_blank">disini</a>), atau folder lokasi yang Anda inginkan. <br><br>
+                    <img src="images/oto1.png">
+                </li>
+                <li>Agar mudah menjalankannya buat shortcut OtomaX di Desktop. <br><br>
+                    <img src="images/oto2.png"> <br><br>
+                    <img src="images/oto3.png">
+                </li>
+            </ul>
+            
+            <h2>Restore Database</h2>
+            <p>Tata cara restore Database OtomaX ialah sebagai berikut:</p>
+            <ul>
+                <li>Klik tombol <b>Start</b> cari Microsoft SQL Server 2005 -> SQL Server Management Studio Express, klik kanan dan pilih Run as administrator. <br><br>
+                    <img src="images/restore1.png">
+                </li>
+                <li>Klik <b>Yes</b>. <br><br>
+                    <img src="images/restore2.png">
+                </li>
+                <li>Klik <b>Connect</b>. <br><br>
+                    <img src="images/restore3.png">
+                </li>
+                <li>Pilih <b>Databases</b>, klik kanan kemudian pilih <b>Restore Database...</b>. <br><br>
+                    <img src="images/restore4.png">
+                </li>
+                <li>Pada box <b>To database:</b> isi <b>otomax</b>. Kemudian pilih CheckItem <b>From device</b> dan klik tombol sebelah kanannya. <br><br>
+                    <img src="images/restore5.png">
+                </li>
+                <li>Klik <b>Add</b>. <br><br>
+                    <img src="images/restore6.png">
+                </li>
+                <li>Cari folder <b>OtomaX</b> tempat instalasi OtomaX, dan kemudian pilih file di dalam folder tersebut yang bernama <b>db_otomax.bak</b>. <br><br>
+                    <img src="images/restore7.png"> <br>
+                    <img src="images/restore8.png">
+                </li>
+                <li>Klik <b>OK</b>. <br><br>
+                    <img src="images/restore9.png">
+                </li>
+                <li>Centang CheckBox <b>Restore</b>. <br><br>
+                    <img src="images/restore10.png">
+                </li>
+                <li>Klik <b>Options</b>, kemudian klik tombol sebelah kanan <b>otomax</b>. <br><br>
+                    <img src="images/restore11.png">
+                </li>
+                <li>Pilih folder <b>Database</b> yang sudah dibuat sebelumnya (lihat <a href=mengatur-lokasi-instalasi.html>disini</a>), kemudian pada box <b>File name</b> isi <b>otomax.mdf</b> dan klik <b>OK</b>. <br><br>
+                    <img src="images/restore12.png">
+                </li>
+                <li>Klik tombol sebelah kanan <b>otomax_log</b>. <br><br>
+                    <img src="images/restore13.png">
+                </li>
+                <li>Pilih folder <b>Database</b> yang sudah dibuat sebelumnya (lihat <a href=mengatur-lokasi-instalasi.html>disini</a>), kemudian pada box <b>File name</b> isi <b>otomax.ldf</b> dan klik <b>OK</b>. <br><br>
+                    <img src="images/restore14.png">
+                </li>
+                <li>Pastikan hasilnya seperti gambar di bawah, dan klik <b>OK</b>. <br><br>
+                    <img src="images/restore15.png">
+                </li>
+                <li>Restore sukses, kemudian klik <b>OK</b>. <br><br>
+                    <img src="images/restore16.png">
+                </li>
+                <li>Database OtomaX akan terbentuk di folder <b>Database</b>, lihat gambar di bawah. <br><br>
+                    <img src="images/restore17.png"> <br>
+                    <img src="images/restore18.png">
+                </li>
+            </ul>
+            
+            <h2>Setting SIM Card dongle</h2>
+            <p>Tata cara Setting SIM Card dongle ialah sebagai berikut:</p>
+            <ul>
+                <li>Jalankan Software OtomaX dengan klik 2x pada shortcut-nya yang telah dibuat sebelumnya di Desktop. <br><br>
+                    <img src="images/runoto1.png"> <br><br>
+                Jika muncul seperti gambar di bawah, klik <b>OK</b><br><br>
+                    <img src="images/runoto2.png"> <br><br>
+                Selanjutnya klik tombol <b>Connect</b>. <br><br>
+                    <img src="images/runoto3.png"> <br><br>
+                Jika muncul form login masukkan Login ID: <i>admin</i>, Password: <i>admin</i> dan klik <b>Login</b>.<br><br>
+                    <img src="images/runoto4.png">
+                </li>
+                <li>Masukkan SIM Card calon dongle ke HandPhone, Modem Wavecom atau lainnya (selanjutnya disebut dengan perangkat).</li>
+                <li>Tancapkan kabel USB/Serial perangkat Anda ke Komputer, akan muncul proses install driver perangkat.</li>
+                <li>(Untuk Windows 7) klik tombol <b>Start</b>, pada box <b>search</b> ketik <b>device manager</b>, kemudian klik <b>Device Manager</b>. <br><br>
+                    <img src="images/device1.png">
+                </li>
+                <li>Perhatikan Port <b>COMXX</b> (dimana XX ialah berupa angka) dari perangkat Anda. Misalnya perangkat Anda di <b>COM26</b>. <br><br>
+                    <img src="images/device2.png"> <br>
+                    <img src="images/device22.png">
+                </li>
+                <li>Masuk ke OtomaX, pada Terminal <b>!#dongle</b> klik kanan dan pilih <b>Setting</b>. Kemudian pada <b>Serial Port</b> pilih <b>COM26</b> (sesuaikan dengan COM perangkat Anda), dan klik tombol <b>Simpan</b>.<br><br>
+                    <img src="images/device3.png">
+                </li>
+                <li>Icon Terminal akan berwarna biru pertanda OtomaX sudah bekerja.</li>
+            </ul>
+            <p>Instalasi Software OtomaX sudah selesai, siap digunakan. Selanjutnya Anda dapat mencobanya; atau membeli Edisi Berbayar, selengkapnya <a href="purchase.html" target="_blank">klik disini</a> dan <a href="price-plan.html" target="_blank">klik disini</a>.</p>
+            
+            <div class="bottom-content"></div>
+        </div>
+        
+        <div id="footer">
+        
+        </div>
+    </body>
+</html>

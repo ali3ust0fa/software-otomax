@@ -1,0 +1,964 @@
+<!DOCTYPE hmtl>
+<html>
+    <head>
+        <title>Change Log</title>
+        <link rel="stylesheet" type="text/css" href="styles/global.css" />
+        <style>
+        
+        </style>
+    </head>
+    <body>
+<!--        begin promo-->
+<!--
+        <div id="promo">
+            <a href="promo20.html"><img src="images/promo-otomax-idul-fitri-1437.jpg" style="width:100%; height:160%;"></a>
+        </div>
+-->
+<!--        end promo-->
+        <div id="split-header">
+            <marquee style="padding:6px;">Selamat Datang di Virtual Office M.A.M (Reseller OtomaX Original Indonesia), melayani: Pembelian Baru, Upgrade, Iuran, Ganti SIMCard, Balik Nama dan Support Premium OtomaX</marquee>
+        </div>
+        
+        <div id="header">
+            <div>
+                 <img src="images/logo_otomax.png" >
+            </div>
+        </div>
+        
+        <div id="sidebar">
+            <ul class="nav">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="download.html">Download</a></li>
+                <li><a href="price-plan.html">Price & Plan</a></li>
+                <li><a href="documentation.html">Documentation</a></li>
+                <li><a href="change-log.html">Change Log</a></li>
+                <li><a href="purchase.html">Purchase</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+<!--            begin widget yahoo-->
+            <div style="color:yellow; font-size:10pt; text-align:center; text-decoration:none;">
+                <a href="ymsgr:sendIM?mam_service"><img src="http://opi.yahoo.com/online?u=mam_service&amp;m=g&amp;t=2&amp;l=us"/></a>
+                <br>
+                YM: mam_service 
+                <br>
+                HP/WA: +628-5258-1112-30
+            </div>
+<!--            end widget yahoo-->
+        </div>
+        
+        <div id="content">
+            <h1>Change Log</h1>
+            
+            <p class="change-log">
+                3.6.6 @24-Apr-2016 <br>
+                - Fix: Peringatan keliru soal kenaikan harga pada modul chip. TrxID #726987: Modul Dial: MKIOS 1 Produk S10, harga beli naik dari -1,79769313486232E+308 ke 0. <br><br>
+                
+                3.6.5 @24-Apr-2016 <br>
+                - Fix: Sebelumnya proses hapus komisi ikut menghapus komisi tunda. <br>
+                - Fix: Harga beli tidak tertangkap jika menggunakan Regex pada seting modul. <br>
+                - Fix: Response will not work without tujuan and qty parameter. Untuk edisi international. <br><br>
+                   
+                3.6.4 @22-Apr-2016 <br>
+                - New: Menu Alat Bantu - Reset Poin. <br>
+                - New: Forward info saat modul auto off dan bank auto correction. <br>
+                - New: Kolom "Qty Yg Diijinkan" pada tabel produk sebagai pengganti kolom Min Qty dan Max Qty. <br>
+                - Fix: SqlException: String or binary data would be truncated saat insert inbox atau outbox. <br>
+                - Fix: Escape parameter pada parsing modul IP tipe HTTP GET. <br>
+                - Fix: Sender speed maksimal untuk XMPP/Jabber adalah 255, untuk YM adalah 10. <br>
+                - Fix: Update parameter qty di postpaid saat tangkap tagihan. <br>
+                - Fix: Mendukung parameter qty/nominal yang mengandung titik/koma saat tangkap jawaban. <br>
+                - Fix: Potensi hang di modul OtomaX HTH (OH). <br>
+                - Fix: Regex tangkap harga beli dan saldo tidak bekerja pada modul IP dan Dial. <br>
+                - Fix: Internet Banking auto correction diaktifkan kembali. <br>
+                - Fix: Perintah Balasan tidak update kolom perintah di transaksi. <br>
+                - Fix: Monitor Modul tidak muncul jika bukan admin. <br>
+                - Fix: File bahasa tidak bekerja. <br>
+                - Fix: Penyempurnaan proses hapus komisi yang sudah ditukar. <br>
+                - Fix: Status sedang diproses pada transaksi modul IM. <br>
+                - Fix: Prefixes on Web SMS Sender did not work. <br>
+                - Some minor fixes. <br><br>
+
+                3.6.3 @28-Mar-2016 <br>
+                - New: Penyempurnaan dan peningkatan kinerja saat proses jawaban. <br>
+                - New: Postpaid untuk edisi Ultimate. Parameter yang ditangkap adalah [tagihan] atau [bill]. <br>
+                - New: OtomaX HTH (OH) lebih cepat dan hemat bandwith. <br>
+                - New: OH mendukung parameter [keterangan] atau [description] pada reply status. <br>
+                - New: Monitor diubah istilah menjadi Log dan tambahan fitur Silent. <br>
+                - New: Check box aktivasi filter prefix di setting SMS Sender. <br>
+                - New: Jam aktif dan limit counter pada modul. Untuk edisi Standard atau lebih tinggi. <br>
+                - New: Sistem Poin, kolom Poin per Trx di tabel Grup. Untuk edisi Standard atau lebih tinggi. <br>
+                - New: Nomor / Tujuan transaksi mendukung tanda - (strip). <br>
+                - New: Saat loading menghapus data komisi yang sudah ditukar. <br>
+                - New: Modul IP mendukung Cookies dan Perintah Balasan. Untuk edisi Standard atau lebih tinggi. <br>
+                - New: Mutasi bank debit/keluar yang mencurigakan akan muncul di Log Sistem, tidak ada auto correction. <br>
+                - Fix: Filter Kode Area di modul OH tidak bekerja. <br>
+                - Fix: Error "nama_reseller" di CS Monitor. <br>
+                - Fix: Log Sistem berat (not responding). <br>
+                - Fix: Inbox Service Center kosong SMS bisa masuk. <br>
+                - Fix: CS Monitor, parameter [pengirim] untuk pesan dari non member tidak terisi.v
+                - Fix: !21842 IndexOutOfRangeException: Index was outside the bounds of the array. <br>
+                - Fix: Filter Perintah pada halaman Parsing tidak bekerja. <br>
+                - Fix: Ubah selisih harga di Halaman Grup tidak langsung mempengaruhi harga. <br>
+                - Some minor fixes. <br> <br>
+
+                3.6.2 @7-Oct-2015 <br>
+                - New: Client bisa simpan data administrasi. <br>
+                - Fix: Penyempurnaan modul Internet Banking BRI. <br>
+                - Fix: Perbaikan rekening multi pada Internet Banking BNI. <br>
+                - Fix: Penyempurnaan CS Monitor dan Log Sistem. <br>
+                - Fix: Perbaikan modul OH saat update status transaksi. <br> <br>
+
+                3.6.1 @30-Jun-2015 <br>
+                - New: Menu kirim ulang semua transaksi modul OH yang pending. <br>
+                - New: Parameter [sumofqty] = jumlah qty hari ini. <br>
+                - New: Parameter [trxcount] = total transaksi hari ini. <br>
+                - Fix: \r\n pada Auto Respon. <br>
+                - Fix: Pengalihan pada modul dial tidak bekerja jika perintah balasan terisi. <br>
+                - Fix: Anomali transaksi tanpa kode jika kolom filter prefix tujuan kosong. <br>
+                - Fix: Auto kirim ulang transaksi modul OH yang gagal kirim. <br>
+                - Fix: Transaksi melalui OH, tujuan pada mutasi saldo tidak muncul. <br>
+                - Fix: Log modul OH jika transaksi sukses dengan SN/Ref yang sama. <br>
+                - Fix: Internet Banking BRI. <br> <br>
+
+                3.6.0 @2-Jun-2015 <br>
+                - New: OtomaX HTH, Host To Host sesama software OtomaX. <br>
+                - New: Format CekOid dan UbahOid terkait OtomaX HTH. <br>
+                - New: India amount R-Offer using expression regular. <br>
+                - New: Proses ulang semua transaksi yang 'Belum Diproses'. <br>
+                - Fix: Auto Kirim Ulang di setting modul. <br>
+                - Fix: Parameter [format] tidak muncul pada balasan FormatSalah. <br>
+                - Fix: Parameter [pesan] tidak tepat pada kiriman Forward CS. <br>
+                - Fix: Perintah balasan tidak bekerja jika status Sukses atau Gagal. <br>
+                - Fix: Auto update harga parsing tidak bekerja. <br>
+                - Fix: Terminal tidak bisa ditambah jika jumlah sudah mencapai 255. <br>
+                - Fix: Penyempurnaan fitur NoCodeHistory pada transaksi tanpa kode. <br>
+                - Fix: Error EvaluateResponse -> System.NullReferenceException. <br>
+                - Beberapa perbaikan dan peningkatan stabilitas. <br> <br>
+
+                3.5.4 @2-May-2015 <br>
+                - New: Setting DisableXpSslValidation. Mematikan validasi SSL meningkatkan resiko keamanan namun dapat membantu masalah login YM di XP. <br>
+                - Fix: Sebelumnya kolom Saldo di tabel Reseller bisa diedit. <br>
+                - Fix: Kolom stok di tabel Produk tidak berubah. <br> <br>
+
+                3.5.3 @29-Apr-2015 <br>
+                - New: Refresh data tabel lebih cepat. <br>
+                - New: Status Nomor Tidak Aktif. <br>
+                - Fix: Sekarang auto update harga parsing dilakukan hanya jika harga di parsing terisi. <br>
+                - Fix: Interval pengecekan mutasi Internet Banking lebih cepat. <br>
+                - Fix: ArgumentOutOfRangeException: Row index provided is out of range. <br>
+                - Fix: Reset perintah saat pengalihan atau proses ulang transaksi. <br>
+                - Fix: Internet Banking BCA. <br> <br>
+
+                3.5.2 @02-Apr-2015 <br>
+                - Fix: Masalah kompatibilitas di versi 3.5.1. <br> <br>
+
+                3.5.1 @31-Mar-2015 <br>
+                - New: Pengenalan otomatis R#trxid akan dibatalkan jika Regex mengandung "<trxid>". <br>
+                - New: Edisi Jupiter bisa tambah login selain admin. <br>
+                - New: Filter Prefix Tujuan pada HLR bisa mencapai 100 ribu karakter. <br>
+                - New: Force valid SSL Certificate, untuk keamanan akses internet banking. <br>
+                - New: Info versi di balasan OID. <br>
+                - New: Tambahan server verifikasi ketiga. <br>
+                - New: Ukuran program lebih kecil dan ringan. <br>
+                - New: Tampilan data tabel lebih cepat. <br>
+                - New: Pengenalan format <#000000> pada pesan YM. <br>
+                - Fix: Sekarang istilah Startup Login diubah menjadi Auto Login. <br>
+                - Fix: Perbaikan keamanan/integrasi data saat ubah status manual. <br>
+                - Fix: Ubah status manual tidak auto refresh. <br>
+                - Fix: Warna latar belakang aplikasi tidak konsisten. <br>
+                - Fix: Kesulitan saat menyimpan pada halaman Setting - Jawaban. <br>
+                - Fix: Versi 3.5.0 gagal verifikasi ke server cadangan. <br>
+                - Fix: User tertentu (acak) mengalami Invalid License walaupun Serial Number benar. <br>
+                - Fix: DataGridViewComboBoxCell value is not valid. <br>
+                - Fix: Parameter [pinbaru] di balasan UbahPin tidak bekerja. <br>
+                - Fix: Error while updating transaction status, transaksi menjadi gagal seharusnya menunggu. <br>
+                - Fix: Error String or binary data would be truncated saat jawaban SN terlalu panjang. <br>
+                - Fix: Internet Banking: The underlying connection was closed. <br>
+                - Fix: Menu Tambah Modul tidak muncul. <br>
+                - Fix: OverflowException saat kirim SMS yang mengandung karakter tertentu. <br>
+                - Some improvements and minor fixes. <br> <br>
+
+                3.5.0 @25-Feb-2015 <br>
+                - New: Format transaksi mendukung [trxid] sebagai alias dari [refid]. <br>
+                - New: Perintah parsing mendukung [refid] sebagai alias dari [trxid]. <br>
+                - New: Kotak filter di tabel Provider. <br>
+                - New: Kotak filter nominal di tabel Produk. <br>
+                - New: Login akses dengan fitur auto login dan penguncian. Default login = admin/admin. <br>
+                - New: Otomatis mengenali R#trxid pada jawaban supplier tanpa perlu Regex. <br>
+                - New: Kotak filter Alamat dan Kode Area di tabel Reseller/Member. <br>
+                - New: Triple klik untuk menyeleksi semua text pada jendela Input SN/Ref. <br>
+                - New: Kotak Cek Perjanjian Lisensi di jendela Bantuan - Tentang. <br>
+                - New: Modul Pelangi di non-aktifkan sementara. <br>
+                - Fix: Sekarang, jika format daftar downline tidak ada parameter [kodelevel], [markup], [selisih] dan DaftarSesamaLevel=0 maka downline akan berada 1 level/grup dibawahnya. <br>
+                - Fix: Sebelumnya, pendaftaran gagal jika format mengandung [markup] dan isinya 0. <br>
+                - Fix: Sebelumnya, untuk kasus tertentu tiket deposit expired terlalu cepat. <br>
+                - Fix: Penanganan error saat baca SMS. <br>
+                - Fix: IBanking BCA saat pembacaan IP Address. <br>
+                - Fix: Penyempurnaan proses verifikasi online. <br>
+                - Fix: Error setelah ubah kode pada tabel Level jika kode tersebut dipakai sebagai upline. <br>
+                - Some bug fixes and improvements. <br> <br>
+
+                3.4.4 @17-Nov-2014 <br>
+                - Fix: Penyempurnaan prioritas pada IM Sender. <br>
+                - Fix: Pendaftaran downline gagal jika grup sama dan markup 0 (nol) atau kosong. <br>
+                - Fix: Program hapus komisi otomatis ditiadakan. <br>
+                - Fix: Penyempurnaan koreksi tiket auto dan broadcast info pengurangan saldo. <br>
+                - New: Jumlah karakter label terminal bisa hingga 50 karakter. <br>
+                - New: Kolom komisi dan laba di tabel Transaksi. <br>
+                - New: Kotak filter Produk di tabel Transaksi bisa lebih dari 1, dipisah dengan koma. <br> <br>
+
+                3.4.3 @2-Okt-2014 <br>
+                - Fix: Inisial command modul IM Hybrid tidak bekerja untuk edisi tertentu. <br>
+                - Fix: Beberapa perbaikan saat aktivasi modul (termasuk iSev gagal di edisi satelit/cabang). <br>
+                - Fix: Error DataGrid: Index was out of range. Must be non-negative and less than the size of the collection. <br>
+                - Fix: SMS outbox kosong tapi tetap terproses. <br>
+                - Fix: Client tidak bisa mengalihkan transaksi. <br>
+                - Fix: Penanganan pesan SMS yang mengandung karakter tidak standar seperti [, ], |, ^, dll. <br>
+                - Fix: Penanganan HTML Tags pada pesan YM. <br>
+                - Fix: Pendaftaran downline dengan setting DaftarSesamaLevel=0. <br>
+                - Fix: Komisi tertukar yang lewat 7 hari terhapus otomatis. <br>
+                - New: Perintah Balasan untuk modul Dial. <br>
+                - New: Informasi Perintah Balasan di Penguji Jawaban. <br>
+                - New: Dynamic Processing. Lintas metode proses dari Dial ke SMS, STK atau sebaliknya (edisi Standard ke atas). <br> <br>
+
+                3.4.2 @25-Agu-2014 <br>
+                - Fix: Client tidak bisa membatalkan transaksi. <br>
+                - Fix: Modul internet banking sleeping tapi ikon tetap biru. <br>
+                - Fix: Optimasi tukar komisi. <br>
+                - Fix: Menghapus HTML Tag pada pesan YM. <br>
+                - Fix: Optimasi startup. <br>
+                - New: Optimasi refresh data di client. <br>
+                - New: Pause per kirim di SMS Sender. <br> <br>
+
+                3.4.1 @26-Jul-2014 <br>
+                - Fix: Alihkan tidak berjalan pada beberapa kasus. <br>
+                - Fix: Info masih dalam proses tidak termasuk status Terjadwal. <br>
+                - Fix: Reseller tidak mendapat balasan SMS kadaluarsa. <br> <br>
+
+                3.4.0 @03-Jul-2014 <br>
+                - New: Menu Tambah Saldo dan Kirim Pesan di Tiket Deposit. <br>
+                - New: De-Captcha Internet Banking BNI. <br>
+                - New: Halaman Cek Harga Reseller. <br>
+                - New: Alat Bantu - Ubah Grup Reseller. <br>
+                - New: Format Ubah Markup mengukung nomor HP atau IM. <br>
+                - New: Balasan format ListDL mendukung parameter [markup]. <br>
+                - New: Peringatan hapus reseller jika masih aktivitas dalam 7 hari terakhir (sebelumnya 31 hari). <br>
+                - New: Voucher Hybrid. <br>
+                - New: Kolom Tanggal Kadaluarsa di Tabel Fisik. <br>
+                - Fix: Default setting Update Harga Parsing di modul adalah off. <br>
+                - Fix: Sender sleeping, icon tetap biru. <br>
+                - Fix: Intenet BRI tidak membaca mutasi dengan jumlah yang sama. <br>
+                - Fix: Font 'Verdana' does not support 'Bold'. <br>
+                - Fix: NullReferenceException at .OnDataError(). <br>
+                - Fix: Hapus centang di Parsing. <br>
+                - Fix: Error 158. <br>
+                - Fix: Penyempurnaan pengecekan transaksi dobel untuk transaksi tanpa kode atau dengan Refid. <br>
+                - Fix: Penyempurnaan harga tetap pada balasan CekHarga dan perhitungan komisi. <br>
+                - Fix: "Batalkan Semua Transaksi Yang Belum Diproses" tidak bekerja untuk status Tidak Ada Parsing. <br>
+                - Fix: Harga Beli berubah untuk stok chip sendiri (kasus ditemukan di Windows XP). <br>
+                - Fix: T32, T48, and T64 edition cannot add IP modules. <br>
+                - Fix: Optimasi pembacaan SMS dari modem. <br>
+                - Fix: Locking pemotongan saldo untuk transaksi dan refund. <br>
+                - Fix: Modul.Tujuan terpotong pada edisi cabang. <br> <br>
+
+                3.3.9 @19-May-2014 <br>
+                - New: Sistem markup harga per reseller. <br>
+                - New: Kotak Markup pada halaman Registrasi. <br>
+                - New: Pengecekan transaksi dengan REFID juga mencocokkan tujuan. <br>
+                - New: Bisa ubah keterangan pada halaman setting. <br>
+                - New: Pengingat saldo minimal di modul Pelangi. <br>
+                - New: Format baru CekMarkup dan UbahMarkup. <br>
+                - New: Format DaftarDL mendukung parameter [markup]. <br>
+                - New: Balasan CekSaldoDL mendukung parameter [markup]. <br>
+                - New: Forward CS support GTalk. <br>
+                - New: Masa Berlaku di Status Bar dan jendela Registrasi. <br>
+                - New: Informasi versi di Status Bar. <br>
+                - New: Saat mendaftarkan downline, default Kode Area downline adalah Kode Area upline. <br>
+                - New: Safe Mode mengecek waktu transaksi terakhir. Jika masih dalam 10 menit maka akan masuk ke mode normal. <br>
+                - Fix: Format sukses di Provider untuk edisi Ultimate. <br>
+                - Fix: Modul Pelangi muncul error karena SN sama untuk Cek dan Bayar PLN. <br>
+                - Fix: Parameter lain dalam Parameter Balasan tidak muncul di reply. <br>
+                - Fix: Peningkatan saat memulai program untuk database yang besar. <br>
+                - Fix: Penyempurnaan pengenalan bilangan pada Tangkap Harga Beli dan Saldo. <br>
+                - Fix: ReadUSSD Error: Message length can not be greater than 160 chars. <br>
+                - Fix: Pengecekan Nomor HP/YM/GTalk pada halaman Registrasi. <br>
+                - Fix: Komisi tidak diterima upline jika upline tidak bisa akses produk yang bersangkutan. <br>
+                - Fix: IM Center, pesan dari bukan reseller tidak masuk inbox. <br>
+                - Fix: Error saat buka setting modul Pelangi untuk edisi Mini dan Lite. <br>
+                - Fix: Intenet BNI tidak membaca mutasi dengan jumlah yang sama. <br> <br>
+
+                3.3.8 @04-Mar-2014 <br>
+                - New: Menangkap Harga Beli di setting modul. Otomatis update harga beli di transaksi. Parsing otomatis off jika harga beli lebih mahal dari harga jual. <br>
+                - New: Otomatis meng-update harga beli di tabel Parsing (untuk edisi Standard atau lebih tinggi). <br>
+                - New: Menangkap Saldo di setting modul. Warning dan forward CS jika saldo mencapai angka tertentu. <br>
+                - New: Kolom komisi pada auto save XML Spreadsheet. <br>
+                - New: Tabel pengirim pada auto save XML Spreadsheet. <br>
+                - New: Realtime* auto save XML Spreadsheet (hanya tabel reseller + komisi). *Seting key "SpreadsheetSaveInterval" = 1. Default 60. <br>
+                - New: Halaman pendaftaran bisa diakses untuk edisi satelit/cabang. <br>
+                - New: Modul IP mendukung HTTP GET dan POST. <br>
+                - New: Transaksi berstatus Timeout tidak termasuk dalam hitungan auto Blacklist. <br>
+                - New: Pemberitahuan jika ada transaksi yang sukses dengan SN yang sama (hanya jika ada parameter trxid). <br>
+                - New: Otomatis update SN untuk transaksi yang sebelumnya sukses tanpa SN (atau SN berbeda). <br>
+                - New: Alat Bantu - Monitor Modul untuk memonitor saldo modul. <br>
+                - New: Modul Hapus Data otomatis menghapus terminal, modul, sender yang sudah tidak digunakan (status terhapus). <br>
+                - New: Pilihan "Kirim ulang transaksi modul IP yang pending" pada halaman Transaksi. <br>
+                - New: Peningkatan keamanan pada file OtomaX.con. <br>
+                - Fix: Info yang lebih jelas saat Infinite Loop di perhitungan komisi. <br>
+                - Fix: Pembacaan SMS error "has no active thread". <br>
+                - Fix: Modul Pelangi: Keterangan saat saldo tidak cukup; Postpaid dengan tagihan lebih dari 1 bulan; Error 0068 Timeout. <br>
+                - Fix: Penyesuaian Internet Banking BRI. <br> <br>
+
+                3.3.7 @15-Jan-2014 <br>
+                - New: Tulis ulang program/algoritma perhitungan komisi transaksi. <br>
+                - New: Format request transaksi yang mengandung [refid] otomatis akan diprioritaskan. <br>
+                - New: Peningkatan keamanan transaksi. Pengecekan transaksi dobel jika transaksi diulang dalam 5 detik kemudian. <br>
+                - New: Kotak cari Produk di Administrasi Parsing mendukung input nominal. <br>
+                - New: Pilihan batas jumlah komisi pada modul Alat Bantu - Komisi. <br>
+                - New: Kolom Format Sukses di tabel Provider untuk edisi Ultimate. <br>
+                - New: Mendukung USSD modem stik Huawei E1550. <br>
+                - New: Saat loading, menghapus Daftar Hitam yang kadaluarsa 7 hari lalu. <br>
+                - New: Transaksi berstatus Dibatalkan tidak termasuk dalam hitungan auto Blacklist. <br>
+                - New: Klik dobel pada tabel Tiket Deposit akan menyimpan ke clipboard. <br>
+                - Fix: Optimasi query pada Inbox. <br>
+                - Fix: Optimasi hapus Inbox, Outbox dan Komisi pada modul Hapus Data. <br>
+                - Fix: Balasan CekMutasi2 tidak menampilkan deposit manual. <br>
+                - Fix: Tukar komisi timeout jika data terlalu banyak. <br>
+                - Fix: Transaksi manual tidak membawa kode area dari reseller. <br>
+                - Fix: Transaksi manual berat saat menampilkan data histori. <br>
+                - Fix: Penyempurnaan pencarian transaksi dobel dengan REFID. <br>
+                - Fix: Optimasi di modul Alat Bantu - Komisi. <br>
+                - Fix: Kursor jam pasir saat klik Refresh pada modul Tambah Deposit. <br> <br>
+
+                3.3.6 @09-Dec-2013 <br>
+                - New: "Daftar Hitam" untuk memblok nomor-nomor tertentu. <br>
+                - New: Setting "FailToBlacklist". Otomatis mem-blacklist nomor jika transaksi gagal sekian kali. <br>
+                - New: Balasan "NomorBlacklist" untuk reply gagal karena nomor ada dalam Daftar Hitam. <br> 
+                - New: Kolom "Harga Tetap" di Produk.  <br>
+                - New: Kolom "Service Center" di Inbox. <br>
+                - New: Default prefix SMS Service Center = setting KodeNegara. <br>
+                - New: Infomasi jumlah data, total kredit dan total debit pada jendela Tiket Deposit. <br>
+                - New: Kolom "Text before Qty" dan ""Text after Qty" pada tabel Jawaban Provider (untuk edisi tertentu). <br>
+                - New: Kolom "Postpaid" pada tabel Produk (untuk modul khusus). <br>
+                - New: Modul Pelangi mendukung produk PLN Pascabayar. <br>
+                - New: Tombol "Find duplicates" di Administrasi Pengirim. <br>
+                - Fix: Index rekening di Internet Banking BNI. <br>
+                - Fix: Bahasa Inggris untuk status Kode Area Tidak Cocok. <br>
+                - Fix: Pembatalan tiket karena mutasi debit, tidak muncul data jumlah dan waktu. <br>
+                - Fix: Pengambilan tiket dengan jumlah yang terlalu besar (Arithmetic overflow). <br>
+                - Fix: Format balasan pada Auto Respon tidak bisa kosong. <br>
+                - Fix: Pengecekan transaksi dobel. <br>
+                - Fix: Ada data yang tidak muncul saat query transaksi (tanggal awal dan akhir sama). <br>
+                - Fix: Error when opening WebSMSSender's setting. <br>
+                - Fix: Penyempurnaan modul hapus data. <br>
+                - Fix: Pesan "Anda yakin ingin menghapus {0} - {1} ?" saat menghapus reseller. <br>
+                - Fix: Edisi satelit, setting tujuan kirim hanya bisa diisi maksimal 6 karakter. <br>
+                - Fix: Setting Jawaban. Jika Awalan SN dan Akhiran SN terisi, maka SN dapat mengandung karakter apapun. <br>
+                - Fix: Internet Banking BRI. Pengecekan data mutasi berdasarkan: tanggal bank, jumlah, dan saldo. <br>
+                - Fix: Menghapus komisi saat reseller dihapus. <br>
+                - Fix: Input dobel (contoh 0812345678 dan +62812345678) di Administrasi Pengirim. <br>
+                - And some fixes. <br> <br>
+
+                3.3.5 @23-Sep-2013 <br>
+                - New: Menu untuk membuka website forum <br>
+                - New: Tombol Kirim Ulang semua transaksi IM yang pending <br>
+                - New: Reseller tidak dapat dihapus jika masih ada aktivitas dalam 31 hari terakhir <br>
+                - New: Pencatatan di log sistem: tambah saldo, registrasi reseller, mengubah kode reseller, menghapus data reseller <br>
+                - New: Pencatatan di log sistem: menghapus data produk, menambah/mengubah modul <br>
+                - Fix: Tambah saldo tidak bisa proses karakter koma <br>
+                - Fix: Kotak cari di Tiket Deposit juga bisa mencari data catatan <br>
+                - Fix: Internet Banking BRI mendukung cetak rekening koran terbaru <br>
+                - Fix: Internet Banking BNI mendukung sistem website terbaru <br>
+                - Fix: Penyempurnaan auto kirim ulang modul IM <br>
+                - Fix: Seting Terminal tidak bisa disimpan karena nilai kadaluarsa SMS (Free Edition) <br> <br>
+
+                3.3.4 @04-Aug-2013 <br>
+                - New: Daily auto saving XML Spreadsheet (Excel compatible) contains D-1 transactions and reseller data. <br>
+                - New: Internet Banking BRI. <br>
+                - New: Kotak cari di halaman Setting. <br>
+                - Fix: Format balasan kosong tapi masih terkirim ke reseller. <br>
+                - Fix: SMS Center error di edisi server cabang/satelit. <br>
+                - Fix: DataGridViewComboBoxCell value is not valid. <br>
+                - Fix: Modul Pelangi, saldo tidak cukup akan mengalihkan transaksi dan modul tetap aktif. <br>
+                - Fix: Internet Banking secara acak non aktif sendiri. <br> <br>
+
+                3.3.3 @02-Jul-2013 <br>
+                - New: Setting NoCodeHistory untuk mengaktifkan pencarian histori saat transaksi tanpa kode. <br>
+                - New: Setting SmsMultiLine untuk mendukung format SMS multi baris <br>
+                - Fix: Error: Incorrect syntax near 'WHERE' pada jendela Ubah Saldo Pengingat. <br>
+                - Fix: Perintah pada parsing provider tidak bisa kosong. <br>
+                - Fix: Urutan pembacaan perintah pada data parsing dan setting modul. <br>
+                - Fix: Parameter [enduser] tidak bisa digunakan di edisi tertentu. <br>
+                - Fix: Error while proccessing inbox X. The conversion of a char data type to a datetime data type resulted in an out-of-range datetime value. <br>
+                - Fix: Pengecekan dobel saat transaksi tanpa kode. <br> <br>
+
+                3.3.2 @13-Jun-2013 <br>
+                - New: Optimasi pemakaian bandwidth modul Internet Banking <br>
+                - New: Shortcut Ctrl+T = tambah saldo, F9 = CS Monitor, F10 = Log Sistem, F11 = Kirim Broadcast. <br>
+                - Fix: Transaksi Fisik: TrxMan Error #9: Object reference not set to an instance of an object. <br>
+                - Fix: BCA: Error: WebException:: The underlying connection was closed: A connection that was expected to be kept alive was closed by the server. <br>
+                - Fix: Online verification failed. Error: Can't connect database (1040) <br>
+                - Fix: Operator selular tertentu, tidak bisa mengirim SMS ke tujuan lokal (awalan 0) <br> <br>
+
+                3.3.1 @10-Jun-2013 <br>
+                - Fix: Modul Pelangi Indodata tidak muncul. <br> <br>
+
+                3.3 @10-Jun-2013 <br>
+                - New: Lisensi tidak mengecek kode mesin atau OID. <br>
+                - New: Kolom jawaban pada jendela CS Monitor, bisa mengetahui pesan mana yang sudah dibalas. <br>
+                - New: Format balasan Timeout ketika transaksi tidak diproses setelah waktu tertentu (timeout). <br>
+                - New: Kirim SMS ke end user saat transaksi sukses. Tambahan kolom contreng di Administrasi Produk dan Level. <br>
+                - New: Parameter [enduser] pada format untuk mengenali nomor yang akan dikirim SMS end user. <br>
+                - New: Setting SmsEndUserRegex untuk filter nomor yang boleh dikirim SMS. <br>
+                - New: Parsing modul mendukung format "file:///<path>" dimana <path> adalah file text yang berisi parsing. <br>
+                - New: Format REK2 untuk cek mutasi khusus deposit manual, transfer, dan tiket bank. <br>
+                - New: Pengingat saldo. Tersedia alat bantu untuk mengupdate pengingat saldo secara serentak. <br>
+                - New: Modul Host to Host khusus ke Pelangi Indodata untuk transaksi PLN prabayar, game, dll. <br>
+                - New: Kolom Awalan dan akhiran nominal pada halaman Administrasi Jawaban. <br>
+                - New: Untuk kecepatan, jendela tambah deposit hanya menampilkan mutasi 3 bulan terakhir. <br>
+                - New: Seting modul, antrian pending per produk dan total antrian pending per modul. <br>
+                - Fix: Waktu loading lebih cepat. <br>
+                - Fix: Kirim ulang membuat transaksi menjadi gagal jika produk dinonaktifkan saat transaksi berjalan. <br>
+                - Fix: Outbox perintah ke supplier IM otomatis dibatalkan jika belum terkirim lebih dari 2 menit. <br>
+                - Fix: Mode client muncul error koneksi dongle. <br>
+                - Fix: Mengubah prefix di SMS Sender harus mengaktifkan ulang modulnya. <br>
+                - Fix: Transfer saldo 'hang' jika data upline tidak normal (loopback) <br>
+                - Fix: Penyempurnaan proses jawaban saat seting tidak akurat (tanpa tujuan), meminimalisir salah kamar. <br>
+                - Fix: Proteksi transaksi manual dari klik dobel tombol Simpan. <br>
+                - Fix: Icon terminal dan modul kadang tidak muncul. <br>
+                - Fix: Error while proccessing inbox XXXX. Collection was modified; <br>
+                - Fix: Isi SMS tidak terbaca (karakter aneh) pada long SMS (SMS lebih dari 160 karakter). <br>
+                - Fix: Halaman Registrasi Member, Kode Area tidak kosong saat tekan tombol Refresh. <br>
+                - Some minor fixes <br> <br>
+                
+                3.2 @4-Feb-2013 <br>
+                - New: Peningkatan kecepatan program secara keseluruhan <br>
+                - New: Jam aktif dan reset counter pada SMS Sender <br>
+                - New: Menu Login all dan Logout all pada IM Center <br>
+                - New: Parameter fleksibel di format transaksi (advanced ke atas) <br>
+                - New: Splash screen. Menginformasikan proses loading <br>
+                - New: Lisensi dengan kombinasi SIM Card dan kode mesin, tanpa pengecekan sinyal <br>
+                - New: Klik kanan pada transaksi untuk input jawaban dan SN <br>
+                - New: Encrypted database's connection string <br>
+                - New: Pengecekan file pendukung saat startup <br>
+                - New: Tampilan baru Log Sistem. Bisa search history <br>
+                - New: Pengenalan variable [refid] pada format transaksi, meningkatkan akurasi proses transaksi <br>
+                - New: Deteksi Captcha saat cek mutasi Mandiri <br>
+                - New: Jam aktif pada modul Internet Banking <br>
+                - New: Pengenalan kata kunci "Hubungi BNI Call" pada modul IBanking BNI <br>
+                - New: Interval cek mutasi internet banking paling cepat 60 detik <br>
+                - New: Balasan initial parsing disimpan di Inbox <br>
+                - New: Transaksi tanpa kode jika prioritas sama maka akan didahulukan harga jual termurah <br>
+                - New: Peningkatan akurasi transaksi tanpa kode dengan memanfaatkan data histori <br>
+                - New: Tersedia parameter [namareseller],[kodereseller],[saldo] pada modul broadcast <br>
+                - New: Penggabungan modul SMS Center ke dalam terminal <br>
+                - New: Auto restart terminal dengan batas waktu yang bisa ditentukan <br>
+                - New: Indikator sinyal selular <br>
+                - New: Menu Reboot modem di terminal <br>
+                - New: Jendela Tentang berisi informasi edisi, versi, OID dan kepemilikan lisensi <br>
+                - New: Error yang tidak tertangani akan disimpan di file Error.log <br>
+                - Fix: Mutasi saldo transaksi dan refund lebih akurat dan rapih <br>
+                - Fix: Ubah status manual dan transaksi manual tersimpan di log sistem dengan lebih rinci <br>
+                - Fix: Biaya kirim SMS Sender tidak bisa bernilai 0 <br>
+                - Fix: Transaksi manual, beberapa kotak tidak kosong seteleh tekan tombol Refresh <br>
+                - Fix: Setelah hapus IM center, harus restart program agar bisa tambah lagi <br>
+                - Fix: Reset halaman pendaftaran, GTalk ID tidak kosong0 <br>
+                - Fix: Pengecekan mutasi BNI berdasarkan jumlah dan saldo0 <br>
+                - Fix: Tambah Facebook ID -1000008670XXXX@chat.facebook.com <br>
+                - Fix: Transfer saldo gagal jika saldo penerima < saldo minimal <br>
+                - Fix: Penyempurnaan proses STK untuk modem Wavecom <br>
+                - Fix: Error jika transaksi disukseskan manual saat produk tidak aktif <br> <br>
+
+                3.1.4 @4-Oct-2012 <br>
+                - New: Report supports otomax.lang <br>
+                - New: IM sender speed <br>
+                - Fix: Error saat cek transaksi pada client <br>
+                - Fix: Pembacaan report IP/XML dari supplier <br>
+                - Fix: Pesan YM/GTalk tidak sampai jika pesan panjang (contoh LDL) <br>
+                - Fix: Hapus YM ketika Yahoo! ID berakhiran @yahoo.com atau @yahoo.co.id <br>
+                - Fix: Perintah balasan jika melalui YM/GTalk <br> <br>
+
+                3.1.3 @16-Sep-2012 <br>
+                - New: Kotak GTalk ID pada halaman pendaftaran <br>
+                - New: Parameter [number] sebagai alias [tujuan] di parsing <br>
+                - New: Shortcut F12 untuk menampilkan Context Menu pada daftar modul <br>
+                - New: Nomor Service Center yang diijinkan pada SMS Center <br>
+                - New: USSD session, membalas respon USSD. Contoh parsing: *111#,1, <br>
+                - New: Kotak Quantity di transaksi manual (khusus edisi tertentu) <br>
+                - New: Modul IP (basis text/xml). Jumlah maks: Free 0, Mini 1, Lite 2, Standard 5, Pro 10, Advanced 20, ~ <br>
+                - Fix: Saat reset pin oleh upline, balasan [saldo] adalah saldo upline/sponsor <br>
+                - Fix: Pengenalan nomor format internasional pada Inbox <br>
+                - Fix: Web SMS Sender recipient <br>
+                - Fix: Inisialisasi STK tidak wajib (hanya warning bukan error) <br>
+                - Fix: Filter terminal di Inbox tidak bisa memilih IM Center <br>
+                - Fix: InvalidArgument=Value of '0' is not valid for 'SelectedIndex' <br>
+                - Fix: Balasan SMS bukan reseller tidak bekerja <br>
+                - Fix: Muncul tanda koma untuk [nominal] di parsing dan perintah balasan <br>
+                - Fix: Parameter [nominal] tidak tersedia di perintah balasan <br>
+                - Fix: Ubah Hasil Akhir tidak bekerja untuk perintah balasan <br>
+                - Fix: Format pendaftaran menggunakan nama atau alamat yang lebih dari 2 kata <br>
+                - Fix: Inbox YM/GTalk terpotong jika lebih dari 255 karakter <br>
+                - Fix: Perintah balasan IM tidak terkirim <br>
+                - Fix: Kotak Reseller di transaksi manual <br>
+                - Fix: Pengecekan nomor dobel saat pendaftaran downline <br>
+                - Fix: Refresh CS Monitor, pesan terakhir berada di baris paling bawah <br>
+                - Fix: CS Monitor, saat membalas muncul error: Input string was not in a correct format.Couldn't store... <br> <br>
+
+                3.1.2 @15-Jun-2012 <br>
+                - New: Supports SIM Toolkit (SAT) Siemens MC35i or compatible <br>
+                - New: Alat Bantu > Komisi > Summary, ada total <br>
+                - New: Cluster management dengan kode area. Dapat diatur pada halaman reseller, provider, produk dan seting modul <br>
+                - New: Format reset pin downline (pin acak) <br>
+                - New: SMS Center/Sender untuk edisi server cabang <br>
+                - New: Format daftar mendukung variabel [namapemilik] dan [kodearea] <br>
+                - New: Kolom catatan pada halaman provider dan produk <br>
+                - New: Web SMS Sender (edisi tertentu) <br>
+                - Fix: USSD Siemens MC35i <br>
+                - Fix: Format numerik pada jendela komisi <br>
+                - Fix: Kolom terminal pada halaman Inbox belum menampilkan IMcenter dan terminal modem <br>
+                - Fix: Transaksi manual dari OtomaX Client tidak langsung dieksekusi <br>
+                - Fix: Prefix pada SMS Sender diperpanjang <br>
+                - Fix: Patch keamanan pada perhitungan komisi (jika user salah setting harga pada halaman produk level) <br>
+                - Fix: Data prefix pada halaman HLR dapat menyimpan 8000 karakter <br>
+                - Fix: Gagal kirim pada SMS Sender <br> <br>
+
+                3.1.1 @24-May-2012 <br>
+                - Fix: Pembacaan SMS ponsel China Cross <br>
+                - Fix: Invalid License <br>
+                - Fix: Jumlah IM Center di edisi Enterprise <br>
+                - Fix: Voucher fisik error, status jadi terpakai semua <br>
+                - Fix: Refresh data di halaman transaksi saat kolom modul disembunyikan <br> <br>
+
+                3.1 @18-May-2012 <br>
+                - New: Multi IM Center <br>
+                - New: Pencatatan aktivitas user ke log sistem <br>
+                - New: Pembatasan antrian (transaksi pending) per kode produk <br>
+                - New: Edisi server cabang: Mars, Venus, dan Jupiter <br>
+                - Fix: Penyempurnaan pembacaan SMS <br>
+                - Fix: Memory SMS bisa diubah. MT=Mobile Terminal, SM=SIM Card. <br>
+                - Fix: Voucher fisik. Kolom VN berubah jadi keterangan. <br>
+                - Fix: USSD Sony Ericsson K320i, K510i, etc <br>
+                - Fix: More fixes <br> <br>
+
+                3.0.3 @30-Apr-2012 <br>
+                - New: Cetak nota di tambah saldo (LPT1) <br>
+                - New: 40 terminal untuk edisi Advanced <br>
+                - New: SMS validity. 30 menit ke supplier, 1 hari ke member. <br>
+                - New: Pengecekan [qty] pada transaksi dobel <br>
+                - Fix: Penyempurnaan modul STK (command type 2) <br>
+                - Fix: Invalid serial number <br>
+                - Fix: AT Commands send timeout <br>
+                - Fix: Pembatalan (reversal) tiket muncul di Log Sistem <br>
+                - Fix: Paralel Yahoo! ID akan mendeteksi dan menghapus akhiran @yahoo.com, @yahoo.co.id, etc. <br> <br>
+
+                3.0.2 @18-Apr-2012 <br>
+                - Quick fix for 3.0.1: High YM traffic <br>
+                - Fix: Connect Server YM mendukung non default port dengan format: host:port <br> <br>
+
+                3.0.1 @17-Apr-2012 <br>
+                - Fix: USSD timeout <br>
+                - Fix: USSD handphone cina <br> <br>
+
+                3.0 @08-Apr-2012 <br>
+                - Fix: Penanganan exception di reguler expression <br>
+                - Fix: Friends List (Roster) YM/GTalk kosong <br>
+                - Fix: Setting YM Center - server host dan port tidak berfungsi <br>
+                - Fix: Reply SMS auto respon dengan CS tercontreng <br>
+                - New: Info ke reseller saat terblokir karena salah PIN <br>
+                - New: Info ke reseller jika transaksi masih dalam proses (setelah 1 menit) <br>
+                - New: Seting modul - batas antrian. Jumlah maksimal transaksi terpending, sebelum modul boleh memproses transaksi berikutnya <br>
+                - Fix: Aktifkan modul tidak bekerja untuk kondisi tertentu <br>
+                - Fix: Penyempurnaan SMS Center tidak bisa membaca pesan <br>
+                - New: Format hapus nomor gagal jika nomor terdaftar tersisa 1 <br>
+                - New: Kolom perintah pada setting jawaban. Merespon balik jawaban dari provider/supplier <br>
+                - New: CS monitor bisa balas walau bukan dari reseller <br>
+                - Fix: Penyempurnaan IM Hybrid, GTalk Center, YM Center <br>
+                - New: Filter terminal di halaman inbox <br>
+                - Fix: Penyempurnaan dial USSD standar, balasan multi baris <br> <br>
+
+                2.9 @11-Feb-2012 <br>
+                - New: Pembatalan otomatis untuk tiket kadaluarsa yang lewat 6 jam (bisa diubah). Mengirim pesan ke reseller. <br>
+                - New: Jumlah tiket open untuk 1 reseller dibatasi maksimal 3 tiket. Jika setelah 3 ambil tiket lagi, maka tiket sebelumnya akan dibatalkan. <br>
+                - New: GTalk Center, supports specified resource identifier <br>
+                - New: Format tambah (TGT) dan hapus (HGT) untuk pengirim tipe GTalk <br>
+                - New: Format LIST menampilkan pengirim semua tipe <br>
+                - Fix: Penyempurnaan modul internet banking dan tiket deposit <br>
+                - New: IM Hybrid HTH. Otomatis pindah jalur ke center yang online (jika lebih dari 1). Bisa YM atau GTalk atau campuran. <br>
+                - Fix: Some minor fixes <br> <br>
+
+                2.8 @01-Nov-2011 <br>
+                - New: Metode Dial: Voice Call untuk modul F-Kios <br>
+                - Fix: Parameter [namaoperator] tidak tampil pada balasan CekHarga <br>
+                - Fix: Penyempurnaan OtomaX Client. Daftar modul di halaman transaksi <br>
+                - New: Otomatis blok reseller jika pin salah 3x berturut-turut <br>
+                - New: Supports language dan floating point (otomax.lang) <br>
+                - Fix: Parameter [sn] tidak tampil pada balasan CekLaporan <br>
+                - Fix: Pengirim awalan 08 dan +628 diperlakukan beda sehingga data pengirim dobel <br>
+                - Fix: Anomali Waktu Tunggu Akhir di Modul Keypad <br>
+                - Fix: Some minor fixes <br> <br>
+
+                2.7 @19-Aug-2011 <br>
+                - Fix: Tombol kirim ulang di Outbox <br>
+                - Fix: Sender Auto Off ketika gagal kirim N kali <br>
+                - Fix: Paralel nomor handphone 01817 <br>
+                - Fix: Penanganan pesan: Harap hubungi Halo BCA / Please contact Halo BCA <br>
+                - Fix: Forward CS kena biaya SMS di sender <br>
+                - Fix: Format cek harga tidak dapat menampilkan [namaprovider] <br>
+                - Fix: Kotak produk di transaksi manual <br>
+                - Fix: Filter -- Belum Selesai -- di Outbox <br>
+                - Fix: SMS Center yang dibarengi modul transaksi hanya bisa menangkap format transaksiet <br>
+                - Fix: Waktu tunggu akhir modul Keypad <br>
+                - New: Blok level di table provider <br>
+                - Fix: Penyimpanan pengirim selalu menggunakan format internasional <br>
+                - Fix: Peringatan tidak ada transaksi menunggu, padahal bukan dari nomor pengirim <br>
+                - New: Perapihan modul USSD menjadi modul Dial <br>
+                - Fix: Transaksi batal tidak termasuk dalam pengecekan dobel <br>
+                - New: Filter nominal di halaman Transaksi <br>
+                - New: Seting jawaban, Regex Expression diperketat <br>
+                - New: Kolom Bank pada daftar tiket <br>
+                - New: Tukar semua komisi tertunda
+                - Fix: Perubahan tampilan pada Internet Banking BCA <br> <br>
+
+                2.6 @09-May-2011 <br>
+                - Fix: Penyempurnaan modul Verificator <br>
+                - New: Pilihan fungsi sebagai center pada modul +SMS <br>
+                - New: Tambahan filter pada halaman Inbox dan Outbox <br>
+                - Fix: Peyempurnaan parsing untuk format transaksi multi
+                - New: Pilihan Auto Off pada SMS Sender <br>
+                - Fix: Pengangan inbox (Format Salah) jika menggunakan client <br>
+                - New: Masa berlaku tiket deposit adalah 3 hari <br>
+                - Fix: Penyempurnaan penanganan error pada modul Internet Banking <br>
+                - New: Reply untuk tiket deposit yang telah kadaluarsa <br>
+                - New: Pembatalan tiket deposit otomatis jika ada mutasi debit yang jumlahnya sama <br>
+                - New: Pilihan untuk memilih nomor rekening (jika lebih dari 1 rekening) pada modul Internet Banking <br>
+                - New: Pembatasan jumlah tiket deposit yang aktif untuk tiap reseller <br>
+                - New: Tombol Refresh pada halaman Transaksi Manual <br>
+                - New: Inbox CS bisa diteruskan ke YM atau nomor lain <br>
+                - Fix: Penyempurnaan engine SMS Sender <br>
+                - New: Pesan dari bukan reseller bisa masuk ke CS Monitor <br>
+                - New: Summary total mutasi pada halaman Mutasi Saldo <br>
+                - New: Mutasi BCA ada kode validasi, jika kode tidak sama dengan "0000" <br>
+                - New: Penambahan jumlah terminal untuk edisi dibawah Advanced <br>
+                - Fix: Some minor fixes <br> <br>
+
+                2.5.3 @02-Nov-2010 <br>
+                - Fix: Penyempurnaan SMS Sender Engine <br>
+                - Fix: Perubahan data kode reseller turut mengubah data pada tabel-tabel terkait <br>
+                - Fix: Pengenalan variable kode reseller pada komisi tunda <br>
+                - Fix: Filter "belum selesai" pada outbox tidak bekerja <br> <br>
+
+                2.5.2 @15-Oct-2010 <br>
+                - Fix: Penyempurnaan SMS Sender Engine. Pengecekan counter/limit, dan penjadwalan ulang saat sender sibuk. <br>
+                - New: SMS Sender akan auto off jika 5x gagal kirim secara berturut-turut <br>
+                - New: Penangkapan SN pada jawaban mencakup karakter: / dan - <br>
+                - Fix: IBanking BNI, pesan error pada saat gagal login <br> <br>
+
+                2.5.1 @01-Nov-2010 <br>
+                - Fix: Stabilitas YM Center <br>
+                - Fix: Transfer saldo gagal jika menggunakan parameter nomor HP <br> <br>
+
+                2.5 @01-Nov-2010 <br>
+                - New: SMS Sender, ada seting pengenaan biaya reply secara paksa (mengabaikan seting bebas biaya reply) <br>
+                - New: Supports YM Aliases. 1 account Yahoo! tapi memiliki beberapa Yahoo! ID, online bersamaan. <br>
+                - New: Data pengirim diperpanjang menjadi 100 karakter <br>
+                - Fix: Kode dan Nama Upline yang salah muncul di reply daftar <br>
+                - Bew: Initial Commands di modul diperpanjang menjadi 1000 karakter <br>
+                - Fix: Tukar komisi dalam jumlah banyak yang menyebabkan error <br>
+                - New: Parameter yang menampilkan sebagian pesan: pesan20, pesan25, pesan30, ..., pesan50 (kelipatan 5) <br>
+                - New: Totally new sms sender engine. Auto kirim ulang (tergantung seting prefix dan jumlah sender) <br>
+                - Fix: RS non aktif (terblokir) sekarang tidak bisa menerima transfer saldo <br>
+                - New: Internet Banking BNI (edisi tertentu) <br>
+                - Fix: Format TYM (pararel YM) salah menghitung jumlah YM terdaftar <br>
+                - New: Algoritma pemrosesan jawaban/balasan. Lebih efisien dan akurat. <br>
+                - Fix: Format BTL (batal transaksi), sekarang membalas ke pengirim asal bukan pengirim yang membatalkan <br>
+                - Fix: Contreng gangguan/kosong pada tabel operator tidak mengubah parameter status pada balasan CekHarga <br>
+                - Fix: Penambahan info Kode RS pada saat input saldo manual terjadi dobel <br>
+                - New: Transaksi tanpa kode produk. Tergantung seting pada tabel operator dan produk. <br>
+                - New: Transaksi ke nomor sendiri (pengirim SMS).  Tergantung seting format request. <br>
+                - New: Shortcut untuk seting Terminal 1 (tambahan menu pada Node Terminal) <br>
+                - Fix: Some minor fixes and updates <br> <br>
+
+                2.4 @11-Aug-2010 <br>
+                - Fix: Refresh CS Monitor <br>
+                - Fix: Proteksi tanggal sistem diperpendek, dari 3 hari menjadi 1 hari <br>
+                - New: Mendeteksi koreksi (kode "KOR ") mutasi Bank BCA <br>
+                - Fix: Pesan SMS/YM yang kosong akan diabaikan <br>
+                - New: Format cek harga bisa menampilkan info kosong atau gangguan <br>
+                - Fix: Delay auto kirim ulang (modul ym) diperlambat: 30 + 60 + 60 detik <br>
+                - Fix: Pada tabel mutasi bank, kolom Kode Tiket diubah jadi Kode Reseller <br>
+                - New: Log sistem tersimpan ke database <br>
+                - Fix: "Tidak ada transaksi menunggu" akan masuk ke log sistem <br>
+                - New: Di monitor SMS Center/Sender ditambahkan info kode reseller <br>
+                - Fix: Filter tujuan di modul dihilangkan, silakan gunakan HLR <br>
+                - New: Parameter saldoproses di balasan, untuk menampilkan saldo transaksi yang belum selesai <br>
+                - Fix: Fitur menghapus data sekarang lebih banyak pilihan dan tidak timeout <br>
+                - Fix: Kolom VN dan SN pada tabel fisik, diperpanjang jumlah karakternya <br>
+                - Fix: Komisi transaksi yang batal akan tercatat di mutasi saldo <br>
+                - New: Format LISTYM dan LISTNO untuk menampilkan data pengirim reseller maupun downlinenya <br>
+                - New: Format TNO dan HNO sekarang bisa untuk mengolah data downline <br>
+                - Fix: Some minor fixes and updates <br> <br>
+
+                2.3 @21-Apr-2010 <br>
+                - New: Saat startup, mereset data outbox dan transaksi <br>
+                - Fix: Format UbahLevel akan memblok jika struktur downline tidak normal (level downline dibawahnya tidak sesuai) <br>
+                - Fix: Memblok markup komisi transaksi karena salah struktur downline <br>
+                - Fix: Pernyempurnaan pembacaan SMS yang kadang-kadang tidak terbaca <br>
+                - Fix: Memproses atau membatalkan inbox yang kadang-kadang tidak terproses <br>
+                - New: Pengirim yang sama bisa dipakai di modul yang berbeda (lebih dari 1 modul) <br>
+                - New: Pengalihan transaksi tanpa mematikan parsing <br>
+                - Fix: Panjang filter tujuan di modul menjadi 2000 karakter. Mendukung pemisah koma dan titik koma. <br>
+                - New: Tabel HLR (Seting Regional) <br>
+                - New: Status Tujuan Diluar Wilayah untuk transaksi <br>
+                - Fix: Pengenalan nomor tujuan pada saat memproses jawaban <br>
+                - Fix: Filter reseller pada alat bantu - komisi - summary sudah berfungsi <br>
+                - New: Transaksi terjadwal (melalui transaksi manual) <br>
+                - New: Nominal di tabel produk bisa hingga 5 digit <br>
+                - New: Balasan saat SMS kadaluarsa atau dibatalkan oleh sistem <br>
+                - New: Jika inbox belum diproses hingga lebih dari 30 menit, maka akan dibatalkan <br>
+                - New: Beberapa status di jawaban provider: Kirim Ulang, Proses Ulang, Alihkan <br>
+                - New: Broadcast SMS tidak mengganggu reply transaksi (penerapan prioritas) <br>
+                - New: Mendeteksi Reversal (Error Correction) pada mutasi Bank Mandiri <br>
+                - New: Memproteksi tanggal sistem jika lebih awal dari tanggal transaksi terakhir (problem baterai BIOS) <br>
+                - New: Kirim ulang otomatis transaksi pada modul YM (maksimal 3 kali kirim dengan interval 45 detik) <br>
+                - New: Kolom panjang tujuan nimimal dan panjang tujaun minimal di tabel Operator <br>
+                - New: Panjang kolom pengirim dari 30 menjadi 50 karakter <br> <br>
+
+                2.2 @02-Feb-2010 <br>
+                - Fix: Summary pada table komisi hanya menampilkan yang belum ditukar <br>
+                - New: Parameter balasan pada Administrasi Jawaban <br>
+                - Fix: Otomatis menghapus parsing pada saat menghapus data produk <br>
+                - Fix: Pengenalan kodelevel pada format request  DaftarDL <br>
+                - New: Bisa daftar sesama level, lihat Seting Lain-Lain <br>
+                - New: Single instance <br>
+                - New: Reply offline messages, lihat Seting Format Balasan <br>
+                - New: 30 digit OtomaX ID (OID) <br>
+                - New: Nama pemilik di tabel reseller <br>
+                - New: Contreng terklaim, catatan pada data bank <br>
+                - Fix: Parameter menggunakan kurung kurawal {} pada initial command modul Keypad+SMS <br>
+                - Fix: Hapus data pada tabel reseller <br>
+                - New: Membatalkan tiket per satuan <br> <br>
+
+                2.1 @30-Nov-2009 <br>
+                - Fix: Penyempurnaan cek deposit duplikat saat tambah saldo manual <br>
+                - Fix: Perbaikan .1. (counter) pada reply transaksi dengan modul USSD <br>
+                - New: Kolom level dan upline pada tabel pengirim <br>
+                - Fix: Penyempurnaan random tiket, mengurangi tiket sampah <br>
+                - Fix: Penyempurnaan stabilitas modul TrxMan <br>
+                - New: Bisa transfer saldo menggunakan Yahoo! ID sebagai parameter <br>
+                - New: Transfer saldo bisa dilimit, silakan cek Seting - Lain-lain <br>
+                - New: Downline bisa transfer saldo ke upline, silakan cek Seting - Lain-lain <br>
+                - Fix: Penyempurnaan modul YM Center (saat login) <br>
+                - New: Teks pada monitor bisa dipilih sebagian <br>
+                - New: Bisa menangkap Transanction ID (SN) reply Tri <br>
+                - New: Kolom tanggal aktivitas terakhir di tabel reseller, berdasarkan aktifitas mutasi saldo <br>
+                - New: Fitur Menghapus Data... bisa menghapus data transaksi, tiket deposit, dan mutasi bank <br>
+                - New: Seting TundaKomisi, silakan cek Seting - Lain-lain <br>
+                - New: Parameter [komisitunda] pada reply balasan <br>
+                - New: Reseller bisa cek status  transaksi sesuai tanggal, termasuk transaksi downlinenya <br>
+                - New: Format TUKAR untuk mengambil komisi <br>
+                - New: Seting modul untuk memberikan jeda proses antar transaksi (berguna untuk Dompul) <br> <br>
+
+                2.0 @10-Oct-2009 <br>
+                - New: Inti program baru demi kestabilan dan kecepatan <br>
+                - New: Penambahan fitur untuk mengaktifkan semua parsing pada Administrasi Parsing <br>
+                - New: Pemberian warna baris untuk membedakan status pada tiket deposit <br>
+                - New: Pada CS Monitor, tombol Clear diganti menjadi Refresh <br>
+                - New: Pada mutasi bank, ada pilihan filter mutasi kredit/debit <br>
+                - New: Pada mutasi saldo reseller, ditambahkan filter tanggal <br>
+                - New: Pembatalan transaksi otomatis jika belum diproses selama sekian detik (Setting - Lain-lain) <br>
+                - New: Bisa seting gangguan atau kosong per operator (Administrasi - Operator) <br>
+                - New: Penambahan fitur untuk membatalkan semua transaksi yang belum diproses <br>
+                - Fix: Penyempurnaan modul internet banking <br>
+                - Fix: Di tabel transaksi bisa mencari penggalan nomor tujuan atau nama reseller <br>
+                - Fix: Perbaikan error pada saat filter di CS Monitor <br>
+                - Fix: Perubahan warna baris untuk transaksi status TidakAdaParsing <br>
+                - Fix: Pengenalan nomor pada format BatalTransaksi <br>
+                - Fix: Initial parsing pada Modul STK sudah bisa digunakan <br>
+                - Fix: Alat penguji hanya menampilkan terminal yang aktif <br>
+                - Fix: Penyempurnaan datagrid dan daftar kontak pada YM Monitor <br>
+                - Fix: Penyempurnaan jika 1 terminal untuk 2 modul transaksi secara bersamaan <br>
+                - Fix: Jika transaksi sudah dalam antrian, tidak mengecek status produk kosong atau gangguan <br>
+                - Fix: YMSG16 Compatible, gunakan server scs.msg.yahoo.com:5050 <br>
+                - Fix: Maksimal 30 terminal untuk edisi Advanced <br> <br>
+                
+                1.4.4 @08-Sep-2009 <br>
+                - Fix: Perbaikan bug pada internet banking, dimana tidak dapat memproses data transfer masuk <br>
+                - New: Penambahan fitur kirim pesan dan broadcast <br> <br>
+
+                1.4 @27-Aug-2009 <br>
+                - New: Shortcut untuk Safe Mode <br>
+                - Fix: Input deposit ganda dicek sesuai data 24 jam terakhir <br>
+                - New: Tiket Deposit. Otomatis cek bank (BCA dan Mandiri) untuk deposit. Hanya untuk edisi Advanced atau lebih tinggi <br>
+                - New: Kolom deposit minimal di tabel Level, untuk keperluan tiket deposit <br>
+                - Fix: Penyempurnaan koneksi database pada saat startup <br>
+                - Fix: SMS Sender cek counter dulu sebelum kirim SMS <br>
+                - New: CS Monitor menampilkan nama reseller dan kolom pesan bisa pilih kata <br>
+                - New: Status baru di tabel transaksi: Tidak Ada Parsing <br>
+                - New: Format Batal Transaksi bisa dengan mengenali nomor tujuan. Format tidak berubah <br>
+                - Fix: Opsi beda kecepatan auto refresh pada tabel transaksi, inbox dan outbox <br> <br>
+
+                1.3.2 @07-Aug-2009 <br>
+                - Fix: Error di transaksi fisik <br>
+                - Fix: Parameter tanggal, waktu, jam di ubah status transaksi (oleh operator) <br>
+                - Fix: Balasan REK yang salah data <br>
+                - Fix: Penyempurnaan di tambah saldo, pengecekan jumlah yang sama pada hari ini <br>
+                - Fix: Gagal tambah YM: inccorrect syntax near 1 <br>
+                - Fix: Penyempurnaan di format tambah nomor <br> <br>
+
+                1.3 @03-Aug-2009 <br>
+                - Fix: Info waktu yang salah pada saat reply laporan mutasi <br>
+                - New: Jumlah total saldo/mutasi pada tabel reseller dan mutasi saldo <br>
+                - New: Info tanggal pada balasan pembatalan transaksi. Parameter yang tersedia: [waktu], [tanggal] dan [jam] <br>
+                - New: Pilihan kecepatan Auto Refresh pada tabel transaksi, inbox dan outbox <br>
+                - New: Parameter [counter] pada balasan status transaksi <br>
+                - New: Saat pendaftaran oleh operator, upline juga akan dikirimkan info. Parameter baru: [level], [kodelevel] <br>
+                - New: Kolom "Kirim Info" pada tabel pengirim. Menge-set nomor utama dari reseller misalnya pada saat info transfer saldo. <br>
+                - New: OtomaX Client. Hanya tersedia untuk edisi Standard atau lebih tinggi <br>
+                - New: Saat proses transaksi gagal kirim maka status transaksi adalah "Gagal Kirim" bukan "Menunggu Jawaban" <br>
+                - Fix: Kirim ulang akan mengabaikan data gangguan dan stok kosong <br>
+                - New: Mode Aman (Safe Mode). Jika PC hang atau mati lampu maka begitu hidup kembali, transaksi tidak diproses (inbox tetap diproses). <br> <br>
+
+                1.2 @12-Juli-2009 <br>
+                - New: Pada saat terminal terhubung, jam terminal akan dicocokkan dengan jam sistem <br>
+                - New: Parameter kodeinbox di reply <br>
+                - New: Parameter biaya di reply <br>
+                - New: Seting cek pembalas di modul. Bisa diset supaya tidak mengecek nomor atau id pengirim <br>
+                - New: Format untuk ubah nama <br>
+                - Fix: Error waktu klik kanan pada tabel transaksi <br>
+                - Fix: Teknik baru untuk auto refresh pada tabel transaksi, inbox dan outbox <br>
+                - Fix: Modul STK. Gagal kirim pada modem dengan chipset Wavecom tertentu <br> <br>
+
+                1.1.0 @21-May-2009 <br>
+                - New: Format untuk mengecek daftar downline <br>
+                - New: Peringatan di tambah saldo jika sudah pernah input untuk jumlah yang sama <br>
+                - New: Format untuk mengubah kode level dari downline <br>
+                - New: Parameter [pesan] di balasan/reply <br>
+                - New: Info upline di jendela tambah saldo <br>
+                - New: Bisa cek saldo downline dari downline <br> <br>
+
+                1.0.9 @14-May-2009 <br>
+                - New: Seting untuk mengaktifkan blok transaksi tujuan yang sama. Default non aktif <br>
+                - Fix: Program error kalo koneksi ke terminal putus: NullException <br> <br>
+
+                1.0.8 @11-May-2009 <br>
+                - New: Fitur untuk menghapus data-data lama dan memperkecil ukuran database <br>
+                - New: Daftar terminal dan modul pada jendela utama diurut sesuai abjad <br>
+                - New: Kolom terminal di Inbox <br>
+                - New: Kolom sender di Outbox <br>
+                - Fix: Pengambilan harga beli jika transaksi dikirim ulang <br> <br>
+
+                1.0.7 @28-Apr-2009 <br>
+                - New: Tolak transaksi jika masih ada transaksi yang belum selesai untuk tujuan yang sama <br>
+                - Fix: Penyempurnaan modul STK <br>
+                - New: Seting ServerName dan ServerPort pada YM Center <br>
+                - New: Seting MarginHarga di seting lain-lain <br>
+                - Fix: Penyempurnaan counter tembak karena auto parsing off <br> <br>
+
+                1.0.6 @15-Apr-2009 <br>
+                - Fix: Pengecekan kecukupan saldo pada format multi transaksi dan multi format <br>
+                - New: YM Center akan mengirim balik permintaan tambah kontak (add) pada saat reseller menambahkan kontak YM Center <br>
+                - New: Blok Produk pada Administrasi Level diperpanjang menjadi 1000 karakter <br>
+                - Fix: Program "hang" jika salah seting level atau upline reseller <br>
+                - New: Parameter [kodelevel] dan [jumlah] (saldo awal) pada format daftar downline. Parameter [jumlah] sebelumnya diganti dengan parameter [selisih] yaitu selisih level dengan yang mendaftarkan <br>
+                - New: Tambah saldo bisa dari beberapa tabel: Reseller, Pengirim, Transaksi dan CS Monitor <br>
+                - New: Seting biaya di format balasan <br>
+                - Fix: Beberapa perubahan kecil <br> <br>
+
+                1.0.5 @06-Apr-2009 <br>
+                - New: Custom status untuk YM Center <br>
+                - New: Sistem popup pada jendela monitor diganti dengan sistem "flashing", lebih nyaman <br>
+                - Fix: Penyempurnaan modul STK, bisa mendeteksi gagal kirim atau "message failed". <br>
+                - New: Popup untuk daftar kolom. Bisa memilih kolom apa saja yang tampil pada tabel <br>
+                - Fix: Optimasi di modul verificator <br>
+                - New: Parameter [separator] atau [spr] pada format request. Seting ada di lain-lain. <br>
+                - New: Format transaksi multi. Pengisian beberapa nomor dalam 1 format. <br> <br>
+
+                1.0.4 @10-Mar-2009 <br>
+                - Fix: Penyempurnaan modul USSD, support lebih banyak device: Wavecom, Option <br>
+                - Fix: Perhitungan pada parameter [debet] kini tidak memasukkan transaksi gagal <br>
+                - Fix: Peningkatan stabilitas YM (Center, Sender dan YM H2H) <br>
+                - Fix: Peningkatan stabilitas modul SMS Center dan SMS Sender <br>
+                - New: Modul STK (SIM Tool Kit) dengan parsing yang sangat sederhana <br>
+                - New: Fungsi kirim ulang transaksi akan meminta konfirmasi tambahan jika tanggal sudah berbeda <br>
+                - Fix: Penyempurnaan perhitungan parameter [counter] tembak <br>
+                - New: Mendukung SMS CDMA dengan Modem ZTE MG880 <br> <br>
+
+                1.0.3 @21-Feb-2009 <br>
+                - New: Counter dan Limit Counter di SMS Sender <br>
+                - New: Parameter PanjangMaksimalTujuan di setting lain-lain <br>
+                - New: Seting untuk aktifasi pengecekan filter tujuan (region), di masing-masing modul <br>
+                - Fix: Penanganan pesan YM dari H2H <br>
+                - Fix: Saldo tidak dikembalikan saat reseller membatalkan transaksi <br>
+                - New: Penambahan kolom saldo akhir pada mutasi saldo <br>
+                - New: Filter modul pada tabel transaksi, berbentuk combobox <br>
+                - New: Akses cepat, menu Non Aktifkan pada menu popup modul <br>
+                - Fix: Penyempurnaan cara mengubah manual status transaksi (menu popup) <br>
+                - Fix: Jawaban boleh tanpa tujuan (tidak disarankan, kurang akurat), transaksi diproses FIFO menurut tanggal status <br>
+                - New: Seting untuk ubah hasil akhir perintah di masing-masing modul <br>
+                - Fix: Parameter [mutasi] diganti dengan [debet] = total pemakaian saldo hari ini <br>
+                - New: Parameter [debet] bisa ditaruh dimana aja, namun tidak disarankan karena bisa memperlambat sistem <br> <br>
+
+                1.0.2 @10-Feb-2009 <br>
+                - Fix: Jika selisih = 0, perhitungan komisi berhenti ke level berikutnya <br>
+                - New: Kolom SN di tabel transaksi <br>
+                - New: YM Center mengabaikan pesan offline (bisa dinonaktifkan) <br>
+                - Fix: Optimasi YM Sender dan H2H <br>
+                - New: Setting SenderSpeed di YM Center untuk mengatur kecepatan YM Sender <br>
+                - New: Bisa menampilkan SN pada balasan TransaksiDobel <br>
+                - New: Format dan balasan baru untuk cek saldo downline <br>
+                - Fix: Balasan laporan mutasi/transaksi jika lebih dari 160 karakter maka akan dikirim dalam beberapa SMS <br>
+                - New: Kotak tujuan di transaksi manual, sekarang lebih jelas terlihat <br>
+                - New: Parameter [komisi] bisa ditaruh dimana aja, namun tidak disarankan karena bisa memperlambat sistem <br>
+                - Fix: Parameter [counter] tembak, berlaku hanya untuk transaksi sukses dan menunggu <br>
+                - Fix: Penyempurnaan penanganan pesan YM berformat <br> <br>
+
+                1.0.1 @02-Feb-2009 <br>
+                - Fix: Parameter [counter] pada perintah parsing dimulai dari 1 (tadinya 2) <br>
+                - Fix: Bug pada format BatalTransaksi, bisa membatalkan transaksi reseller lain <br>
+                - Fix: Parameter [kodeproduk] dan [tujuan] kosong pada format CekTransaksi <br>
+                - New: Setting kadaluarsa pada SMS Center, untuk mengabaikan SMS lama <br>
+                - Fix: Parameter [totalmutasi] pada balasan cek saldo diganti jadi [mutasi] <br>
+                - New: Parameter [komisi] pada balasan cek saldo, total komisi hari ini <br> <br>
+
+                1.0.0.9 @01-Feb-2009 <br>
+                - New: Setting FormatSalahMasukKeCs sudah bisa digunakan <br>
+                - New: Setting DefaultNamaUpline: nilai default untuk parameter [namaupline] <br>
+                - New: Parameter [totalmutasi] pada balasan cek saldo, total mutasi hari ini <br>
+                - New: Setting kirim ulang (CobaLagi) pindah dari setting lain-lain ke setting masing-masing modul <br>
+                - New: Parameter CekTrxDobelPerTanggal, setting untuk blok transaksi pada tanggal yang sama <br>
+                - New: Otomatis memutus jika ada panggilan masuk ke nomor SMS Center <br>
+                - Fix: Pendaftaran manual, kode reseller tertukar dengan nama reseller <br>
+                - Fix: Terminal salah sambung pada alat bantu: Penguji USSD, Kirim SMS dan Penguji Keypad <br>
+                - New: Menghapus parameter balasan yg tidak terisi <br>
+                - New: Host to Host antar OtomaX melalui YM <br>
+                - Fix: Solusi sementara untuk deadlock pada SMS Sender <br>
+                - New: Parameter [counter] pada perintah parsing <br> <br>
+
+                1.0.0.8 @25-Jan-2009 <br>
+                - Fix: Mutasi manual tidak termasuk transfer saldo antar reseller <br>
+                - New: Jika nomor tujuan pada jawaban provider tidak tertangkap, jawaban akan diabaikan <br>
+                - Fix: Status default reseller adalah aktif pada saat pendaftaran manual <br>
+                - New: Transfer deposit dengan nominal, tujuan dan tanggal yang sama akan diblok <br>
+                - New: Parameter [namaupline] pada format balasan <br>
+                - New: Jika modul Keypad gagal kirim, maka status transaksi menjadi "Menunggu Jawaban" bukan "Gagal" <br>
+                - New: Parameter [counter] pada format transaksi. Contoh: S10.2.08123456789.1234 <br>
+                - Fix: Pendaftaran downline tidak boleh menggunakan nomor yang sudah terdaftar <br>
+                - New: Format balasan pada saat saldo dikurangi oleh upline <br>
+                - New: Shorcut Laporan dari menu database <br> <br>
+
+                1.0.0.7 @24-Jan-2009 <br>
+                - Fix: Menyimpan database pada saat klik kanan "Aktifkan" pada modul <br>
+                - Fix: Perbaikan kirim ulang pada modul USSD, SMS dan SMS Sender <br>
+                - New: Jika modul SMS gagal kirim SMS, maka status transaksi menjadi "Menunggu Jawaban" bukan "Gagal" <br>
+                - Fix: Saldo minus tidak dapat reply SMS jika ada bea reply <br>
+                - New: Balasan Cek Harga diurut sesuai nominal <br>
+                - New: Parameter [tagihan] pada format balasan cek saldo <br>
+            </p>
+            
+            <div class="bottom-content"></div>
+        </div>
+        
+        <div id="footer">
+        
+        </div>
+    </body>
+</html>
