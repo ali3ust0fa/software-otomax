@@ -108,6 +108,10 @@ div#content ol li {
     text-align: justify;
 }
 
+div#content img.content-image {
+    width: 100%;
+}
+
 div#content p span.name-app {
     font-style: italic;
     background-color: coral;
