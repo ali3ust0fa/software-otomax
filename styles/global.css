@@ -42,7 +42,7 @@ div#header img {
 div#sidebar {
     float: left;
     width: 250px;
-    height: 540px;
+    height: 1040px;
     background-color: #0a494e;
     #margin-top: 20px;
     font-size: 20px;
@@ -74,7 +74,7 @@ div#sidebar li:hover {
 
 div#content {
     width: 77.7% auto;
-    height: 500px;
+    height: 1000px;
     background-color: #b7daf8;
     #margin-top: 20px;
     margin-left: 250px;
