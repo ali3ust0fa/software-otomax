@@ -100,6 +100,12 @@ div#content h2 {
     margin-bottom: 30px;
 }
 
+div#content h3 {
+    background-color: #879caf;
+    padding: 5px;
+    color: #f0e7e3;
+}
+
 div#content p {
     margin-top: 20px;
     margin-bottom: 20px;
