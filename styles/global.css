@@ -77,6 +77,19 @@ div#sidebar li:hover {
     background-color: #417e7e;
 }
 
+/*
+div#sidebar button {
+    width: 165px;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    background-color: #0a494e;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+*/
+
 div#content {
     width: 77.7% auto;
     height: 100%;
@@ -203,4 +216,15 @@ div#footer {
 }
 #isi_kolom_fitur {
     
+}
+
+.log {
+    border: 1px solid green;
+    padding: 5px;
+    font-size: 12px;
+    line-height: 19px;
+}
+
+.log:hover {
+    border: 1px solid red;
 }
