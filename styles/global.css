@@ -25,6 +25,22 @@ div#promo {
 */
 }
 
+/* banner penjualan otomax */
+div#banner-jualan {
+    width: 37%;
+    height: 10px;
+    position: fixed;
+    margin-left: 30%
+
+}
+
+div#banner-jualan img {
+    width: 100%;
+    height: 100px;
+    margin-top: 30px;
+}
+
+
 div#split-header {
     width: 100%;
     height: 30px;
