@@ -64,21 +64,25 @@ div#sidebar {
     width: 250px;
     height: 106%;
     background-color: #0a494e;
-    #margin-top: 20px;
     font-size: 20px;
     display: block;
     cursor: pointer;
 }
 
-div#sidebar a {
+div#sidebar .nav a {
     color: white;
+    background-color: #0a494e;
+    padding: 10px;
+    display: block;
+    border: 1px solid yellow;
+    border-radius: 10px;
 }
 
 div#sidebar ul.nav li {
-    padding: 10px;
     list-style-type: none;
-    border: 1px solid yellow;
-    border-radius: 10px;
+/*    padding: 10px;*/
+/*    border: 1px solid yellow;*/
+/*    border-radius: 10px;*/
 }
 
 div#sidebar ul.nav {
