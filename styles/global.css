@@ -66,7 +66,6 @@ div#sidebar {
     background-color: #0a494e;
     font-size: 20px;
     display: block;
-    cursor: pointer;
 }
 
 div#sidebar .nav a {
@@ -93,7 +92,7 @@ div#sidebar ul.nav a {
     text-decoration: none;
 }
 
-div#sidebar li:hover {
+div#sidebar a:hover {
     background-color: #417e7e;
 }
 
