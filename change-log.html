@@ -66,6 +66,38 @@
             <h1>Change Log</h1>
             
             <p class="change-log">
+                3.6.8 @30-Agu-2016
+                - New: Log Sistem saat tambah saldo ditambahkan keterangan deposit.
+                - New: Backup otomatis saldo akhir ke file OtomaX-tanggal-balance.txt.
+                Ukuran file lebih kecil jika dibandingkan format XML.
+                - New: Reseller tidak dapat dihapus jika saldo tidak 0 (nol).
+                Untuk meminimalkan kesalahan operator saat menghapus reseller.
+                - New: Parameter Parsing 2 di setting modul. Berfungsi sama seperti Parameter Parsing namun lebih aman karena terenkripsi.
+                - New: IP Center untuk edisi Enterprise atau lebih tinggi, termasuk edisi-edisi pada kategori server cabang.
+                IP Center adalah modul untuk menerima transaksi dari member melalui jalur HTTP/IP.
+                - New: Modul IP Client mendukung parameter [sign] versi OtomaX.
+                Rumus sign = encodeBase64(sha1("OtomaX|" + memberId + "|" + product + "|" + dest + "|" + refID + "|" + pin + "|" + password)).
+                - New: Parameter [aktif2] di format ListDL. 0 = non aktif, 1 = aktif.
+                - New: Format transaksi dengan teks awalan akan lebih diprioritaskan dibanding format transaksi tanpa teks awalan.
+                Contoh format dengan teks awalan: TU [kodeproduk] [tujuan] [pin]
+                - New: Kolom Total Markup pada tabel Reseller. Total Markup adalah markup yang digunakan oleh program untuk menentukan harga,
+                hasil penjumlahan markup reseller ditambah semua markup uplinenya.
+                - New: Tombol Hitung Ulang Total Markup pada tabel Reseller.
+                - New: Menu Proses Ulang (modul sama) di data Transaksi.
+                - New: Cache transaksi dengan REFID yang berstatus Kosong, Gangguan, dan Produk Salah.
+                Pengulangan transaksi yang berstatus Kosong, Gangguan, dan Produk Salah tetap mendapatkan status yang sama walaupun produk sudah dibuka (hapus centang).
+                Ini adalah peningkatan keamanan terhadap kemungkinan tertundanya pesan IM, SMS, atau OH akibat gangguan jaringan atau sarana pendukung lainnya.
+                Hal ini tidak berlaku untuk transaksi tanpa REFID atau transaksi yang melalui jalur IP.
+                - Fix: Pembaruan pada proses Auto Kirim Ulang.
+                Auto Kirim Ulang berlaku pada modul IM atau IP, dijalankan setiap 30 detik dalam rentang 10 menit dihitung dari tanggal entri transaksi.
+                Hati-hati menggunakan fitur ini karena ketidakstabilan pada jaringan dapat menyebabkan keadaan yang tidak terduga.
+                - Fix: Fitur Hapus Data tidak menghapus Log Sistem.
+                - Fix: Fatal error: System.ArgumentException pada beberapa bagian yang mengolah string.
+                - Fix: Pembaruan proses transaksi pada modul IP.
+                - Fix: Pembaruan Internet Banking BNI.
+                - Fix: Mengubah grup pada tabel Provider harus restart OtomaX dahulu, tidak langsung mengubah daftar harga.
+                - Fix: Free Edition mendukung Regex untuk menangkap jawaban.
+
                 3.6.7 @12-Jul-2016 <br>
                 - New: Ringkasan Outbox pada halaman Transaksi. Ringkasan data outbox hari ini berdasarkan status belum diproses, sedang diproses, dan gagal.<br>
                 - New: Format DaftarNonMember untuk registrasi non member. Seting NonMemberRegGroup untuk menentukan grup defaultnya. Parameter yang didukung pada format DaftarNonMember: [nama], [name], [alamat], [address], [namapemilik], [owner], [kodearea], [areacode],  [pin]<br>
