@@ -1,0 +1,6 @@
+<?php
+// $str = "OtomaX|" + memberId + "|" + product + "|" + dest + "|" + refID + "|" + pin + "|" + password
+// $sign should be "vlrN9Yuu4xHAT8_bXIUHKw2NjHo"
+$sign = str_replace('/', '_', str_replace('+', '-' , rtrim(base64_encode(sha1('OtomaX|YUSUF|X10|08123456789|2140669|1144|abcd', true)), '=')));
+echo $sign;
+?>
