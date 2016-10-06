@@ -83,6 +83,42 @@
             <h1>Change Log</h1>
             
             <p class="change-log">
+                3.6.9 @5-Okt-2016 <br>
+                - New: Tambah GTalk/Jabber mendukung karakter \.<br> Biasanya karena menggunakan transport, profil mengandung spasi.<br>
+                - New: GTalk auto invite balik setelah member mengirim invitation.<br>
+                - New: Allowed QTY on module's seeting can be up to 1000 characters.<br>
+                - New: IP Center memiliki opsi untuk mengizinkan parsing transaksi tanpa parameter [sign].<br>
+                - New: IP Center mendukung parsing pengecekan status transaksi. Cukup tambahan "&check=1" pada parsing transaksi biasa.<br>
+                Contoh:http://192.168.1.1/trx?memberID=member02&product=S10&dest=08123456789&refID=123456&sign=EXbM5aAW8vdSF86&check=1<br>
+                - New: URL Cek Saldo, Transaksi, Report pada IP Center bersifat case-insensitive (huruf besar dan kecil dianggap sama).<br>
+                Contoh: trx, Trx, atau TRX akan dianggap sama.<br>
+                - New: Report URL pada tabel Reseller boleh tidak lengkap. Otomatis akan dilengkapi berdasarkan data alamat IP atau pengirim di Inbox.<br>
+                Contoh: Jika Report URL adalah http://192.168.1.1/report maka bisa juga diinput dengan: report.<br>
+                - New: Format PASSIP untuk ubah Password IP. Default password adalah kosong.<br>
+                Kosongkan password untuk menonaktifkan transaksi IP untuk reseller yang bersangkutan.<br>
+                - New: Format IPADDRESS untuk ubah IP Address. Tambahkan parameter [oldip] jika IP Address lama ingin dicocokkan.<br>
+                - New: Format REPORTURL untuk ubah Report URL (URL untuk menerima laporan status / callback).<br>
+                - New: IM Center memiliki filter server (domain). Nama server pada daftar roster/friend sudah otomatis, tidak perlu diinput lagi.<br>
+                - New: Engine baru di IM Sender, semoga lebih ringan. Lebih baik dalam hal broadcast pesan GTalk/XMPP.<br>
+                - New: Format BATALTRANS untuk menarik saldo yang sebelumnya ditransfer ke reseller lain (berlaku di tanggal yang sama).<br>
+                Total saldo yang bisa ditarik adalah lebih kecil atau sama dengan total transfer saldo pada tanggal yang sama.<br>
+                - New: Seting lain-lain "TransferSaldoLintas" untuk mengizinkan transfer saldo lintas hirarki.<br>
+                Khusus untuk transfer ke selain downline, jumlah harus > 0.<br>
+                - New: Otomatis membersihkan cache dan cookie Internet Explorer terkait Internet Banking BNI.<br>
+                Untuk kinerja terbaik, silakan unduh dan instal Internet Explorer 11 atau lebih baru.<br>
+                Jika menggunakan Windows 7, mungkin juga diperlukan untuk instal SP1 atau lebih tinggi.<br>
+                - New: IP Gateway, server perantara yang memungkinkan transaksi IP walaupun tidak memiliki IP Statik (tanpa setting router/jaringan).<br>
+                Sebagai sedoter (pengambil stok), server gateway akan menerima status report dari supplier dan meneruskannya langsung ke modul. Tersedia untuk semua edisi, kecuali cabang/satelit.<br>
+                Sebagai supplier, server gateway seakan-akan menjadi IP Center pribadi yang bisa diakses dari luar. Tersedia untuk edisi Standard atau lebih tinggi.<br>
+                Layanan ini berbayar mulai Rp. 10.000,-/bulan. Info lanjut, silakan hubungi CS atau mitra kami.<br>
+                - New: Modul IP, setting cek ID/Pengirim balasan bisa dinonaktifkan (tidak mengecek IP pengirim jawaban).<br>
+                - Fix: Incomplete USSD Reply on some modems. May be required to restart the affected modems.<br>
+                - Fix: Saat kirim perintah balasan status tetap Menunggu, seharusnya Sedang Diproses.<br>
+                - Fix: Connecting database error saat menunggu service database loading.<br>
+                - Fix: T32 edition supports IP Center.<br>
+                - Fix: Kolom balasan pada Auto Respon tidak bisa kosong.<br>
+                - Fix: Transaksi voucher fisik tidak terproses.<br><br>
+
                 3.6.8 @30-Agu-2016<br>
                 - New: Log Sistem saat tambah saldo ditambahkan keterangan deposit.<br>
                 - New: Backup otomatis saldo akhir ke file OtomaX-tanggal-balance.txt.<br>
