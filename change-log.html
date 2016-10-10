@@ -83,6 +83,23 @@
             <h1>Change Log</h1>
             
             <p class="change-log">
+                3.7.0 @10-Okt-2016 <br>
+                - New: Built-in format "myhangouts" untuk mengetahui ID Hangouts untuk keperluan paralel (TGT). <br>
+                Hangouts memiliki pengkodean ID yang berbeda dengan GTalk/GMail sehingga paralel dengan alamat email akan tidak bekerja. <br>
+                Member bisa mengetahui ID Hangouts dengan mengirim "myhangouts" (tanpa tanda petik) lalu menggunakan ID tersebut saat melakukan paralel (TGT). <br>
+                Contoh ID Hangouts: 2uDUMMY5vovsx2knmazsegc34e@public.talk.google.com <br>
+                - New: Saat menerima invitation dari Hangouts, akan otomatis mengecek dan memparalel ID Hangouts member tersebut. <br>
+                Contoh ID saat invitation: dummy-at-gmail.com--2uDUMMY5vovsx2knmazsegc34e@public.talk.google.com <br>
+                - New: IP Center/Gateway mendukung HTTP POST. <br>
+                - Fix: IP Center/Gateway, URL balance tanpa parameter [sign] tidak bekerja. <br>
+                - Fix: IM Center (GTalk/XMPP) tidak melakukan koneksi ulang jika koneksi putus. <br>
+                - Fix: Kolom Kadaluarsa tidak muncul pada tabel Daftar Hitam. <br>
+                - Fix: Kolom Kadaluarsa tidak muncul pada tabel Voucher Fisik. <br>
+                - Fix: TGT*user@server.com/resouce*pin gagal karena ada karakter /. <br>
+                - Fix: Inbox untuk tipe IP pesan tidak lengkap. <br>
+                - Fix: IP Gateway: WebException: The operation has timed out. <br>
+                - Fix: Auto kirim ulang tidak bekerja pada jam tertentu. <br><br>
+                
                 3.6.9 @5-Okt-2016 <br>
                 - New: Tambah GTalk/Jabber mendukung karakter \.<br> Biasanya karena menggunakan transport, profil mengandung spasi.<br>
                 - New: GTalk auto invite balik setelah member mengirim invitation.<br>
