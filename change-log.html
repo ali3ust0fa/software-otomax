@@ -83,6 +83,27 @@
             <h1>Change Log</h1>
             
             <p class="change-log">
+                3.7.2 @14-Dec-2016<br>
+                - Fix: ArgumentNullException: sys/disk on loading.<br>
+                - Fix: Patches TransferSaldoLintas agar kompatibel dengan versi 3.6.9.<br>
+                - Fix: IP Gateway edisi tertentu pesan outbox tidak mau terkirim ke sedoter.<br><br>
+                
+                3.7.1 @4-Dec-2016 <br>
+                - New: Kolom Nama Produk di halaman Cek Harga Grup dan Cek Harga Reseller.<br>
+                - New: Perubahan OID. Pengaruh: modul OH dan IP Gateway akan meminta ulang password. Mungkin diperlukan untuk melakukan UBAHOID ke supplier/cabang.<br>
+                - New: Engine baru Internet Banking BNI. Tanpa captcha.<br>
+                - New: Fitur "TransferSaldoLintas" pindah dari Seting Lain-Lain ke administrasi Grup.<br>
+                - Fix: Arithmetic overflow error for data type tinyint, saat memproses transaksi baru (dengan counter).<br>
+                - Fix: Saat startup, jumlah Modul IP hanya berjumlah maksimal 255 modul.<br>
+                - Fix: Meminimalkan munculnya error "The operation has timed out" dan "Connection reset by peer" pada IP Gateway.<br>
+                - Fix: Balasan Transaksi Dobel tidak menampilkan parameter harga.<br>
+                - Fix: Qty pada transaksi postpaid modul IP tidak bekerja sebagaimana mestinya.<br>
+                - Fix: Kode Area pada Produk atau Provider tidak bekerja.<br>
+                - Fix: Transaksi modul Dial/USSD atau IP berstatus Sedang Diproses jika ada perintah balasan.<br>
+                - Fix: Edisi cabang/satelit tidak muncul kolom Alamat dan Password IP pada tabel Reseller.<br>
+                - Fix: Penyempurnaan auto login pada client.<br>
+                - Fix: Modul IM lambat saat memproses antrian transaksi.<br><br>
+                
                 3.7.0 @10-Okt-2016 <br>
                 - New: Built-in format "myhangouts" untuk mengetahui ID Hangouts untuk keperluan paralel (TGT). <br>
                 Hangouts memiliki pengkodean ID yang berbeda dengan GTalk/GMail sehingga paralel dengan alamat email akan tidak bekerja. <br>
