@@ -681,7 +681,7 @@
                     adalah modul untuk memproses transaksi yang menggunakan metode STK, misalnya: ISEV.
                     </li>
                     <li><b>IP Client.</b><br>
-                    adalah modul untuk transaksi Host to Host ke server lain menggunakan IP.
+                    adalah modul untuk transaksi Host to Host ke server lain menggunakan IP. Modul ini dapat digunakan transaksi IP berkolaborasi dengan modul IP Center atau IP Gateway (tidak dapat berdiri sendiri).
                     </li>
                     <li><b>OtomaX HTH.</b><br>
                     adalah modul untuk transaksi Host to Host ke sesama server OtomaX menggunakan OID OtomaX.
@@ -729,7 +729,7 @@
                     adalah fitur untuk mengatur jam aktif sebuah modul dan membatasi jumlah transaksi yang dapat diprosesnya.
                     </li>
                     <li><b>Sistem Poin.</b><br>
-                    adalah sistem untuk memberikan poin tertentu kepada grup reseller tertentu dari setiap transaksi sebagai dasar pemberian hadiah.
+                    adalah sistem untuk memberikan poin tertentu kepada grup reseller tertentu dari setiap transaksi sukses sebagai acuan pemberian hadiah.
                     </li>
                     <li><b>Jawaban Per Provider.</b><br>
                     adalah fitur untuk membuat balasan berbeda - beda ke reseller untuk setiap Provider.
@@ -762,13 +762,13 @@
                     adalah fitur untuk mengirimkan SMS ke pembeli secara otomatis, misalnya untuk menginformasikan status pembelian pulsa, mengirimkan Token PLN Prabayar, mengirimkan tagihan dan status pembayaran PLN Paskabayar, menyematkan iklan ke pembeli, dan lain - lain.
                     </li>
                     <li><b>IP Center</b>.<br>
-                    adalah modul untuk menerima transaksi dari member melalui jalur HTTP/IP (transaksi IP). Disyaratkan memiliki IP Publik Statis.
+                    adalah modul untuk menerima transaksi dari member melalui jalur HTTP/IP (transaksi IP) dan juga menerima report status transaksi IP dari supplier. Disyaratkan memiliki IP Publik Statis. Modul ini berguna untuk melakukan transaksi IP baik sebagai Supplier ataupun Sedoter (Pengambil stok).
                     </li>
                     <li><b>IP Gateway - Report</b>.<br>
-                    adalah modul untuk menerima status report transaksi IP dari supplier. Ini berguna bagi sedoter (pengambil stok) agar dapat host to host ke server lain via IP meskipun tidak memiliki IP Publik Statis.
+                    adalah modul untuk menerima status report transaksi IP dari supplier. Ini berguna bagi sedoter (Pengambil stok) agar dapat host to host ke server lain via IP meskipun tidak memiliki IP Publik Statis.
                     </li>
                     <li><b>IP Gateway - Center</b>.<br>
-                    adalah modul yang seakan-akan menjadi IP Center pribadi yang bisa diakses dari luar. Ini berguna bagi supplier agar dapat menerima transaksi via IP meskipun tidak memiliki IP Publik Statis.
+                    adalah modul yang seakan-akan menjadi IP Center pribadi yang bisa diakses dari luar. Ini berguna bagi supplier agar dapat menerima transaksi IP dari member meskipun tidak memiliki IP Publik Statis.
                     </li>
                 </ul>
             </p>
