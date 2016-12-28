@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>Jawaban dari Provider | OtomaX - Software Server Pulsa</title>
+        <meta charset="utf-8">
+<!--        <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+        <link rel="stylesheet" type="text/css" href="styles/global.css" />
+<!--        begin to redirect index of page to home page-->
+<!--        <meta http-equiv="refresh" content="0; url=home.html" />-->
+<!--        end redirect-->
+        <style>
+            
+        </style>
+<!--        GA-->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-80250152-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+    </head>
+    <body>
+        <div id="banner-jualan">
+            <a href="purchase.html" target="_blank"><img src="images/banner-penjualan-otomax.png" width=""></a>
+        </div>
+        
+        <div id="split-header">
+            <marquee style="padding:6px;">Selamat Datang di Virtual Office M.A.M (Reseller OtomaX Original Indonesia), melayani: Pembelian Baru, Upgrade, Iuran, Ganti SIMCard, Balik Nama dan Support Premium OtomaX</marquee>
+        </div>
+        
+        <div id="header">
+            <div>
+                 <img src="images/logo_otomax.png" >
+            </div>
+        </div>
+        
+        <div id="sidebar">
+            <ul class="nav">
+                <li><a href="home.html" hreflang="id">Home</a></li>
+                <li><a href="download.html" hreflang="id">Download</a></li>
+                <li><a href="price-plan.html" hreflang="id">Price & Plan</a></li>
+                <li><a href="documentation.html" hreflang="id">Documentation</a></li>
+                <li><a href="change-log.html" hreflang="id">Change Log</a></li>
+                <li><a href="purchase.html" hreflang="id">Purchase</a></li>
+                <li><a href="support.html" hreflang="id">Support</a></li>
+            </ul>
+            
+<!--            begin widget yahoo-->
+<!--
+            <div style="color:yellow; font-size:10pt; text-align:center; text-decoration:none;">
+                <a href="ymsgr:sendIM?mam_service"><img src="http://opi.yahoo.com/online?u=mam_service&amp;m=g&amp;t=2&amp;l=us"/></a>
+                <br>
+                YM: mam_service 
+                <br>
+                HP/WA: +628-5258-1112-30
+            </div>
+-->
+<!--            end widget yahoo-->
+            
+<!--            begin widget telegram-->
+            <div style="color:yellow; font-size:10pt; text-align:center;">
+                <a href="http://telegram.me/mam_service"  target="_blank"><img src="images/Telegram-icon%2048x48.png"></a>
+                <br>
+                Telegram:
+                <br>
+                @mam_service
+                <br><br>
+                HP | WA | TG:
+                <br>
+                +628-5258-1112-30
+            </div>
+<!--            end widget telegram-->
+            
+        </div>
+        
+        <div id="content">
+            <h1>Jawaban dari Provider</h1>
+            
+                <p><b>Jawaban dari Provider</b> merupakan fitur untuk memberikan keputusan akan status sebuah transaksi secara otomatis, baik itu sukses, gagal, menunggu jawaban, kirim ulang, proses ulang atau yang lain, berdasarkan respon balasan dari supplier. Supplier disini ialah dari MKIOS, DOMPUL, MTRONIK, Server Pulsa Rekanan atau yang lain.</p>
+                
+                <p>Dalam mensetting <b>Jawaban dari Provider</b> kita harus paham alur kerjanya agar pemutusan status transaksi tersebut akurat sebagaimana mestinya. Kalau tidak, biasanya akan terjadi keganjilan - keganjilan.</p>
+                
+                <p>
+                    Konsep dasar dalam mensetting <b>Jawaban dari Provider</b> adalah sebagai berikut:
+                    <ol>
+                        <li>
+                            Cari tahu respon balasan dari Supplier, misalnya balasan sukses <b>MKIOS</b>: <br><br>
+                            <span style="color:green;">Pembelian 1 buah voucher &#60;simPATI&#62; senilai &#60;10&#62; untuk &#60;082311940000&#62; telah berhasil. SN &#60;5030212113081200000&#62;.Stok anda 10K=43.</span>
+                            <br><br>
+                        </li>
+                        <li>Buat 1 kelompok jawaban setiap 1 supplier, sebagai contoh: <b>MKIOS</b></li>
+                        <li>Pada kolom <b>Kelompok</b> isi dengan nama kelompok jawaban, pada contoh ini isi dengan: <b>MKIOS</b></li>
+                        <li>Cari kalimat di dalam balasan/respon dari Supplier di atas yang akan dijadikan kata kunci. Pada contoh ini kita mendapati kalimat yang dapat dijadikan kata kunci adalah kata <span style="color:green;">berhasil</span>, maka kata ini kita masukkan ke dalam kolom: <b>Kata Kunci Harus Ada</b> di <b>Jawaban dari Provider</b></li>
+                        <li>Cari kalimat apa yang terletak sebelum nomor tujuan transaksi. Pada contoh di atas nomor tujuannya ialah <span style="color:green;">082311940000</span> sehingga kalimat yang terletak sebelumnya adalah <span style="color:green;">untuk &#60;</span>; maka kata ini kita masukkan ke dalam kolom: <b>Awalan Tujuan</b></li>
+                        <li>Cari kalimat apa yang terletak sesudah nomor tujuan (082311940000). Pada contoh di atas ialah <span style="color:green;">&#62; telah</span>; maka kalimat ini dimasukkan ke kolom: <b>Akhiran Tujuan</b></li>
+                        <li>Cari kalimat apa yang terletak sebelum nominal. Pada contoh di atas nominalnya adalah <span style="color:green;">10</span> sehingga kalimat sebelumnya adalah <span style="color:green;">senilai &#60;</span>; maka ini dimasukkan ke kolom: <b>Awalan Nominal</b> (untuk menampilkan kolom <b>Awalan Nominal</b>, arahkan kursor ke judul Tabel <b>Jawaban dari Provider</b> -> Klik Kanan -> Centang <b>Awalan Nominal</b>)</li>
+                        <li>Cari kalimat apa yang terletak sesudah nominal (10). Pada contoh di atas ialah <span style="color:green;">&#62; untuk</span>; maka ini dimasukkan ke kolom: <b>Akhiran Nominal</b> (untuk menampilkannya sama dengan cara menampilkan kolom <b>Awalan Nominal</b>)</li>
+                        <li>Cari kalimat apa yang terletak sebelum SN/Serial Number. Pada contoh di atas SN nya adalah <span style="color:green;">5030212113081200000</span> sehingga kalimat yang terletak sebelumnya ialah <span style="color:green;">SN &#60</span>; maka ini yang dimasukkan ke kolom: <b>Awalan SN/Ref</b></li>
+                        <li>Cari kalimat apa yang terletak sesudah SN/Serial Number. Pada contoh di atas ialah <span style="color:green;">&#62.Stok</span>; maka ini masukkan ke kolom: <b>Akhiran SN/Ref</b> (untuk menampilkannya sama dengan cara menampilkan kolom <b>Awalan Nominal</b>)</li>
+                        <li>Selanjutnya tentukan Status transaksi sesuai balasan yang diterima dari Supplier. Pada contoh di atas, balasan menyatakan transaksi Sukses, maka pada kolom: <b>Status Trx</b> kita pilih <b>Sukses</b></li>
+                        <li>Klik menu <b>Alat Penguji</b> -> <b>Penguji Jawaban</b> -> pada box: <b>Jawaban Provider</b> masukkan balasan supplier yang hendak diuji -> Tentukan <b>Kelompok Jawaban</b> -> Klik tombol <b>Tes</b>. Apabila Hasilnya menyatakan Status Trx= Sukses, Nominal, Tujuan, dan SN tertangkap; maka setting penangkap jawaban telah berhasil. Bilamana belum, maka cek kembali</li>
+                        <li>Lakukan hal yang sama untuk respon balasan Supplier yang lain</li>
+                        <li>Selesai</li>
+                    </ol>
+                </p>
+                
+                <p style="color:blue;">
+                    Poin penting dalam mensetting penangkap jawaban di OtomaX adalah:
+                    <ul style="color:blue;">
+                        <li>Pastikan Nominal tertangkap</li>
+                        <li>Pastikan Tujuan tertangkap</li>
+                        <li>Pastikan Status Trx yang kita berikan sesuai dengan kata kunci dari jawaban supplier</li>
+                        <li>Pastikan SN/Ref tertangkap (khusus transaksi berstatus Sukses)</li>
+                    </ul>
+                </p>
+                
+                <p>
+                    Dalam terciptanya transaksi sukses atau gagal dan me-reply ke Reseller fitur <b>Jawaban dari Provider</b> berkolaborasi dengan setting di modul, pada contoh ini dengan modul berisi chip MKIOS:
+                    <ol>
+                        <li>Pilih modul <b>Dial</b> yang berisi chip <b>MKIOS</b> -> klik kanan -> klik <b>Setting</b></li>
+                        <li>Klik tab <b>Page1</b> -> pada <b>Kelompok Jawaban</b> arahkan ke kelompok jawaban yang dibuat di atas. Pada contoh ini kelompok yang dibuat adalah <b>MKIOS</b>; maka pilih <b>MKIOS</b></li>
+                        <li>Cari tahu balasan: " <span style="color:green;">Pembelian 1 buah voucher &#60;simPATI&#62; senilai &#60;10&#62; untuk &#60;082311940000&#62; telah berhasil. SN &#60;5030212113081200000&#62;.Stok anda 10K=43.</span> " ini dikirim oleh apa? Cek di menu <b>Transaksi</b> -> <b>Inbox</b> -> kolom <b>Pengirim</b>. Kita dapati pengirimnya ialah <b style="color:red;">Dial</b>; maka ini kita masukkan di box: <b>ID/Nomor Sender/Pengirim Provider</b></li>
+                        <li>Klik tombol <b>Simpan</b></li>
+                        <li>Selesai</li>
+                    </ol>
+                </p>
+        
+<!--            <p class="note">
+    
+                </p>-->
+            
+            <div class="bottom-content"></div>
+        </div>
+        
+        <div id="footer">
+            
+        </div>
+    </body>
+</html>
