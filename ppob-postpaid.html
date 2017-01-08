@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>PPOB Postpaid/Paskabayar | OtomaX - Software Server Pulsa</title>
+        <meta charset="utf-8">
+<!--        <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+        <link rel="stylesheet" type="text/css" href="styles/global.css" />
+<!--        begin to redirect index of page to home page-->
+<!--        <meta http-equiv="refresh" content="0; url=home.html" />-->
+<!--        end redirect-->
+        <style>
+            table {
+                background-color: chartreuse;
+            }
+        </style>
+<!--        GA-->
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-80250152-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+    </head>
+    <body>
+        <div id="banner-jualan">
+            <a href="purchase.html" target="_blank"><img src="images/banner-penjualan-otomax.png" width=""></a>
+        </div>
+        
+        <div id="split-header">
+            <marquee style="padding:6px;">Selamat Datang di Virtual Office M.A.M (Reseller OtomaX Original Indonesia), melayani: Pembelian Baru, Upgrade, Iuran, Ganti SIMCard, Balik Nama dan Support Premium OtomaX</marquee>
+        </div>
+        
+        <div id="header">
+            <div>
+                 <img src="images/logo_otomax.png" >
+            </div>
+        </div>
+        
+        <div id="sidebar">
+            <ul class="nav">
+                <li><a href="home.html" hreflang="id">Home</a></li>
+                <li><a href="download.html" hreflang="id">Download</a></li>
+                <li><a href="price-plan.html" hreflang="id">Price & Plan</a></li>
+                <li><a href="documentation.html" hreflang="id">Documentation</a></li>
+                <li><a href="change-log.html" hreflang="id">Change Log</a></li>
+                <li><a href="purchase.html" hreflang="id">Purchase</a></li>
+                <li><a href="support.html" hreflang="id">Support</a></li>
+            </ul>
+            
+<!--            begin widget yahoo-->
+<!--
+            <div style="color:yellow; font-size:10pt; text-align:center; text-decoration:none;">
+                <a href="ymsgr:sendIM?mam_service"><img src="http://opi.yahoo.com/online?u=mam_service&amp;m=g&amp;t=2&amp;l=us"/></a>
+                <br>
+                YM: mam_service 
+                <br>
+                HP/WA: +628-5258-1112-30
+            </div>
+-->
+<!--            end widget yahoo-->
+            
+<!--            begin widget telegram-->
+            <div style="color:yellow; font-size:10pt; text-align:center;">
+                <a href="http://telegram.me/mam_service"  target="_blank"><img src="images/Telegram-icon%2048x48.png"></a>
+                <br>
+                Telegram:
+                <br>
+                @mam_service
+                <br><br>
+                HP | WA | TG:
+                <br>
+                +628-5258-1112-30
+            </div>
+<!--            end widget telegram-->
+            
+        </div>
+        
+        <div id="content">
+            <h3>PPOB Postpaid/Paskabayar</h3>
+            
+            <p>Pada versi 3.6.3 OtomaX telah mendukung transaksi <b>PPOB Postpaid</b>/Paskabayar namun hanya berlaku untuk edisi Ultimate, sehingga jika edisi OtomaX Anda belum Ultimate, upgrade dahulu <a href="bagaimana-upgrade-otomax.html" target="_blank">klik disini</a>; dan jika belum memiliki OtomaX, beli dahulu <a href="purchase.html" target="_blank">klik disini</a>.</p>
+            
+            <p>Dengan fitur ini Anda dapat memproses pembayaran tagihan listrik, telpon, PDAM, tagihan cicilan kendaraan dan lain - lain dengan bekerja sama dengan Supplier PPOB Postpaid/Paskabayar mana saja yang Anda inginkan.</p>
+            
+            <p>
+                Bagaimana setting PPOB Postpaid/Paskabayar di OtomaX? Berikut gambarannya:
+                <ol>
+                    <li>
+                        Masuk menu <b>Administrasi</b> -> <b>Provider</b>, buat Kode Provider. <br><br>
+                        <img src="images/ppob-postpaid/postpaid01.png" alt="kode provider" width="50%">
+                        <br><br> 
+                    </li>
+                    <li>
+                        Masuk menu <b>Administrasi</b> -> <b>Produk</b>, buat Kode Produk Postpaid/Paskabayar (sesuai kebutuhan) -> Centang cekbox <b>Postpaid</b>. Kolom <b>Harga Beli</b> isi fee dari Supplier diawali tanda minus (-), misalnya Anda dapat fee Rp2.000 isi -2.000; sementara kolom <b>Harga Jual</b> isi fee untuk Reseller Anda diawali tanda minus (-), misalnya Anda ingin memberikan fee Rp1.500 isi -1.500. <br><br> 
+                        <img src="images/ppob-postpaid/postpaid02.png" alt="kode produk" width="90%">
+                        <br><br>
+                    </li>
+                    <li>
+                        Buat modul <b>IM Hybrid HTH</b> untuk memproses transaksi (sama seperti untuk host to host pulsa).
+                    </li>
+                    <li>
+                        Masuk menu <b>Administrasi</b> -> <b>Parsing ke Provider</b>, pada kolom <b>Perintah</b> isi dengan format cek tagihan Supplier Anda. Untuk format cek tagihan tanyakan ke Supplier Anda. <br><br>
+                        <img src="images/ppob-postpaid/postpaid03.png" alt="parsing ke provider" width="70%">
+                        <br><br>
+                    </li>
+                    <li>
+                        Kemudian masuk ke <b>Administrasi</b> -> <b>Jawaban dari Provider</b>, buat penangkap jawaban untuk menangkap total tagihan dan simpan dalam parameter/variable <span style="color:red">tagihan</span> atau <span style="color:red">bill</span> (konsep dasar <a href="jawaban-dari-provider.html" target="_blank">klik disini</a>). Selanjutnya kolom <b>Perintah</b> isi dengan format bayar tagihan. Untuk format bayar tagihan tanyakan ke Supplier Anda. <br><br>
+                        <img src="images/ppob-postpaid/postpaid04.png" alt="jawaban dari provider" width="100%">
+                        <br><br>
+                        Untuk Regex penangkap total tagihan, Anda bisa membuat sendiri atau <a href="http://forum.orisinil.com/index.php/topic,242.msg1973.html#msg1973" target="_blank">klik disini</a> (Gratis) , dan bisa juga <a href="http://forum.orisinil.com/index.php/topic,12421.msg199643.html#msg199643" target="_blank">klik disini</a> (Berbayar).
+                        <br><br>
+                    </li>
+                    <li>Selesai</li>
+                </ol>
+            </p>
+            
+            <p class="note">
+                <b>Catatan 1</b>: <br>
+                Harga Reseller = Tagihan + Harga Jual <br><br>
+                Misal <b style="color:orange">Tagihan</b>: 10.000 dan <b style="color:orange">Harga Jual</b>: -1.500, maka <b style="color:orange">Harga Reseller</b>: 10.000 + -1.500 = 8.500
+            </p>
+            
+            <p class="note">
+                <b>Catatan 2</b>: <br>
+                Panduan ini merupakan gambaran pemanfaatan fitur <b>PPOB Postpaid</b>/Paskabayar secara umum. Regex, Penangkap Jawaban dan lainnya harus disesuaikan dengan alur kerja masing - masing Supplier PPOB, karena setiap supplier PPOB memiliki karakteristik sendiri - sendiri. Mintalah ke supplier Anda: <br>
+                <span style="color:orange">
+                #1 - Panduan atau penjelasan alur kerja sistem yang digunakan.  <br>
+                #2 - Format - format cek tagihan dan bayar tagihan. <br>
+                #3 - Contoh - contoh balasan cek tagihan dan bayar tagihan. <br>
+                #4 - Kontak Supplier yang dapat dihubungi untuk membantu singkronisasi setting. <br>
+                </span>
+            </p>
+            
+            <div class="bottom-content"></div>
+        </div>
+        
+        <div id="footer">
+            
+        </div>
+    </body>
+</html>
