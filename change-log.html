@@ -83,6 +83,34 @@
             <h1>Change Log</h1>
             
             <p class="change-log">
+               3.7.4 @3-Apr-2016 <br>
+                - New: Regex pada tabel jawaban dapat menyimpan 1000 karakter. <br>
+                - New: Meringkas respon XML RPC agar lebih mudah dibaca. Seting jawaban mungkin perlu penyesuaian kembali. <br>
+                - New: Tabel Harga Grup jika harga dikosongkan berarti blok terhadap produk ybs (sebelumnya -1). <br>
+                - New: Selisih Harga pada Grup harus >= 0. <br>
+                - New: Kolom Keterangan (status) di tabel Transaksi. <br>
+                - New: Dapat menangkap lebih dari 1 (satu) reply jawaban sukses, contohnya pada MKios (Dial dan SMS). <br>
+                - New: Opsi "multi-threaded processing" pada modul IP Client (untuk edisi standar atau lebih tinggi). <br>
+                - New: Entri Log Sistem saat pemakai melakukan login. <br>
+                - New: Limit data di CS monitor. <br>
+                - Fix: Auto refresh transaksi untuk beberapa kasus. <br>
+                - Fix: Log Sistem tidak auto refresh. <br>
+                - Fix: Jika master diblok produk ternyata grup dibawahnya masih bisa akses produk tersebut. <br>
+                PERHATIAN: Jika user mengalami produk tidak bisa diakses untuk grup tertentu, silakan telusuri level/grup upline tertinggi
+                dan gunakan halaman cek harga untuk mengecek apakah produk tersebut muncul. Jika tidak, maka cek kembali setting
+                terkait blok produk di tabel Operator, Produk, dan Harga Grup. <br>
+                - Fix: Modul IP gagal mengecek transaksi dobel jika beberapa transaksi masuk berbarengan (simultan) untuk reseller yang sama. <br>
+                - Fix: Ambil tiket gagal. Mohon ulangi atau masukkan jumlah berbeda. <br>
+                - Fix: XMPP tidak menampilkan roaster online/offline. <br>
+                - Fix: Mode Client tidak bisa mengirim ulang semua transaksi IM yang status menunggu. <br>
+                - Fix: IP Center mengubah karakter + menjadi spasi saat memproses pesan masuk. <br>
+                - Fix: SqlException: String or binary data would be truncated saat menangkap jawaban. <br>
+                - Fix: SqlException: The conversion of a char data type to a datetime data type resulted in an out-of-range datetime value. <br>
+                Terjadi pada Windows 10 yang menggunakan format waktu (region) Indonesia. <br>
+                - Fix: Client tidak bisa mematikan auto login. <br><br>
+
+                Untuk pengguna Ultimate, bisa mencoba fitur auto cek stok MKIOS. Caranya: Nama modul diawali dengan MKIOS (huruf besar semua) <br><br>
+
                 3.7.3 @31-Dec-2016 <br>
                 - New: Pengenalan pesan offline untuk beberapa server XMPP. <br>
                 - Fix: SMS Sender/Modul: Thread was interrupted from a waiting state. <br>
