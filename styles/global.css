@@ -158,6 +158,11 @@ div#content img.content-image {
     width: 100%;
 }
 
+div#content img.center-image {
+    display: block; 
+    margin: auto;
+}
+
 div#content p span.name-app {
     font-style: italic;
     background-color: coral;
