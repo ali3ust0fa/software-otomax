@@ -83,41 +83,49 @@
             <h1>Change Log</h1>
             
             <p class="change-log">
-              3.7.7 @27-09-2017<br>
-              - New: Kode Grup di IM Center. Jika kosong maka center bisa digunakan oleh semua reseller.<br>
-              Jika terisi maka center hanya bisa digunakan oleh reseller dengan kode group yang ada pada isian.<br>
-              IM Center selalu bisa digunakan oleh supplier, selama IDnya terdaftar pada modul-modul IM.<br>
-              - New: Filter Server Exclusion di IM Center. Jika diisi, maka IM Sender tidak mengirim pesan ke domain-domain tersebut.<br>
-              - New: Menu File - Night Mode.<br>
-              - New: BlokTujuanNominalSama di Setting - Lain-lain.<br>
-              Tolak transaksi jika masih ada pending dengan tujuan dan nominal yang sama.<br>
-              - Fix: Optimasi pendaftaran reseller. Gejala lambat atau data pengirim tidak tersimpan.<br>
-              - Fix: Cek jawaban dengan trxid tidak mengecek tujuan.<br>
-              - Fix: IBanking BNI bermasalah jika format tanggal Windows menggunakan Indonesia.<br>
-              - Fix: Optimasi saat pengecekan mutasi internet banking Mandiri dan BCA.<br>
-              - Fix: Optimasi IP Gateway.<br>
-              - Fix: Hang APPCRASH, Exception Code: e053534. Umumnya terjadi karena kode upline = kode reseller.<br><br>
+                3.7.8 @3-Oct-2017<br>
+                - New: Statistik Outbox berupa checkbox. Bisa tidak dicontreng untuk meringankan proses query database.<br>
+                - Fix: Error while proccessing inbox 41922725: REK2 Invalid column name 'SPC'.<br>
+                - Fix: Setting MaxMarkup tidak berpengaruh di format UbahMarkupProduk.<br>
+                - Fix: Autosize baris tidak berfungsi.<br>
+                - Fix: Lambat pada Form pendaftaran manual dan perubahan data reseller.<br>
+                - Fix: Optimasi proses mutasi saldo reseller.<br><br>
              
-              3.7.6 @13-06-2017<br>
-              - New: Markup Produk per Reseller. Untuk edisi Standard atau lebih tinggi.<br>
-              - New: Format CekMarkupProduk, UbahMarkupProduk, HapusMarkupProduk.<br>
-              - New: Deposit Maksimal di tabel Grup.<br>
-              Jumlah maksimal yang diijinkan saat mengambil tiket deposit.<br>
-              - New: Max Pakai (daily usage) di tabel Grup. Untuk edisi Ultimate.<br>
-              Membatasi transaksi berdasarkan jumlah pemakaian harian.<br>
-              - Fix: Timeout Mandiri Online dibuat lebih lama.<br>
-              - Fix: Optimasi proses perhitungan komisi.<br>
-              - Fix: Seting jawaban yang salah saat menangkap parameter qty bisa menyebabkan jumlah komisi membengkak.<br>
-              - Fix: Optimasi kecepatan saat mengubah data reseller.<br>
-              - Fix: CS Monitor error jika format waktu menggunakan pemisah titik (misal Indonesia).<br>
-              - Fix: Modul IP. Update harga beli tidak berjalan dengan baik pada reply pertama (respon langsung saat tembak).<br>
-              - Fix: Pesan Log saat pemakai mengulang semua transaksi IP yang pending.<br><br>
+                3.7.7 @27-09-2017<br>
+                - New: Kode Grup di IM Center. Jika kosong maka center bisa digunakan oleh semua reseller.<br>
+                Jika terisi maka center hanya bisa digunakan oleh reseller dengan kode group yang ada pada isian.<br>
+                IM Center selalu bisa digunakan oleh supplier, selama IDnya terdaftar pada modul-modul IM.<br>
+                - New: Filter Server Exclusion di IM Center. Jika diisi, maka IM Sender tidak mengirim pesan ke domain-domain tersebut.<br>
+                - New: Menu File - Night Mode.<br>
+                - New: BlokTujuanNominalSama di Setting - Lain-lain.<br>
+                Tolak transaksi jika masih ada pending dengan tujuan dan nominal yang sama.<br>
+                - Fix: Optimasi pendaftaran reseller. Gejala lambat atau data pengirim tidak tersimpan.<br>
+                - Fix: Cek jawaban dengan trxid tidak mengecek tujuan.<br>
+                - Fix: IBanking BNI bermasalah jika format tanggal Windows menggunakan Indonesia.<br>
+                - Fix: Optimasi saat pengecekan mutasi internet banking Mandiri dan BCA.<br>
+                - Fix: Optimasi IP Gateway.<br>
+                - Fix: Hang APPCRASH, Exception Code: e053534. Umumnya terjadi karena kode upline = kode reseller.<br><br>
+             
+                3.7.6 @13-06-2017<br>
+                - New: Markup Produk per Reseller. Untuk edisi Standard atau lebih tinggi.<br>
+                - New: Format CekMarkupProduk, UbahMarkupProduk, HapusMarkupProduk.<br>
+                - New: Deposit Maksimal di tabel Grup.<br>
+                Jumlah maksimal yang diijinkan saat mengambil tiket deposit.<br>
+                - New: Max Pakai (daily usage) di tabel Grup. Untuk edisi Ultimate.<br>
+                Membatasi transaksi berdasarkan jumlah pemakaian harian.<br>
+                - Fix: Timeout Mandiri Online dibuat lebih lama.<br>
+                - Fix: Optimasi proses perhitungan komisi.<br>
+                - Fix: Seting jawaban yang salah saat menangkap parameter qty bisa menyebabkan jumlah komisi membengkak.<br>
+                - Fix: Optimasi kecepatan saat mengubah data reseller.<br>
+                - Fix: CS Monitor error jika format waktu menggunakan pemisah titik (misal Indonesia).<br>
+                - Fix: Modul IP. Update harga beli tidak berjalan dengan baik pada reply pertama (respon langsung saat tembak).<br>
+                - Fix: Pesan Log saat pemakai mengulang semua transaksi IP yang pending.<br><br>
               
-               3.7.5 @17-05-2017 <br>
+                3.7.5 @17-05-2017 <br>
                 - New: Mandiri Online. Untuk edisi Advanced atau lebih tinggi.<br>
-                Modul ini menggunakan komponen ActiveX Internet Explorer. Mohon pastikan Anda sudah menginstal Internet Explorer versi 9 atau lebih baru.<br><br>
+                Modul ini menggunakan komponen ActiveX Internet Explorer. Mohon pastikan Anda sudah menginstal <<<In></In>ter></Inter>net></Internet> <E></E>atau lebih baru.<br><br>
                 
-               3.7.4 @3-Apr-2017 <br>
+                3.7.4 @3-Apr-2017 <br>
                 - New: Regex pada tabel jawaban dapat menyimpan 1000 karakter. <br>
                 - New: Meringkas respon XML RPC agar lebih mudah dibaca. Seting jawaban mungkin perlu penyesuaian kembali. <br>
                 - New: Tabel Harga Grup jika harga dikosongkan berarti blok terhadap produk ybs (sebelumnya -1). <br>
