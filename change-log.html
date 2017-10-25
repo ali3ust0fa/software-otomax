@@ -83,6 +83,19 @@
             <h1>Change Log</h1>
             
             <p class="change-log">
+               
+                3.8.0 @25-Okt-2017<br>
+                - Fix: System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. Parameter name: rowIndex.<br>
+                Beberapa PC secara acak mengalami error tersebut.<br>
+                - Fix: Auto resize di Log modul. Ada baris yang terpotong.<br>
+                - Fix: Untuk membatasi ukuran file, spreadsheet OtomaX-*.xml hanya menyimpan maksimal 25.000 transaksi.<br>
+                - Fix: Excel tidak dapat membuka file spreadsheet jika data mengandung huruf <.<br>
+                - Fix: Transaksi postpaid qty selalu bernilai 1.<br>
+                - Fix: Error proses inbox dari non reseller jika format DaftarNonMember kosong.<br><br>
+                
+                PERUBAHAN OID<br>
+                Ada kemungkinan OID berubah pada beberapa pc (tidak semua) karena ada perbaikan program di pengenalan hardware ID. Akibat dari ini adalah seting ulang password IP Gateway dan OH, serta update OID ke supplier-supplier terkait. Mohon maaf atas ketidaknyamanannya.<br><br>
+                
                 3.7.9 @18-Okt-2017<br>
                 - Fix: SMS Sender Auto Off di Log Sistem tidak muncul nama modulnya.<br>
                 - Fix: Perubahan tipe data level.kode_upline menjadi varchar(10).<br>
