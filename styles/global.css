@@ -262,3 +262,8 @@ div#footer {
 .log:hover {
     border: 1px solid red;
 }
+
+div#content .center-img {
+    display: block;
+    margin: auto;
+}
