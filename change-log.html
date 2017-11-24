@@ -83,6 +83,25 @@
             <h1>Change Log</h1>
             
             <p class="change-log">
+              
+                3.8.1 @24-Nov-2017<br>
+                - New: Tabel Hadiah Poin. Khusus edisi Standard atau lebih tinggi.<br>
+                - New: Kolom Poin di tabel Produk. Khusus edisi Ultimate.<br>
+                - New: Kolom Poin Produk di tabel Level. Khusus edisi Ultimate.<br>
+                Jika dicentang, maka OtomaX akan menggunakan poin (jika terisi) dari tabel Produk.<br>
+                - New: Penambahan field poin pada tabel transaksi untuk keperluan refund dan laporan.<br>
+                - New: Balasan KurangPoin untuk pengurangan poin secara manual oleh pemakai.<br>
+                Sebelumnya menggunakan format TukarPoin.<br>
+                - New: Format TukarPoinGagal untuk respon gagal saat penukaran poin.<br>
+                - New: Format LihatHadiahPoin untuk melihat daftar hadiah yang tersedia.<br>
+                - New: Alat Bantu - Penukaran Hadiah Poin. Khusus edisi Standard atau lebih tinggi.<br>
+                Daftar poin dan hadiah yang sudah ditukar. Isi kolom tanggal serah untuk menandakan bahwa hadiah sudah diserahkan ke reseller.<br>
+                - New: Re-code Markup per produk. Cukup 1 (satu) data untuk markup produk semua downlinenya, yaitu dengan menambahkan akhiran .* (titik bintang) pada kode reseller.<br>
+                Contoh: RS001.* akan berlaku untuk semua downline dari member RS001.<br>
+                - Fix: Format TukarPoin tidak menggunakan parameter [jumlah] melainkan parameter [kode] (kode hadiah).<br>
+                - Fix: Alat Bantu - Tambah/Kurang Poin tidak bekerja dengan baik.<br>
+                - Fix: Sekarang update harga parsing hanya berlaku untuk produk non postpaid.<br>
+                - Fix: Transaksi OH memotong saldo jika saldo reseller tidak cukup.<br><br>
                
                 3.8.0 @25-Okt-2017<br>
                 - Fix: System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values. Parameter name: rowIndex.<br>
