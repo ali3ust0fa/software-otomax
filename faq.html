@@ -312,6 +312,15 @@
                     x.style.display = "none";
                 }
             }
+            
+            function setReplyTehnis13() {
+                var x = document.getElementById("replyTehnis13");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
             // end reply tehnis
         </script>
     </head>
@@ -1045,6 +1054,28 @@
                 </p>
             </div>
 <!--           end tehnis ask12-->
+
+
+<!--           tehnis ask13-->
+            <div id="tehnis-ask13" onclick="setReplyTehnis13()" class="ask">
+                <img id="arrow" src="images/down_arrow.svg" alt="tanda panah bawah">
+                <p>
+                    Modul Internet Banking BCA tidak membaca mutasi, dan muncul pesan error seperti dibawah, bagaimana menanganinya?
+                    <br><br>
+                        <div class="log">
+                            <code>
+                                Error: tidak dapat membaca form
+                            </code>
+                        </div>
+                    <br>
+                </p>
+            </div>
+            <div id="replyTehnis13" class="reply">
+                <p>
+                    Restart Komputer Anda.
+                </p>
+            </div>
+<!--           end tehnis ask13-->
 
             <div class="bottom-content"></div>
         </div>
