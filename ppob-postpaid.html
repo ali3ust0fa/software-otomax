@@ -82,7 +82,7 @@
         <div id="content">
             <h3>PPOB Postpaid/Paskabayar</h3>
             
-            <p>Pada versi 3.6.3 OtomaX telah mendukung transaksi <b>PPOB Postpaid</b>/Paskabayar namun hanya berlaku untuk edisi Ultimate, sehingga jika edisi OtomaX Anda belum Ultimate, upgrade dahulu <a href="bagaimana-upgrade-otomax.html" target="_blank">klik disini</a>; dan jika belum memiliki OtomaX, beli dahulu <a href="purchase.html" target="_blank">klik disini</a>.</p>
+            <p>Mulai versi 3.6.3 OtomaX telah mendukung transaksi <b>PPOB Postpaid</b>/Paskabayar namun hanya berlaku untuk edisi Ultimate, sehingga jika edisi OtomaX Anda belum Ultimate, upgrade dahulu <a href="bagaimana-upgrade-otomax.html" target="_blank">klik disini</a>; dan jika belum memiliki OtomaX, beli dahulu <a href="purchase.html" target="_blank">klik disini</a>.</p>
             
             <p>Dengan fitur ini Anda dapat memproses pembayaran tagihan listrik, telpon, PDAM, tagihan cicilan kendaraan dan lain - lain dengan bekerja sama dengan Supplier PPOB Postpaid/Paskabayar mana saja yang Anda inginkan.</p>
             
@@ -108,12 +108,14 @@
                         <br><br>
                     </li>
                     <li>
-                        Kemudian masuk ke <b>Administrasi</b> -> <b>Jawaban dari Provider</b>, buat penangkap jawaban untuk menangkap total tagihan dan simpan dalam parameter/variable <span style="color:red">tagihan</span> atau <span style="color:red">bill</span> (konsep dasar <a href="jawaban-dari-provider.html" target="_blank">klik disini</a>). Selanjutnya kolom <b>Perintah</b> isi dengan format bayar tagihan. Untuk format bayar tagihan tanyakan ke Supplier Anda. <br><br>
+                        Kemudian masuk ke <b>Administrasi</b> -> <b>Jawaban dari Provider</b>, buat penangkap jawaban untuk menangkap total tagihan dari balasan cek tagihan Supplier dan simpan dalam parameter <span style="color:red">tagihan</span> atau <span style="color:red">bill</span> (konsep dasar <a href="jawaban-dari-provider.html" target="_blank">klik disini</a>). Selanjutnya kolom <b>Perintah</b> isi dengan format bayar tagihan. Untuk format bayar tagihan tanyakan ke Supplier Anda. Dan satu lagi, pada kolom <b>Status Trx</b> pilih <b>Menunggu Jawaban</b>. Perhatikan gambar di bawah ini:
+                        <br><br>
                         <img src="images/ppob-postpaid/postpaid04.png" alt="jawaban dari provider" width="100%">
                         <br><br>
-                        Untuk Regex penangkap total tagihan, Anda bisa membuat sendiri atau <a href="http://forum.orisinil.com/index.php/topic,242.msg1973.html#msg1973" target="_blank">klik disini</a> (Gratis) , dan bisa juga <a href="http://forum.orisinil.com/index.php/topic,12421.msg199643.html#msg199643" target="_blank">klik disini</a> (Berbayar).
+                        Untuk membuat Regex penangkap total tagihan <a href="http://forum.orisinil.com/index.php/topic,242.msg1973.html#msg1973" target="_blank">klik disini</a> (mohon dibaca dari halaman 1 s/d halaman terakhir).
                         <br><br>
                     </li>
+                    <li>Buat penangkap jawaban untuk menangkap balasan bayar tagihan dari Supplier (sama seperti untuk host to host pulsa).</li>
                     <li>Selesai</li>
                 </ol>
             </p>
@@ -126,12 +128,13 @@
             
             <p class="note">
                 <b>Catatan 2</b>: <br>
-                Panduan ini merupakan gambaran pemanfaatan fitur <b>PPOB Postpaid</b>/Paskabayar secara umum. Regex, Penangkap Jawaban dan lainnya harus disesuaikan dengan alur kerja masing - masing Supplier PPOB, karena setiap supplier PPOB memiliki karakteristik sendiri - sendiri. Mintalah ke supplier Anda: <br>
+                Panduan ini merupakan gambaran pemanfaatan fitur <b>PPOB Postpaid</b>/Paskabayar secara umum. Regex, Penangkap Jawaban dan lainnya harus disesuaikan dengan alur kerja masing - masing Supplier PPOB, karena setiap Supplier PPOB memiliki karakteristik sendiri - sendiri. Mintalah ke Supplier Anda: <br>
                 <span style="color:orange">
-                #1 - Panduan atau penjelasan alur kerja sistem yang digunakan.  <br>
-                #2 - Format - format cek tagihan dan bayar tagihan. <br>
-                #3 - Contoh - contoh balasan cek tagihan dan bayar tagihan. <br>
-                #4 - Kontak Supplier yang dapat dihubungi untuk membantu singkronisasi setting. <br>
+                <br>
+                - Panduan atau penjelasan alur kerja sistem yang digunakan.  <br>
+                - Format - format cek tagihan dan bayar tagihan. <br>
+                - Contoh - contoh balasan cek tagihan dan bayar tagihan komplit. <br>
+                - Kontak Supplier yang dapat dihubungi untuk membantu singkronisasi setting. <br>
                 </span>
             </p>
             
