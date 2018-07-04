@@ -21,6 +21,30 @@
                 background-color: dimgray;
                 color: darkorange;
             }
+            
+/*            css tabel biaya web report*/
+            
+            table {
+                width: 80%;
+                border-collapse: collapse;
+                text-align: center;
+            }
+            
+            table th {
+                background-color: black;
+                color: bisque;
+                height: 40px;
+            }
+            
+            table tr:hover {
+                background-color: dimgray;
+                color: darkorange;
+            }
+            
+            table tr:nth-child(even){
+                background-color: darkgray;
+            }
+/*            end css table biaya web report*/
         </style>
         <!--        GA-->
         <script>
@@ -158,11 +182,85 @@
                 </ol>
             </p>
             
-<!--
-            <p class="note">
-                <b>Catatan</b>: 
+            <h2 id="biaya-web-report">Biaya Web Report</h2>
+            
+            <p>
+                <div align="center" style="overflow-x:auto;">
+                    <table border="1" style="width: 80%; margin-left: auto; margin-right: auto">
+                        <tr>
+                                <th>Paket</th>
+                                <th>Maksimum Trx per Hari</th>
+                                <th>Biaya Setup + Aktivasi</th>
+                                <th>Iuran per Bulan</th>
+                            </tr>
+                            <tr>
+                                <td>Basic</td>
+                                <td>1.000</td>
+                                <td>Rp600.000</td>
+                                <td>Rp20.000</td>
+                            </tr>
+                            <tr>
+                                <td>Pro25</td>
+                                <td>5.000</td>
+                                <td>Rp600.000</td>
+                                <td>Rp40.000</td>
+                            </tr>
+                            <tr>
+                                <td>Pro50</td>
+                                <td>10.000</td>
+                                <td>Rp600.000</td>
+                                <td>Rp70.000</td>
+                            </tr>
+                            <tr>
+                                <td>Pro75</td>
+                                <td>20.000</td>
+                                <td>Rp600.000</td>
+                                <td>Rp100.000</td>
+                            </tr>
+                            <tr>
+                                <td>Business</td>
+                                <td>50.000</td>
+                                <td>Rp600.000</td>
+                                <td>Rp130.000</td>
+                            </tr>
+                            <tr>
+                                <td>Premium</td>
+                                <td>100.000</td>
+                                <td>Rp600.000</td>
+                                <td>Rp240.000</td>
+                            </tr>
+                            <tr>
+                                <td>Enterprise</td>
+                                <td>200.000</td>
+                                <td>Rp600.000</td>
+                                <td>Rp350.000</td>
+                            </tr>
+                            <tr>
+                                <td>Enterprise2</td>
+                                <td>300.000</td>
+                                <td>Rp600.000</td>
+                                <td>Rp460.000</td>
+                            </tr>
+                    </table>
+                </div>
+                <br>
+                <b>Keterangan</b>:
+                <br>
+                <ul>
+                    <li>Paket ialah pilihan layanan <b>Web Report</b>, Anda dapat memilih salah satu paket sesuai keinginan Anda.</li>
+                    <li>
+                        Maksimum Trx ialah batasan maksimal transaksi upload data.
+                    </li>
+                    <li>Biaya Setup + Aktivasi hanya dikenakan 1 kali di awal pendaftaran.</li>
+                    <li>Iuran per Bulan ialah iuran yang wajib dibayarkan tiap bulan.</li>
+                </ul>
+                <br>
+                Misalnya Anda memilih Paket <b>Pro75</b> dan berlangganan selama 1 bulan, maka biayanya Rp600.000 (biaya setup + aktivasi) + Rp100.000 (iuran 1 bulan) = Rp700.000. Adapun bulan selanjutnya jika ingin memperpanjang misal 1 bulan, cukup membayar Rp100.000; jika 2 bulan Rp200.000 dan seterusnya.
             </p>
--->
+            
+            <p class="note">
+                <b>Catatan</b>: biaya di atas dengan asumsi Anda belum berlangganan layanan <b>Online Backup</b>. 
+            </p>
             
             <div class="bottom-content"></div>
         </div>
