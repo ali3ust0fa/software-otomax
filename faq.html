@@ -321,6 +321,15 @@
                     x.style.display = "none";
                 }
             }
+            
+            function setReplyTehnis14() {
+                var x = document.getElementById("replyTehnis14");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
             // end reply tehnis
         </script>
     </head>
@@ -1055,7 +1064,6 @@
             </div>
 <!--           end tehnis ask12-->
 
-
 <!--           tehnis ask13-->
             <div id="tehnis-ask13" onclick="setReplyTehnis13()" class="ask">
                 <img id="arrow" src="images/down_arrow.svg" alt="tanda panah bawah">
@@ -1085,6 +1093,44 @@
                 </p>
             </div>
 <!--           end tehnis ask13-->
+
+<!--           tehnis ask14-->
+            <div id="tehnis-ask14" onclick="setReplyTehnis14()" class="ask">
+                <img id="arrow" src="images/down_arrow.svg" alt="tanda panah bawah">
+                <p>
+                    Setelah update ke versi 3.8.2 Modul Internet Banking BCA muncul pesan error sebagai berikut dan mutasi tidak terbaca, bagaimana agar dapat membaca mutasi kembali?
+                    <br><br>
+                        <div class="log">
+                            <code>
+                                Error: tidak dapat mengolah mutasi. Konten disimpan ke Clipboard.
+                            </code>
+                        </div>
+                    <br>
+                </p>
+            </div>
+            <div id="replyTehnis14" class="reply">
+                <p>
+                    Terdapat beberapa pilihan cara agar mutasi terbaca kembali, dapat dicoba satu per satu:
+                    <ol>
+                        <li>
+                            Reset <b>Internet Explorer</b>.
+                            <br>
+                            <ul>
+                                <li>Jalankan <b>Internet Explorer</b> -> Tekan tombol <b>Alt + X</b></li>
+                                <li>Klik <b>Internet options</b> -> klik Tab <b>Advanced</b></li>
+                                <li>Klik tombol <b>Reset</b> akan muncul pop up konfirmasi dan klik tombol <b>Reset</b></li>
+                                <li>Klik tombol <b>close</b></li>
+                                <li>Selesai</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Gonta - ganti settingan di modul <b>BCA</b> yakni box: <b>Cek mutasi setiap n detik</b> dan cekbox: <b>Logout setiap habis cek mutasi</b>. Silahkan dirubah - rubah mana yang cocok di tempat Anda. Misalnya mula - mula box: <b>Cek mutasi setiap n detik</b> isi 100 dan cekbox: <b>Logout setiap habis cek mutasi</b> tidak dicentang, maka coba <b>Logout setiap habis cek mutasi</b> dicentang. Jika belum berhasil, coba box: <b>Cek mutasi setiap n detik</b> isi 125 dan cekbox: <b>Logout setiap habis cek mutasi</b> tidak dicentang; kalau masih belum berhasil coba cekbox: <b>Logout setiap habis cek mutasi</b> dicentang. Dan begitu seterusnya, lakukan gonta - ganti settingan sampai ketemu settingan yang cocok di tempat Anda.
+                        </li>
+                        <li>Restart Komputer.</li>
+                    </ol>
+                </p>
+            </div>
+<!--           end tehnis ask14-->
 
             <div class="bottom-content"></div>
         </div>
