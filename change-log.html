@@ -83,6 +83,19 @@
             <h1>Change Log</h1>
             
             <p class="change-log">
+                
+                3.8.3 @26-Sep-2018<br>
+                - New: Seting KomisiFull: Bagikan komisi secara penuh walaupun mengurangi margin/laba server. 1=iya.<br>
+                - New: Bisa ubah harga transaksi postpaid melalui dialog Input SN / Ref...<br>
+                - New: Alat Bantu - Kiosk. Modul untuk toko dan cetak struk.<br>
+                Modul Kiosk fungsinya sama dengan Transaksi Manual hanya dengan sedikit penyesuaian a.l: kode reseller diinput di awal, bisa membulatkan harga dan cetak struk (bisa buat templat sendiri).<br>
+                - New: Kolom Struk Templat Path pada tabel Provider, digunakan oleh modul Kiosk.<br>
+                - New: Modul Web SMS Sender, mengirim SMS melalui SMS Gateway dengan HTTP GET. (khusus edisi Ultimate)<br>
+                - New: Kolom Harga Awal di tabel Produk. Agar postpaid memotong saldo di awal transaksi.<br>
+                - Fix: "Arithmetic overflow error for data type tinyint, value = 500" saat ubah status transaksi.<br>
+                - Fix: Internet Banking BCA tidak bisa login tertahan javascript Alert.<br>
+                - Some fixes at jabber login process.<br>
+                - Some fixes for postpaid transactions.<br><br>
              
                 3.8.2 @25-Jul-2018<br>
                 - New: Poin pada tabel produk maksimal 32.000 (sebelumnya 255).<br>
