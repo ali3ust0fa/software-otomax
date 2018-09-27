@@ -191,9 +191,61 @@
             
             <p>
                 Perlu diketahui ada beberapa menu yang dapat dimanfaatkan di <b>Kiosk</b>, diantaranya adalah yang berikut ini:
-                <br><br>
-                <img src="images/kiosk/menu%20kiosk.PNG" alt="menu kiosk" width="100%">
-                <br><br>
+                <ol>
+                    <li>Terdapat menu untuk mengatur tampilan <b>Kiosk</b>
+                        <br><br>
+                        <img src="images/kiosk/menu%20kiosk.PNG" alt="menu kiosk" width="100%">
+                        <br><br>
+                    </li>
+                    <li>
+                        <b>RegEx SN Struk</b> di <b>Administrasi</b> -> <b>Provider</b> berguna untuk membuat parameter baru dari SN dan menampilkannya di struk. Misalnya Produk Token Listrik SN-nya: 6786-0932-6634-3208-8936/JAY-SATRIA/R1/450VA/43,90, maka bisa dipecah menjadi: [token], [nama], [tarif] dan [kwh] dengan mengisikan: (?&lt;token&gt;.{24})/(?&lt;nama&gt;[^/]+)/(?&lt;tarif&gt;.+)/(?&lt;kwh&gt;[.,\d]+) di <b>RegEx SN Struk</b> provider Token Listrik. Kemudian membuat template struk seperti dibawah ini dengan diketik, disimpan dan diberi nama <b>struk_token.htm</b> dan seterusnya seperti panduan diatas:
+                        <br><br>
+                            <code>
+                                &lt;div style="font-family:Lucida Console,Courier New;font-size:12px"&gt;
+                                        &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; LARISO PULSA&lt;br/&gt;
+                                        Jl. Waru Doyong No. 11 Karangan Ula&lt;br/&gt;
+                                        &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Tlp. 081234567890&lt;br/&gt;
+                                        -----------------------------------&lt;br/&gt;
+                                        &lt;br/&gt;
+                                        Tanggal&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; : [tglentri]&lt;br/&gt;
+                                        ID Pelanggan &amp;nbsp; &amp;nbsp; : [tujuan]&lt;br/&gt;
+                                        Harga &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;: [harga]&lt;br/&gt;
+                                        Nama &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; : [nama]&lt;br/&gt;
+                                        Tarif&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; : [tarif]&lt;br/&gt;
+                                        KwH &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;: [kwh]&lt;br/&gt;
+                                        Token &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;: [token]&lt;br/&gt;
+                                        &lt;br/&gt;
+                                        -----------------------------------&lt;br/&gt;
+                                        &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; Terima kasih
+                                    &lt;/div&gt;
+                            </code>
+                        <br><br>
+                        
+                        Akan dihasilkan struk saat dicetak sebagai berikut, dimana [tglentri], [tujuan], [harga], [nama], [tarif], [kwh] dan [token] akan terisi sesuai data transaksi dan hasil tangkapan <b>RegEx SN Struk</b>.
+                        
+                        <br><br>
+                                <code>
+                                    <div style="font-family:Lucida Console,Courier New;font-size:12px">
+                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; LARISO PULSA<br/>
+                                        Jl. Waru Doyong No. 11 Karangan Ula<br/>
+                                        &nbsp; &nbsp; &nbsp; &nbsp; Tlp. 081234567890<br/>
+                                        -----------------------------------<br/>
+                                        <br/>
+                                        Tanggal&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : [tglentri]<br/>
+                                        ID Pelanggan &nbsp; &nbsp; : [tujuan]<br/>
+                                        Harga &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: [harga]<br/>
+                                        Nama &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : [nama]<br/>
+                                        Tarif&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : [tarif]<br/>
+                                        KwH &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: [kwh]<br/>
+                                        Token &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: [token]<br/>
+                                        <br/>
+                                        -----------------------------------<br/>
+                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Terima kasih
+                                    </div>
+                                </code>
+                                <br>
+                    </li>
+                </ol>
             </p>
           
             <p>Selanjutnya apabila Anda memiliki pertanyaan seputar <b>Kiosk</b> silahkan <a href="support.html" target="_blank">klik disini</a>.</p>
