@@ -95,7 +95,7 @@
             
             <p><b>Kiosk</b> merupakan fitur baru di versi 3.8.3 <a href="price-plan.html" target="_blank">klik disini</a> ditujukan untuk memudahkan transaksi penjualan pulsa, token listrik, pembayaran tagihan listrik, BPJS dan lain - lain di toko atau konter pulsa, dilengkapi dengan cetak struk sehingga Anda dapat mencetak struk untuk setiap transaksi.</p>
             
-            <p>Fitur ini menyatu dengan OtomaX (tidak terpisah), langsung dapat dioperasikan melalui menu <b>Alat Bantu</b> -> <b>Kiosk</b>. Apabila Anda tertarik dengan <b>Kiosk</b> dan belum memiliki OtomaX silahkan <a href="purchase.html" target="_blank">klik disini</a>; dan apabila belum menggunakan versi 3.8.3 <a href="bagaimana-melakukan-update-otomax.html" target="_blank">klik disini</a>; dan apabila ingin membayar iuran tahunan OtomaX <a href="bagaimana-membayar-iuran-otomax.html" target="_blank">klik disini</a>.</p>
+            <p>Fitur ini menyatu dengan OtomaX (tidak terpisah), langsung dapat dioperasikan melalui menu <b>Alat Bantu</b> -> <b>Kiosk</b>. Apabila Anda tertarik dengan <b>Kiosk</b> dan belum memiliki OtomaX silahkan <a href="purchase.html" target="_blank">klik disini</a>; dan apabila belum menggunakan versi 3.8.3 lakukan update <a href="bagaimana-melakukan-update-otomax.html" target="_blank">klik disini</a>; dan apabila ingin membayar iuran tahunan OtomaX <a href="bagaimana-membayar-iuran-otomax.html" target="_blank">klik disini</a>.</p>
             
             <p>
                 Kemudian bagaimana penggunaannya?... simak yang berikut ini dengan seksama:
@@ -190,15 +190,20 @@
             </p>
             
             <p>
-                Perlu diketahui ada beberapa menu yang dapat dimanfaatkan di <b>Kiosk</b>, diantaranya adalah yang berikut ini:
+                Sebagai tambahan informasi, terdapat beberapa menu terkait <b>Kiosk</b>, diantaranya:
                 <ol>
-                    <li>Terdapat menu untuk mengatur tampilan <b>Kiosk</b>
+                    <li>Menu untuk mengatur tampilan <b>Kiosk</b>, perhatikan gambar dibawah ini:
                         <br><br>
                         <img src="images/kiosk/menu%20kiosk.PNG" alt="menu kiosk" width="100%">
                         <br><br>
                     </li>
                     <li>
-                        <b>RegEx SN Struk</b> di <b>Administrasi</b> -> <b>Provider</b> berguna untuk membuat parameter baru dari SN dan menampilkannya di struk. Misalnya Produk Token Listrik SN-nya: 6786-0932-6634-3208-8936/JAY-SATRIA/R1/450VA/43,90, maka bisa dipecah menjadi: [token], [nama], [tarif] dan [kwh] dengan mengisikan: (?&lt;token&gt;.{24})/(?&lt;nama&gt;[^/]+)/(?&lt;tarif&gt;.+)/(?&lt;kwh&gt;[.,\d]+) di <b>RegEx SN Struk</b> provider Token Listrik. Kemudian membuat template struk seperti dibawah ini dengan diketik, disimpan dan diberi nama <b>struk_token.htm</b> dan seterusnya seperti panduan diatas:
+                        Menu <b>RegEx SN Struk</b> di <b>Administrasi</b> -> <b>Provider</b>. <br>
+                        Berguna untuk membuat parameter baru dari SN dan menampilkannya di struk. Misalnya Produk Token Listrik SN-nya: 6786-0932-6634-3208-8936/JAY-SATRIA/R1/450VA/43,90, maka bisa dipecah menjadi: [token], [nama], [tarif] dan [kwh] dengan mengisikan: <span style="color: green">(?&lt;token&gt;.{24})/(?&lt;nama&gt;[^/]+)/(?&lt;tarif&gt;.+)/(?&lt;kwh&gt;[.,\d]+)</span> di <b>RegEx SN Struk</b> provider Token Listrik. 
+                        <br><br>
+                        <img src="images/kiosk/regex-sn-struk.PNG" alt="regex sn struk" width="100%">
+                        <br><br>
+                        Kemudian membuat template struk seperti dibawah ini dengan cara diketik, disimpan dan diberi nama <b>struk_token.htm</b> dan seterusnya seperti panduan diatas:
                         <br><br>
                             <code>
                                 &lt;div style="font-family:Lucida Console,Courier New;font-size:12px"&gt;
@@ -211,7 +216,7 @@
                                         ID Pelanggan &amp;nbsp; &amp;nbsp; : [tujuan]&lt;br/&gt;
                                         Harga &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;: [harga]&lt;br/&gt;
                                         Nama &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; : [nama]&lt;br/&gt;
-                                        Tarif&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; : [tarif]&lt;br/&gt;
+                                        Tarif/Daya &amp;nbsp; &amp;nbsp; &amp;nbsp; : [tarif]&lt;br/&gt;
                                         KwH &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;: [kwh]&lt;br/&gt;
                                         Token &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;: [token]&lt;br/&gt;
                                         &lt;br/&gt;
@@ -235,7 +240,7 @@
                                         ID Pelanggan &nbsp; &nbsp; : [tujuan]<br/>
                                         Harga &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: [harga]<br/>
                                         Nama &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : [nama]<br/>
-                                        Tarif&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; : [tarif]<br/>
+                                        Tarif/Daya &nbsp; &nbsp; &nbsp; : [tarif]<br/>
                                         KwH &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: [kwh]<br/>
                                         Token &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;: [token]<br/>
                                         <br/>
