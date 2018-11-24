@@ -84,7 +84,19 @@
             
             <p>Mulai versi 3.6.3 OtomaX telah mendukung transaksi <b>PPOB Postpaid</b>/Paskabayar namun hanya berlaku untuk edisi Ultimate, sehingga jika edisi OtomaX Anda belum Ultimate, upgrade dahulu <a href="bagaimana-upgrade-otomax.html" target="_blank">klik disini</a>; dan jika belum memiliki OtomaX, beli dahulu <a href="purchase.html" target="_blank">klik disini</a>.</p>
             
-            <p>Dengan fitur ini Anda dapat memproses pembayaran tagihan listrik, telpon, PDAM, tagihan cicilan kendaraan dan lain - lain dengan bekerja sama dengan Supplier PPOB Postpaid/Paskabayar mana saja yang Anda inginkan.</p>
+            <p>Dengan fitur ini Anda dapat memproses pembayaran tagihan listrik, telpon, PDAM, tagihan cicilan kendaraan, BPJS dan lain - lain dengan bekerja sama dengan Supplier PPOB Postpaid/Paskabayar mana saja yang Anda inginkan.</p>
+            
+            <p style="color: red">
+                <b>PERHATIAN</b>: <br>
+                Sebelum mensetting PPOB Postpaid/Paskabayar Anda harus mengetahui lebih dahulu hal - hal berikut:
+                <ol style="color: red">
+                    <li>Alur kerja sistem yang digunakan supplier.</li>
+                    <li>Format - format cek tagihan dan bayar tagihan supplier setiap produk.</li>
+                    <li>Contoh - contoh balasan cek tagihan dan bayar tagihan supplier komplit untuk masing - masing produk.</li>
+                </ol>
+                <br>
+                <span style="color: red">Silahkan 3 poin diatas ditanyakan ke supplier Anda, baru kemudian dapat mulai melakukan penyettingan di OtomaX.</span>
+            </p>
             
             <p>
                 Bagaimana setting PPOB Postpaid/Paskabayar di OtomaX? Berikut gambarannya:
@@ -100,7 +112,7 @@
                         <br><br>
                     </li>
                     <li>
-                        Buat modul <b>IM Hybrid HTH</b> untuk memproses transaksi (sama seperti untuk host to host pulsa).
+                        Buat modul <b>IM Hybrid HTH</b> atau <b>IP</b> untuk memproses transaksi (sama seperti untuk host to host pulsa).
                     </li>
                     <li>
                         Masuk menu <b>Administrasi</b> -> <b>Parsing ke Provider</b>, pada kolom <b>Perintah</b> isi dengan format cek tagihan Supplier Anda. Untuk format cek tagihan tanyakan ke Supplier Anda. <br><br>
@@ -115,17 +127,18 @@
                         Untuk membuat Regex penangkap total tagihan <a href="http://forum.orisinil.com/index.php/topic,242.msg1973.html#msg1973" target="_blank">klik disini</a> (mohon dibaca dari halaman 1 s/d halaman terakhir).
                         <br><br>
                     </li>
-                    <li>Buat penangkap jawaban untuk menangkap balasan bayar tagihan dari Supplier (sama seperti untuk host to host pulsa).</li>
+                    <li>Buat penangkap jawaban untuk menangkap balasan bayar tagihan dari Supplier (sama seperti untuk host to host pulsa), konsepnya <a href="jawaban-dari-provider.html" target="_blank">klik disini</a>.</li>
                     <li>Selesai</li>
                 </ol>
             </p>
             
             <p class="note">
-                <b>Catatan 1</b>: <br>
+                <b>Catatan</b>: <br>
                 Harga Reseller = Tagihan + Harga Jual <br><br>
                 Misal <b style="color:orange">Tagihan</b>: 10.000 dan <b style="color:orange">Harga Jual</b>: -1.500, maka <b style="color:orange">Harga Reseller</b>: 10.000 + -1.500 = 8.500
             </p>
             
+<!--
             <p class="note">
                 <b>Catatan 2</b>: <br>
                 Panduan ini merupakan gambaran pemanfaatan fitur <b>PPOB Postpaid</b>/Paskabayar secara umum. Regex, Penangkap Jawaban dan lainnya harus disesuaikan dengan alur kerja masing - masing Supplier PPOB, karena setiap Supplier PPOB memiliki karakteristik sendiri - sendiri. Mintalah ke Supplier Anda: <br>
@@ -137,6 +150,7 @@
                 - Kontak Supplier yang dapat dihubungi untuk membantu singkronisasi setting. <br>
                 </span>
             </p>
+-->
             
             <div class="bottom-content"></div>
         </div>
