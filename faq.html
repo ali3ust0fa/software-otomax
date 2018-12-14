@@ -330,6 +330,15 @@
                     x.style.display = "none";
                 }
             }
+            
+            function setReplyTehnis15() {
+                var x = document.getElementById("replyTehnis15");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
             // end reply tehnis
         </script>
     </head>
@@ -1137,6 +1146,24 @@
                 </p>
             </div>
 <!--           end tehnis ask14-->
+
+<!--           tehnis ask15-->
+            <div id="tehnis-ask15" onclick="setReplyTehnis15()" class="ask">
+                <img id="arrow" src="images/down_arrow.svg" alt="tanda panah bawah">
+                <p>
+                    Bagaimana migrasi dari software server pulsa lain ke software OtomaX?
+                </p>
+            </div>
+            <div id="replyTehnis15" class="reply">
+                <p>
+                    <ol>
+                        <li>Beli software OtomaX, <a href="purchase.html" target="_blank">klik disini</a>.</li>
+                        <li>Ketik satu per satu data Reseller atau Agen bertahap dari software lain ke software OtomaX. Agen yang datanya telah terinput di OtomaX, arahkan untuk bertransaksi ke OtomaX; sementara Agen yang datanya belum terinput arahkan untuk bertransaksi ke software lain.</li>
+                        <li>Selesai. Dengan cara demikian, Reseller atau Agen tetap dapat transaksi (tanpa perlu off transaksi) saat proses migrasi.</li>
+                    </ol>
+                </p>
+            </div>
+<!--           end tehnis ask15-->
 
             <div class="bottom-content"></div>
         </div>
