@@ -339,6 +339,15 @@
                     x.style.display = "none";
                 }
             }
+            
+            function setReplyTehnis16() {
+                var x = document.getElementById("replyTehnis16");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
             // end reply tehnis
         </script>
     </head>
@@ -1164,6 +1173,30 @@
                 </p>
             </div>
 <!--           end tehnis ask15-->
+
+<!--           tehnis ask16-->
+            <div id="tehnis-ask16" onclick="setReplyTehnis16()" class="ask">
+                <img id="arrow" src="images/down_arrow.svg" alt="tanda panah bawah">
+                <p>
+                    Di log aplikasi <b>Online Backup</b> muncul pesan error seperti dibawah ini, apa yang perlu dilakukan?
+                    <br><br>
+                    <div class="log">
+                        <code>Server: Please update this application to version 3.01 or later</code>                        
+                    </div>
+                    <br><br>
+                </p>
+            </div>
+            <div id="replyTehnis16" class="reply">
+                <p>
+                    <ol>
+                        <li>Download file <b>OtomaX Online Backup</b> versi terbaru <a href="https:software-otomax.com/download.html#lain-lain" target="_blank">klik disini</a>, dan kemudian extract.</li>
+                        <li>Klik 3 tanda titik bertumpuk di sisi kiri atas tampilan <b>Online Backup</b> -> klik <b>Quit Online Backup</b> -> klik <b>OK</b>.</li>
+                        <li>Timpa file <b>Online Backup</b> versi lama dengan file <b>Online Backup</b> hasil download.</li>
+                        <li>Selesai</li>
+                    </ol>
+                </p>
+            </div>
+<!--           end tehnis ask16-->
 
             <div class="bottom-content"></div>
         </div>
