@@ -214,6 +214,10 @@ div#content p.note:hover {
     color: white;
 }
 
+div#content p.note a {
+    color: red;
+}
+
 div#content p.change-log {
     font-family: courier new;
 }
