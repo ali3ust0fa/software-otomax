@@ -6,25 +6,57 @@
 <!--        <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
         <link rel="stylesheet" type="text/css" href="styles/global.css" />
         <style>
-            table {
-                width: 80%;
+            table, th, td {
+                border: 1px solid black;
                 border-collapse: collapse;
-                text-align: center;
+                padding: 5px;
             }
             
             table th {
-                background-color: black;
-                color: bisque;
                 height: 40px;
-            }
-            
-            table tr:hover {
-                background-color: dimgray;
-                color: darkorange;
+                text-align: center;
             }
             
             table tr:nth-child(even){
-                background-color: darkgray;
+                background-color: #f2f2f2;
+            }
+            
+            table td.fitur {
+                text-align: left;
+            }
+            
+            table td.biaya {
+                text-align: right;
+            }
+            
+            table td {
+                text-align: center;
+            }
+            
+            table th.table-head {
+                background-color: antiquewhite;
+                font-size: 14pt;
+            }
+            
+            table tr:hover {
+                background-color: green;
+                color: white;
+            }
+            
+            table th:hover {
+                color: blue;
+            }
+            
+            table td.colomn {
+                width: 10%;
+            }
+            
+            li {
+                padding: 2px;
+            }
+            
+            table img {
+                width: 20px;
             }
             
             .candidat {
@@ -114,6 +146,156 @@
             <h2 id="fitur">Fitur</h2>
             
             <p>Fitur <b>Aplikasi Android</b> OtomaX sama seperti fitur dasar Aplikasi Android server pulsa pada umumnya, dapat digunakan untuk transaksi pembelian pulsa, pembayaran berbagai macam tagihan, tambah deposit saldo, cek mutasi transaksi, cetak struk dan lain sebagainya. Kelebihannya, <b>Aplikasi Android</b> OtomaX dapat dicustom dan dimanage oleh pengguna sendiri.</p>
+            
+            <div align="center" style="overflow-x:auto;">
+                <table style="width:70%;">
+                    <caption><b>Fitur Aplikasi Android OtomaX</b></caption>
+                    <tr>
+                        <th class="table-head">Fitur</th>
+                        <th class="table-head">Dukungan</th>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">Custom Icon APK</td>
+                        <td class="colomn"><img src="images/maxCross.png" alt="cross"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">Custom Icon Notifikasi</td>
+                        <td class="colomn"><img src="images/maxCross.png" alt="cross"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">Custom ColorPrimary</td>
+                        <td class="colomn"><img src="images/maxCross.png" alt="cross"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">Custom ColorBackground</td>
+                        <td class="colomn"><img src="images/maxCross.png" alt="cross"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">On Time Password (OTP)</td>
+                        <td class="colomn"><img src="images/maxTrue.png" alt="true"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">Isi Pulsa</td>
+                        <td class="colomn"><img src="images/maxTrue.png" alt="true"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">Paket Data</td>
+                        <td class="colomn"><img src="images/maxTrue.png" alt="true"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">Paket SMS</td>
+                        <td class="colomn"><img src="images/maxTrue.png" alt="true"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">Paket Telpon</td>
+                        <td class="colomn"><img src="images/maxTrue.png" alt="true"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">Listrik Paskabayar</td>
+                        <td class="colomn"><img src="images/maxTrue.png" alt="true"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">Token Listrik</td>
+                        <td class="colomn"><img src="images/maxTrue.png" alt="true"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">Tagihan Telkom</td>
+                        <td class="colomn"><img src="images/maxTrue.png" alt="true"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">BPJS</td>
+                        <td class="colomn"><img src="images/maxTrue.png" alt="true"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">Voucher Game</td>
+                        <td class="colomn"><img src="images/maxTrue.png" alt="true"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">Voucher Fisik</td>
+                        <td class="colomn"><img src="images/maxTrue.png" alt="true"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">Custom Produk</td>
+                        <td class="colomn"><img src="images/maxTrue.png" alt="true"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">Tambah Deposit Saldo</td>
+                        <td class="colomn"><img src="images/maxTrue.png" alt="true"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">Transfer Saldo</td>
+                        <td class="colomn"><img src="images/maxCross.png" alt="cross"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">Riwayat Transaksi</td>
+                        <td class="colomn"><img src="images/maxTrue.png" alt="true"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">Mutasi Saldo</td>
+                        <td class="colomn"><img src="images/maxTrue.png" alt="true"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">Cetak Struk</td>
+                        <td class="colomn"><img src="images/maxTrue.png" alt="true"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">Daftar member baru</td>
+                        <td class="colomn"><img src="images/maxTrue.png" alt="true"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">Disable APK</td>
+                        <td class="colomn"><img src="images/maxTrue.png" alt="true"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">Lupa PIN</td>
+                        <td class="colomn"><img src="images/maxTrue.png" alt="true"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">Slider Banner</td>
+                        <td class="colomn"><img src="images/maxTrue.png" alt="true"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">Custom Slider Banner</td>
+                        <td class="colomn"><img src="images/maxTrue.png" alt="true"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">Login Banner</td>
+                        <td class="colomn"><img src="images/maxTrue.png" alt="true"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">Custom Login Banner</td>
+                        <td class="colomn"><img src="images/maxTrue.png" alt="true"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">Custom Menu</td>
+                        <td class="colomn"><img src="images/maxTrue.png" alt="true"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">Custom Submenu</td>
+                        <td class="colomn"><img src="images/maxTrue.png" alt="true"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">Custom Font</td>
+                        <td class="colomn"><img src="images/maxCross.png" alt="cross"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">Custom Theme</td>
+                        <td class="colomn"><img src="images/maxCross.png" alt="cross"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">Custom Teks</td>
+                        <td class="colomn"><img src="images/maxTrue.png" alt="true"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">Custom Struk</td>
+                        <td class="colomn"><img src="images/maxCross.png" alt="cross"></td>
+                    </tr>
+                    <tr>
+                        <td class="colomn fitur">Custom Icon Produk</td>
+                        <td class="colomn"><img src="images/maxTrue.png" alt="true"></td>
+                    </tr>
+                </table>
+            </div>
             
             <h2 id="sample">Sample</h2>
             
