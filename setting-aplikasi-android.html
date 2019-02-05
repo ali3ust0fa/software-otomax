@@ -64,6 +64,11 @@
                 width: 50%;
             }
 */
+            
+/*          for coloring text to blue */
+            .color-blue {
+                color: blue;
+            }
         </style>
         <!--        GA-->
         <script>
@@ -154,18 +159,17 @@
                     </li>
                     <li>
                         Buka <b>OtomaX Online Backup</b> > Klik 3 tanda titik bertumpuk di sisi kiri atas > Klik <b>Manage APK</b>. Disini Anda dapat mengatur Aplikasi Android OtomaX. Perhatikan gambar di bawah ini:
-                        <br><br>
-                            <img src="images/apk/manage-apk-lokasi.png" alt="manage apk" width="20%">
-                        <br><br>
+                        
+                        <p><img src="images/apk/manage-apk-lokasi.png" alt="manage apk" width="20%"></p>
+                        
                     </li>
                     <li>
                         Berikut ini kegunaan pilihan setting di <b>Manage APK...</b>
                         <br><br>
                         <ol type="I">
                             <li><b>General.</b>
-                               <br><br>
-                               <img src="images/apk/manage-apk-general.png" alt="manage apk general" width="90%"></li>
-                                <br>
+                              <p><img src="images/apk/manage-apk-general.png" alt="manage apk general" width="90%"></p>
+                            </li>
                                 <ol type="a">
                                     <li><b>Disable APK service</b>.
                                         <br>
@@ -182,10 +186,11 @@
                                     <li><b>Login banner</b>
                                         <br>
                                         Opsional. Banner yang ditampilkan pada halaman login. Kosongkan jika menggunakan default banner APK. Apabila ingin menggunakan banner milik Anda sendiri, isi dengan URL yang menuju ke banner Anda, contoh: https://domain.com/banner_login.png, perhatikan gambar di bawah ini:
-                                        <br><br>
-                                        <img src="images/apk/banner_login.png" alt="banner_login" width="90%">
-                                        <br><br>
-                                        Sebagai informasi ukuran ideal <b>Login banner</b> kisaran 180 x 60 px dengan format *.PNG.</li>
+                                        
+                                        <p><img src="images/apk/banner_login.png" alt="banner_login" width="90%"></p>
+                                        
+                                        <p class="color-blue">Sebagai informasi ukuran ideal <b>Login banner</b> kisaran 180 x 60 px dengan format *.PNG.</p>
+                                        </li>
                                     <li><b>Strings (loaded before login)</b>.
                                         <br>
                                         Optional. Untuk mengganti String (untaian kata) yang terletak sebelum login.</li>
@@ -193,12 +198,11 @@
                                         <br>
                                         Optional. Untuk mengganti String (untaian kata) yang terletak setelah login.</li>
                                         <br>
-                                        2 Strings (f dan g) diatas dapat digunakan untuk mengganti teks kotak input, tombol dan lain - lain pada APK dengan format: 
-                                        <br><br>
-                                        <code class="format"><span style="color: green">Key</span>=<span style="color: blue">Teks</span></code>
-                                        <br><br>
-                                        <span style="color: green">Key</span> tidak dapat diganti (besar kecil huruf, ejaan berpengaruh), sementara <span style="color: blue">Teks</span> dapat diganti sesuai keinginan Anda. Tambahkan baris baru atau tanda \n untuk mengganti Strings lebih dari 1. Berikut ini tabel <span style="color: green">Key</span> yang tersedia beserta contoh <span style="color: blue">Teks</span>-nya:
-                                        <br><br>
+                                        2 Strings (f dan g) diatas dapat digunakan untuk mengganti teks kotak input, tombol dan lain - lain pada APK dengan format:
+                                         
+                                        <p><code class="format"><span style="color: green">Key</span>=<span style="color: blue">Teks</span></code></p>
+                                        
+                                        <p><span style="color: green">Key</span> tidak dapat diganti (besar kecil huruf, ejaan berpengaruh), sementara <span style="color: blue">Teks</span> dapat diganti sesuai keinginan Anda. Tambahkan baris baru atau tanda \n untuk mengganti Strings lebih dari 1. Berikut ini tabel <span style="color: green">Key</span> yang tersedia beserta contoh <span style="color: blue">Teks</span>-nya:</p>
 
                                         <table>
                                            <caption><b>Strings (loaded before login)</b></caption>
@@ -325,38 +329,40 @@
 
                                         <br>
                                         Misalnya, Anda ingin mengganti teks: nomor hp dan teks: tombol di halaman login, maka pada box: <b>Strings (loaded before login)</b> isi dengan:
-                                        <br><br>
+                                        
+                                        <p>
                                             <code>nomorHp=Mobile Number</code>
                                             <br>
                                             <code>login=Masuk</code>
-                                        <br><br>
+                                        </p>
+                                        
                                         Perhatikan gambar di bawah ini:
-                                        <br><br>
-                                        <img src="images/apk/strings.png" alt="strings" width="90%">
-                                        <br><br>
+                                        <p><img src="images/apk/strings.png" alt="strings" width="90%"></p>
+                                        
                                     <li><b>Slider banners.</b>
                                         <br>
                                         Menampilkan banner pada halaman utama. Banner ditampilkan dengan menggunakan format:
-                                        <br><br>
-                                            <code class="format" style="color: red">Teks|Url</code>
-                                        <br><br>
+                                        <p><code class="format" style="color: red">Teks|Url</code></p>
+                                            
                                         Tambahkan baris baru untuk menambahkan banner lebih dari 1. Contoh:
-                                        <br><br>
-                                        <code>slider banner #1 | https://domain.com/slider-banner-1.png</code><br>
-                                        <code>slider banner #2 | https://domain.com/slider-banner-2.png</code>
-                                        <br><br>
-                                        <code>slider banner #1</code> dan <code>slider banner #2</code> adalah <span style="color: red">Teks</span>, adapun <code>https://domain.com/slider-banner-1.png</code> dan <code>https://domain.com/slider-banner-2.png</code> adalah <span style="color: red">Url</span> yang mengarah ke lokasi penyimpanan banner. Perhatikan gambar di bawah ini:
-                                        <br><br>
-                                        <img src="images/apk/slider-banner.png" alt="slider banner" width="90%">
-                                        <br><br>
-                                        Sebagai informasi ukuran ideal <b>Slider banners</b> kisaran 180 x 60 px dengan format *.PNG.</li>
+                                        <p>
+                                            <code>slider banner #1 | https://domain.com/slider-banner-1.png</code><br>
+                                            <code>slider banner #2 | https://domain.com/slider-banner-2.png</code>
+                                        </p>
+                                        
+                                        <p>
+                                            <code>slider banner #1</code> dan <code>slider banner #2</code> adalah <span style="color: red">Teks</span>, adapun <code>https://domain.com/slider-banner-1.png</code> dan <code>https://domain.com/slider-banner-2.png</code> adalah <span style="color: red">Url</span> yang mengarah ke lokasi penyimpanan banner. Perhatikan gambar di bawah ini:
+                                        </p>
+                                        
+                                        <p><img src="images/apk/slider-banner.png" alt="slider banner" width="90%"></p>
+                                        
+                                        <p class="color-blue">Sebagai informasi ukuran ideal <b>Slider banners</b> kisaran 180 x 60 px dengan format *.PNG.</p>
+                                    </li>
                                 </ol>
                                 
-                            <br><br>
                             <li><b>Menu.</b>
-                                <br><br>
-                                <img src="images/apk/manage-apk-menu-isian.png" alt="manage apk menu" width="100%"></li>
-                                <br>
+                                <p><img src="images/apk/manage-apk-menu-isian.png" alt="manage apk menu" width="100%"></p>
+                            </li>
                                 <ol type="a">
                                     <li><b>Kode.</b>
                                         <br>
@@ -382,16 +388,19 @@
                                     <li><b>Icon</b>
                                         <br>
                                         Ikon yang ditampilkan pada menu. Tersedia icon built-in yang dapat digunakan, kode iconnya: <code style="color: red">bank, bpjs, emoney, fisik, flight, game, gojek, gopay, grab, ovo, pdam, phone, pln, postpaid, telkom, train, wifi</code>.
-                                        <br><br>
-                                            <img src="images/apk/icon_builtin.png" alt="icon built-in" width="80%">
-                                        <br><br>
+                                        
+                                        <p><img src="images/apk/icon_builtin.png" alt="icon built-in" width="80%"></p>
+                                        
                                         Misalnya Anda ingin menggunakan icon pln, maka masukkan kode icon <code style="color: red;">pln</code> di kolom <b>Icon</b>; ingin menggunakan icon phone, maka masukkan kode icon <code style="color: red;">phone</code> di kolom <b>Icon</b>; dan seterusnya.
-                                        <br><br>
-                                        <b>Icon</b> dapat juga diisi dengan icon milik Anda sendiri dengan memasukkan URL yang mengarah ke lokasi icon Anda, contoh: https://domain.com/icon_phone.png, perhatikan gambar di bawah ini:
-                                        <br><br>
-                                        <img src="images/apk/icon-url.png" alt="icon" width="100%">
-                                        <br><br></li>
-                                        Sebagai informasi ukuran ideal untuk <b>Icon</b> menu kisaran 72 x 72 px dengan format *.PNG serta mendukung alpha/transparan.
+                                        
+                                        <p>
+                                            <b>Icon</b> dapat juga diisi dengan icon milik Anda sendiri dengan memasukkan URL yang mengarah ke lokasi icon Anda, contoh: https://domain.com/icon_phone.png, perhatikan gambar di bawah ini:
+                                        </p>
+                                        
+                                        <p><img src="images/apk/icon-url.png" alt="icon" width="100%"></p>
+                                        
+                                        <p class="color-blue">Sebagai informasi ukuran ideal untuk <b>Icon</b> menu kisaran 72 x 72 px dengan format *.PNG serta mendukung alpha/transparan.</p>
+                                    </li>
                                     <li><b>Activity Title.</b>
                                         <br>
                                         Judul yang ditampilkan di halaman setelah menu diklik.</li>
