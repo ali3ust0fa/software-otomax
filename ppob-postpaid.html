@@ -115,7 +115,12 @@
                         Buat modul <b>IM Hybrid HTH</b> atau <b>IP</b> untuk memproses transaksi (sama seperti untuk host to host pulsa).
                     </li>
                     <li>
-                        Masuk menu <b>Administrasi</b> -> <b>Parsing ke Provider</b>, pada kolom <b>Perintah</b> isi dengan format cek tagihan Supplier Anda. Untuk format cek tagihan tanyakan ke Supplier Anda. <br><br>
+                        Masuk menu <b>Administrasi</b> -> <b>Parsing ke Provider</b>, pada kolom <b>Perintah</b> isi dengan format cek tagihan Supplier Anda. Untuk format cek tagihan tanyakan ke Supplier Anda. 
+                        
+                        <p style="color: red"><b>PERHATIAN</b>:<br>
+                            Pastikan kolom <b>Perintah</b> di <b>Parsing ke Provider</b> diisi <b>FORMAT CEK TAGIHAN</b> bukan <b>FORMAT BAYAR TAGIHAN</b>. Perhatikan dengan seksama gambar di bawah ini:
+                        </p>
+                        
                         <img src="images/ppob-postpaid/postpaid03.png" alt="parsing ke provider" width="70%">
                         <br><br>
                     </li>
@@ -124,7 +129,7 @@
                         <br><br>
                         <img src="images/ppob-postpaid/postpaid04.png" alt="jawaban dari provider" width="100%">
                         <br><br>
-                        Untuk membuat Regex penangkap total tagihan <a href="http://forum.orisinil.com/index.php/topic,242.msg1973.html#msg1973" target="_blank">klik disini</a> (mohon dibaca dari halaman 1 s/d halaman terakhir).
+                        Total tagihan ditangkap menggunakan RegEx. Untuk membuat RegEx penangkap total tagihan <a href="http://forum.orisinil.com/index.php/topic,242.msg1973.html#msg1973" target="_blank">klik disini</a> (mohon dibaca dari halaman 1 s/d halaman terakhir).
                         <br><br>
                     </li>
                     <li>Buat penangkap jawaban untuk menangkap balasan bayar tagihan dari Supplier (sama seperti untuk host to host pulsa), konsepnya <a href="jawaban-dari-provider.html" target="_blank">klik disini</a>.</li>
