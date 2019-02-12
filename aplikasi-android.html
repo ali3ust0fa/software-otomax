@@ -431,7 +431,7 @@
                     </tr>
                 </table>
             </div>
-            <p><i>(*) khusus untuk APK v1.12 atau lebih tinggi</i></p>
+            <p><i>(*) khusus untuk versi 1.12 atau lebih tinggi</i></p>
             
             <h2 id="sample">Sample</h2>
             
@@ -527,13 +527,22 @@
                 </ol>
             </p>
             
-<!--
-            <h2>Riwayat</h2>
+            <h2 id="riwayat">Riwayat</h2>
                         
             <p class="change-log">
-                
+                v1.12<br>
+                - WebView bisa perintah print ke APK dengan javascript alert("otomax:print").<br>
+                Contoh penerapan:<br><br>
+                <code>
+                    &lt;script&gt; <br>
+                        document.onreadystatechange = function() {<br>
+                        if (document.readyState === 'complete') alert("otomax:print") <br>
+                    } <br>
+                    &lt;/script&gt;
+                </code>
+                <br><br>
+                Info lebih lanjut hubungi pembuat print struk web yang Anda gunakan.
             </p>
--->
             
             
 <!--
