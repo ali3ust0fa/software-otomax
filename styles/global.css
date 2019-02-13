@@ -271,3 +271,12 @@ div#content .center-img {
     display: block;
     margin: auto;
 }
+
+/* coloring tag a (link) */
+.black-link {
+    color: black;
+}
+
+.red-link {
+    color: red;
+}
