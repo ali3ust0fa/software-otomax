@@ -205,9 +205,9 @@
                                         <br>
                                         2 Strings (f dan g) diatas dapat digunakan untuk mengganti teks kotak input, tombol dan lain - lain pada APK dengan format:
                                          
-                                        <p><code class="format"><span style="color: green">Key</span>=<span style="color: blue">Teks</span></code></p>
+                                        <p><code class="format"><span style="color: green">Key</span><span style="color: red">=</span><span style="color: blue">Teks</span></code></p>
                                         
-                                        <p><span style="color: green">Key</span> tidak dapat diganti (besar kecil huruf, ejaan berpengaruh), sementara <span style="color: blue">Teks</span> dapat diganti sesuai keinginan Anda. Tambahkan baris baru atau tanda \n untuk mengganti Strings lebih dari 1. Berikut ini tabel <span style="color: green">Key</span> yang tersedia beserta contoh <span style="color: blue">Teks</span>-nya:</p>
+                                        <p><span style="color: green">Key</span> tidak dapat diganti (besar kecil huruf, ejaan berpengaruh), sementara <span style="color: blue">Teks</span> dapat diganti sesuai keinginan Anda; serta diantara keduanya (<span style="color: green">Key</span> dan <span style="color: blue">Teks</span>) terdapat tanda <span style="color: red">=</span>. Tambahkan baris baru atau tanda \n untuk mengganti Strings lebih dari 1. Berikut ini tabel <span style="color: green">Key</span> yang tersedia beserta contoh <span style="color: blue">Teks</span>-nya:</p>
 
                                         <table>
                                            <caption><b>Strings (loaded before login)</b></caption>
@@ -347,16 +347,15 @@
                                     <li><b>Slider banners.</b>
                                         <br>
                                         Menampilkan banner pada halaman utama. Banner ditampilkan dengan menggunakan format:
-                                        <p><code class="format" style="color: red">Teks|Url</code></p>
+                                        <p><code class="format"><span style="color: green">Teks</span><span style="color: red">|</span><span style="color: blue">Url</span></code></p>
                                             
                                         Tambahkan baris baru untuk menambahkan banner lebih dari 1. Contoh:
                                         <p>
-                                            <code>slider banner #1 | https://domain.com/slider-banner-1.png</code><br>
-                                            <code>slider banner #2 | https://domain.com/slider-banner-2.png</code>
+                                            <code><span style="color: green">slider banner #1</span> <span style="color: red">|</span> <span style="color: blue">https://domain.com/slider-banner-1.png</span></code><br><code><span style="color: green">slider banner #2</span> <span style="color: red">|</span> <span style="color: blue">https://domain.com/slider-banner-2.png</span></code>
                                         </p>
                                         
                                         <p>
-                                            <code>slider banner #1</code> dan <code>slider banner #2</code> adalah <span style="color: red">Teks</span>, adapun <code>https://domain.com/slider-banner-1.png</code> dan <code>https://domain.com/slider-banner-2.png</code> adalah <span style="color: red">Url</span> yang mengarah ke lokasi penyimpanan banner. Perhatikan gambar di bawah ini:
+                                            <code>slider banner #1</code> dan <code>slider banner #2</code> adalah <span style="color: green">Teks</span>, adapun <code>https://domain.com/slider-banner-1.png</code> dan <code>https://domain.com/slider-banner-2.png</code> adalah <span style="color: blue">Url</span> yang mengarah ke lokasi penyimpanan banner; serta diantara keduanya (<span style="color: green">Teks</span> dan <span style="color: blue">Url</span>) terdapat tanda <span style="color: red">|</span>. Perhatikan gambar di bawah ini:
                                         </p>
                                         
                                         <p><img src="images/apk/slider-banner.png" alt="slider banner" width="90%"></p>
@@ -366,6 +365,7 @@
                                 </ol>
                                 
                             <li><b>Menu.</b>
+                                <p style="color: red">Harap diperhatikan dengan seksama dan teliti gambar contoh pembuatan <b>Menu</b> yang akan tampil di <b>Aplikasi Android</b> OtomaX di bawah ini:</p>
                                 <p><img src="images/apk/manage-apk-menu-isian.png" alt="manage apk menu" width="100%"></p>
                             </li>
                                 <ol type="a">
