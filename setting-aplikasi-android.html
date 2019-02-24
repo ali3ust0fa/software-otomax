@@ -50,6 +50,19 @@
             .color-blue {
                 color: blue;
             }
+            
+/*            for table in faq*/
+            .faq {
+                border: 1;
+                width: 95%;
+                margin: auto;
+                background-color: cadetblue;
+                color: azure;
+            }
+            
+            .faq-td {
+                text-align: center;
+            }
         </style>
         <!--        GA-->
         <script>
@@ -469,6 +482,71 @@
                     </li>
                 </ol>
             </p>
+            
+            <h2 id="faq">FAQ</h2>
+            
+            <table class="faq"
+                <th>
+                    <td class="faq-td">Pesan</td>
+                    <td class="faq-td">Kronologi</td>
+                    <td class="faq-td">Petunjuk</td>
+                </th>
+                <tr>
+                    <td>Error, no data</td>
+                    <td>Muncul saat mengklik icon daftar kode produk di halaman setelah menu utama dan daftar kode produk tidak tampil</td>
+                    <td>Buka OtomaX Online Backup -> klik 3 tanda titik bertumpuk sebelah kiri atas -> klik Settings -> pastikan cekbox dibawah tulisan table to backup telah dicentang semua dan klik tombol simpan</td>
+                </tr>
+                <tr>
+                    <td>Error, NonMemberRegGrup is not set</td>
+                    <td>Muncul saat mendaftar sebagai calon reseller baru melalui APK</td>
+                    <td>Di OtomaX -> klik Administrasi -> Grup Reseller -> catat Kode Grup yang akan dijadikan sebagai grup untuk reseller yang daftar melalui APK -> klik Setting -> lain - lain -> key: NonMemberRegGroup pada kolom nilai isi dengan Kode Grup yang telah Anda catat tadi -> klik tombol simpan</td>
+                </tr>
+                <tr>
+                    <td>Error, Invalid session</td>
+                    <td>Muncul saat hendak bertransaksi</td>
+                    <td>Logout dari APK, kemudian Login kembali</td>
+                </tr>
+                <tr>
+                    <td>Error, serverHost is not set yet</td>
+                    <td>Muncul saat hendak melakukan transaksi</td>
+                    <td>Logout dari APK, kemudian Login kembali</td>
+                </tr>
+                <tr>
+                    <td>Tidak ada</td>
+                    <td>Saldo reseller dan harga pada daftar kode produk di halaman setelah menu utama tidak muncul</td>
+                    <td>Buka OtomaX Online Backup -> klik 3 tanda titik bertumpuk sebelah kiri atas -> klik Manage APK -> klik General -> Pastikan di box: Strings (loaded after login) tidak ada isian: formatRp=Rp; kalau ada hapus -> klik tombol save -> Uninstall APK di HP dan kemudian install ulang</td>
+                </tr>
+                <tr>
+                    <td>"nama apk" telah berhenti <br> atau <br> "nama apk" has stopped <br> dan sejenis</td>
+                    <td>Muncul saat mengklik Icon menu</td>
+                    <td>Pastikan angka - angka yang dimasukkan di Number Buttons sesuai dengan nominal yang tersedia di OtomaX Online Backup -> Manage APK -> Menu -> Kode Produk semua Operator dan pastikan juga di OtomaX -> Administrasi -> Produk, Checbox: Tanpa kode dari Kode Produk tersebut telah dicentang</td>
+                </tr>
+                <tr>
+                    <td>Error, Silahkan ubah pin dahulu</td>
+                    <td>Muncul ketika hendak login di APK</td>
+                    <td>Di OtomaX, ubah PIN reseller yang akan login tersebut dengan PIN yang lain</td>
+                </tr>
+                <tr>
+                    <td>Error, Invalid colomn name 'kode_reseller' SET NOCOUNT ON</td>
+                    <td>Muncul saat akan mengambil tiket deposit</td>
+                    <td>Buka OtomaX Online Backup -> klik 3 tanda titik bertumpuk sebelah kiri atas -> klik Settings -> pastikan cekbox dibawah tulisan table to backup telah dicentang semua dan klik tombol simpan</td>
+                </tr>
+                <tr>
+                    <td>Tidak ada</td>
+                    <td>Muncul ketika transaksi menggunakan nomor tujuan dengan awalan +62 keterangannya produk salah</td>
+                    <td>Edit +62 dengan angka 0 saat memasukkan nomor tujuan, baru kemudian klik tombol beli</td>
+                </tr>
+                <tr>
+                    <td>deviceInfo is too short</td>
+                    <td>Muncul saat mendaftar sebagai calon reseller baru melalui APK</td>
+                    <td>HP tidak didukung, gunakan HP yang lain</td>
+                </tr>
+                <tr>
+                    <td>Tidak ada</td>
+                    <td>Reseller yang mengambil tiket deposit melalui APK datanya tidak muncul di OtomaX -> Transaksi -> Mutasi Saldo</td>
+                    <td>Buka OtomaX Online Backup -> klik 3 tanda titik bertumpuk sebelah kiri atas -> klik Settings -> pastikan cekbox dibawah tulisan table to backup telah dicentang semua dan klik tombol simpan</td>
+                </tr>
+            </table>
             
 <!--
             <p class="note">
