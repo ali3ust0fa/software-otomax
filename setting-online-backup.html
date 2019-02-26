@@ -9,7 +9,7 @@
             table {
                 width: 80%;
                 border-collapse: collapse;
-                text-align: center;
+/*                text-align: center;*/
             }
             
             table th {
@@ -25,6 +25,26 @@
             
             table tr:nth-child(even){
                 background-color: darkgray;
+            }
+            
+            table td {
+                padding: 10px;
+                text-align: left;
+            }
+            
+/*            for table in faq*/
+            .faq {
+                border: 1;
+                width: 95%;
+                margin: auto;
+                background-color: cadetblue;
+                color: azure;
+            }
+            
+            .faq-td {
+                text-align: center;
+                padding: 10px;
+                width: 50%;
             }
         </style>
         <!--        GA-->
@@ -145,6 +165,125 @@
             <p>
                 Adapun untuk tata cara download dan restore data dari layanan <b>Online Backup</b> silahkan <a href="documentation.html" target="_blank">klik disini</a>.
             </p>
+            
+            <h2 id="faq">FAQ</h2>
+            
+            <table class="faq"
+                <th>
+                    <td class="faq-td">Pesan</td>
+                    <td class="faq-td">Petunjuk</td>
+                </th>
+                <tr>
+                    <td>Server: Invalid login</td>
+                    <td>Username atau password Online Backup yang Anda masukkan salah, cek kembali</td>
+                </tr>
+                <tr>
+                    <td>Server: Maaf, password anda adalah p4ssword. Mohon segera diganti</td>
+                    <td>Ganti password Online Backup Anda</td>
+                </tr>
+                <tr>
+                    <td>Server: OutOfMemoryException: Exception of type 'System.OutOfMemoryException' was thrown</td>
+                    <td>Abaikan</td>
+                </tr>
+                <tr>
+                    <td>Gateway Timeout</td>
+                    <td>OB Sedang gangguan, tunggu normal; atau koneksi internet anda tidak stabil</td>
+                </tr>
+                <tr>
+                    <td>Internal Server Error</td>
+                    <td>OB Sedang gangguan, tunggu normal; atau koneksi internet anda tidak stabil</td>
+                </tr>
+                <tr>
+                    <td>Network Error (tcp_error), A communication error occurred: "Connection reset by peer", The Web Server may be down, too busy, or experiencing other problems preventing it from responding to requests. You may wish to try again at a later time, For assistance, contact your network support team</td>
+                    <td>OB Sedang gangguan, tunggu normal; atau koneksi internet anda tidak stabil</td>
+                </tr>
+                <tr>
+                    <td>WebException: Unable to connect to the remote server</td>
+                    <td>OB Sedang gangguan, tunggu normal; atau koneksi internet anda tidak stabil</td>
+                </tr>
+                <tr>
+                    <td>WebException: The underlying connection was closed: An unexpected error occurred on a receive</td>
+                    <td>OB Sedang gangguan, tunggu normal; atau koneksi internet anda tidak stabil</td>
+                </tr>
+                <tr>
+                    <td>WebException: The underlying connection was closed: The connection was closed unexpectedly</td>
+                    <td>OB Sedang gangguan, tunggu normal; atau koneksi internet anda tidak stabil</td>
+                </tr>
+                <tr>
+                    <td>Server: DbException: There are more columns in the INSERT statement than values specified in the V clause. The number of values in the V clause must match the number of columns specified in the INSERT statement</td>
+                    <td>Restart OB</td>
+                </tr>
+                <tr>
+                    <td>Server: ArgumentOutOfRangeException: capacity was less than the current size</td>
+                    <td>Update ke OB versi terbaru</td>
+                </tr>
+                <tr>
+                    <td>Server: NullReferenceException: Object reference not set to an instance of an object</td>
+                    <td>Abaikan, tunggu 1, 2, 3 jam atau lebih nanti akan normal sendiri; atau update ke OB versi terbaru</td>
+                </tr>
+                <tr>
+                    <td>Server: OverflowException: Arithmetic operation resulted in a overflow</td>
+                    <td>Update ke OB versi terbaru</td>
+                </tr>
+                <tr>
+                    <td>Your subsription is expired</td>
+                    <td>Masa aktif layanan Online Backup telah habis, lakukan pembayaran iuran</td>
+                </tr>
+                <tr>
+                    <td>Tidak dapat mengakses database. Format of initialization string does not conform to specification starting at index 0</td>
+                    <td>Tutup modul Online Backup -> Hapus file OnlineBackup.con</td>
+                </tr>
+                <tr>
+                    <td>Connect failed. Delete the .con file if needed. Format of initialization string does not conform to specification starting at index 0</td>
+                    <td>Tutup modul Online Backup -> Hapus file OnlineBackup.con</td>
+                </tr>
+                <tr>
+                    <td>Your subscription is going to be expired</td>
+                    <td>Masa aktif layanan Online Backup akan habis, lakukan pembayaran iuran</td>
+                </tr>
+                <tr>
+                    <td>Server: InvalidDataException: The magic number in GZip header is not correct. Make sure you are passing in a GZip stream</td>
+                    <td>Abaikan</td>
+                </tr>
+                <tr>
+                    <td>markupProduk a.   : Invalid object name 'markup_produk'. SET NOCOUNT ON
+SELECT  GETDATE()
+SELECT kode_reseller,kode_produk,markup,tgl_data FROM markup_produk WITH(NOLOCK)</td>
+                    <td>Abaikan</td>
+                </tr>
+                <tr>
+                    <td>Server: Invalid column name 'apk_grup'</td>
+                    <td>Abaikan</td>
+                </tr>
+                <tr>
+                    <td>Server: OverflowException: Array dimensions exceeded supported range</td>
+                    <td>Abaikan</td>
+                </tr>
+                <tr>
+                    <td>Server: DbException: String or binary data would be truncated</td>
+                    <td>Abaikan</td>
+                </tr>
+                <tr>
+                    <td>FormatException: Index (zero based) must be greater than or equal to zero and less than the size of the argument list</td>
+                    <td>Abaikan</td>
+                </tr>
+                <tr>
+                    <td>Server: Invalid session</td>
+                    <td>Cek koneksi internet, restart modem internet atau ganti koneksi internet</td>
+                </tr>
+                <tr>
+                    <td>Server: Please update this application to version 3.01 or later</td>
+                    <td>Update aplikasi Online Backup dengan versi terbaru</td>
+                </tr>
+                <tr>
+                    <td>Komisi table has more than 2 million rows. We cannot process it until you delete some rows</td>
+                    <td>Hapus data komisi yang telah ditukar</td>
+                </tr>
+                <tr>
+                    <td>Connect failed. Delete the .con file if needed. Error: A network-related or instance-specific error occured while establishing a connection to SQL Server. The server was not found or was not accessible. Verifty that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: SQL Network Interfaces, error: 26 - Error Locating Server/Instance Specified)</td>
+                    <td>Tutup modul Online Backup -> Hapus file OnlineBackup.con dan pastikan database dalam kondisi normal</td>
+                </tr>
+            </table>
 <!--
             <p class="note">
                 <b>Catatan</b>: 
