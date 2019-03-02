@@ -280,3 +280,10 @@ div#content .center-img {
 .red-link {
     color: red;
 }
+
+/* label */
+.label {
+    background-color: green;
+    padding: 3px;
+    color: white;
+}
