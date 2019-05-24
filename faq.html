@@ -384,6 +384,15 @@
                     x.style.display = "none";
                 }
             }
+
+            function setReplyTehnis17() {
+                var x = document.getElementById("replyTehnis17");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
             // end reply tehnis
         </script>
     </head>
@@ -1345,6 +1354,30 @@
                 </p>
             </div>
 <!--           end tehnis ask16-->
+
+<!--           tehnis ask17-->
+            <div id="tehnis-ask17" onclick="setReplyTehnis17()" class="ask">
+                <img id="arrow" src="images/down_arrow.svg" alt="tanda panah bawah">
+                <p>
+                    Di log Modul <b>Internet Banking Mandiri</b> dan <b>BNI</b> setelah update ke versi 3.8.9 muncul pesan error seperti dibawah ini serta tidak bisa membaca mutasi, apa yang perlu dilakukan?
+                    <br><br>
+                    <div class="log">
+                        <code>TLS12 Error: NotSupportedException: System: The requested security protocol is not supported.</code>
+                    </div>
+                    <br><br>
+                </p>
+            </div>
+            <div id="replyTehnis17" class="reply">
+                <p>
+                    Ada beberapa pilihan untuk menanganinya, Anda dapat mencobanya satu per satu:
+                    <ol type="a">
+                        <li>Download <b>Transport Layer Security (TLS) v1.2</b> <a href="download.html#lain-lain" target="_blank">klik disini</a>, kemudian install.</li>
+                        <li>Download <b>Microsoft .Net Framework 3.5 Online Installer</b> <a href="download.html#lain-lain" target="_blank">klik disini</a>, kemudian install.</li>
+                        <li>Update windows.</li>
+                    </ol>
+                </p>
+            </div>
+<!--           end tehnis ask17-->
 
             <div class="bottom-content"></div>
         </div>
