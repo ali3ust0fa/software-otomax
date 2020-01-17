@@ -3,7 +3,11 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Exo 2', sans-serif;
+}
+
+a {
+    color: grey;
 }
 /* membuat tinggi halaman responsive */
 html, body {
@@ -44,7 +48,7 @@ div#banner-jualan img {
 div#split-header {
     width: 100%;
     height: 30px;
-    background-color: #0a494e;
+    background-color: #93a368;
     color: white;
 }
 
@@ -63,14 +67,14 @@ div#sidebar {
     float: left;
     width: 250px;
     height: 106%;
-    background-color: #0a494e;
+    background-color: #93a368;
     font-size: 20px;
     display: block;
 }
 
 div#sidebar .nav a {
     color: white;
-    background-color: #0a494e;
+    background-color: #93a368;
     padding: 10px;
     display: block;
     border: 1px solid yellow;
@@ -93,7 +97,7 @@ div#sidebar ul.nav a {
 }
 
 div#sidebar a:hover {
-    background-color: #417e7e;
+    background-color: #9dcdbf;
 }
 
 /*
@@ -112,31 +116,36 @@ div#sidebar button {
 div#content {
     width: 77.7% auto;
     height: 100%;
-    background-color: #b7daf8;
-    #margin-top: 20px;
+    background-color: #fcfbfc;
+    /* #margin-top: 20px; */
     margin-left: 250px;
     padding: 20px;
     overflow-y: scroll;
 }
 
 div#content h1 {
-    background-color: aliceblue;
+    background-color: #93a36848;
     padding: 5px;
-    text-shadow: 2px 2px gray;
+    text-shadow: 2px 2px rgba(201, 202, 104, 0.445);
+    border-top-right-radius: 100px;
 }
 
 div#content h2 {
-    background-color: #879caf;
+    background-color: #bbee5db0;
     padding: 5px;
     text-shadow: 2px 2px white;
     margin-top: 30px;
     margin-bottom: 30px;
+    border-top-right-radius: 100px;
 }
 
 div#content h3 {
-    background-color: #879caf;
+    background-color: #c6d667e0;
     padding: 5px;
-    color: #f0e7e3;
+    color:rgba(91, 127, 160, 0.719);
+    padding: 25px;
+    border-radius: 10px;
+    border-top-right-radius: 100px;
 }
 
 div#content p {
@@ -165,7 +174,7 @@ div#content img.center-image {
 
 div#content p span.name-app {
     font-style: italic;
-    background-color: coral;
+    background-color: rgba(255, 127, 80, 0.527);
 }
 
 div#content span.modul {
@@ -199,17 +208,18 @@ div#content p.note {
 */
 
 div#content p.note {
-    background-color: #4c7b1e;
+    background-color: #9dcdbf;
     padding: 10px;
-    border: 3px solid #eef70c;
+    border: 3px solid #93a368;
+    border-radius: 5px;
     font-style: italic;
     color: white;
 }
 
 div#content p.note:hover {
-    background-color: #4c7b1e;
+    background-color: #9dcdbf;
     padding: 10px;
-    border: 3px solid #eef70c;
+    border: 3px solid #93a368;
     font-style: italic;
     color: white;
 }
@@ -252,9 +262,9 @@ div#footer {
     height: 50px;
     background-color: #e3d5cf;
 }
-#isi_kolom_fitur {
+/* #isi_kolom_fitur {
     
-}
+} */
 
 .log {
     border: 1px solid green;
