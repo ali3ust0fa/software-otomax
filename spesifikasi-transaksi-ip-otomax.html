@@ -123,7 +123,7 @@
                                 <th>Format</th>
                             </tr>
                             <tr>
-                                <td>Cek saldo</td>
+                                <td>Cek saldo <sup style="color: red;">(*)</sup></td>
                                 <td>balance?memberID=[memberid]&amp;sign=[sign]</td>
                             </tr>
                             <tr>
@@ -139,7 +139,12 @@
                                 <td>encodeBase64(sha1("OtomaX|" + memberId + "|" + product + "|" + dest + "|" + refID + "|" + pin + "|" + password))</td>
                             </tr>
                         </table>
-                        <br>
+
+                        <sup style="color: red; font-style: italic;">
+                            (*) Khusus untuk mitra atau sedoter (pengambil stok) yang menggunakan software OtomaX.
+                        </sup>
+
+                        <br><br>
                         
                         Adapun untuk contoh penerapan Rumus Sign (OtomaX) sebagai berikut:
 
