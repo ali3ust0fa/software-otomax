@@ -96,10 +96,10 @@
                     <li>Contoh - contoh balasan cek tagihan dan bayar tagihan supplier komplit untuk masing - masing produk.</li>
                 </ol>
                 <br>
-                <span style="color: red">Silahkan 3 poin diatas ditanyakan ke supplier Anda, baru kemudian dapat mulai melakukan penyettingan di OtomaX.</span>
+                <span style="color: red">Silahkan 3 poin diatas ditanyakan ke supplier Anda, baru kemudian dapat mulai melakukan pengaturan di OtomaX.</span>
             </p>
             
-            <p>
+            <!-- <p>
                 Bagaimana setting PPOB Postpaid/Paskabayar di OtomaX? Berikut gambarannya:
                 <ol>
                     <li>
@@ -136,8 +136,80 @@
                     <li>Buat penangkap jawaban untuk menangkap balasan bayar tagihan dari Supplier (sama seperti untuk host to host pulsa), konsepnya <a href="jawaban-dari-provider.html" target="_blank">klik disini</a>.</li>
                     <li>Selesai</li>
                 </ol>
-            </p>
+            </p> -->
             
+            <p>
+                Untuk masing - masing jenis PPOB biasanya diperlukan 2 Kode Produk, yaitu kode produk untuk mengecek tagihan dan kode produk untuk membayar tagihan.
+            </p>
+
+            <p>
+                <ol>
+                    <li><b style="color: sienna;">Membuat kode produk cek tagihan.</b></li>
+                    <ol type="a">
+                        <li>
+                            Masuk menu <b>Administrasi</b> -> <b>Provider</b> -> buat <b>Kode Provider</b> misalnya <b>PPOB</b> dan klik tombol <b>Simpan</b>.
+                            <p><img src="images/ppob-postpaid/kode-provider.png" alt="kode provider" width="80%"></p>
+                        </li>
+                        <li>
+                            Masuk menu <b>Administrasi</b> -> <b>Produk</b> -> buat kode produk misalnya <b>CEKPLN</b> (untuk cek tagihan PLN); pada kolom <b>Provider</b> pilih <b>PPOB</b>; dan klik tombol <b>Simpan</b>.
+                            <p><img src="images/ppob-postpaid/produk-cekpln.png" alt="kode produk cekpln" width="60%"></p>
+                        </li>
+                        <li>
+                            Masuk menu <b>Administrasi</b> -> <b>Jawaban dari Provider</b> -> buat penangkap jawaban untuk menangkap balasan cek tagihan dari supplier, tata caranya <a href="jawaban-dari-provider.html" target="_blank">klik disini</a>; dan pada kolom <b>Kelompok</b> isi <b>SUPPLIER-CEK</b> misalnya.
+                            <p><img src="images/ppob-postpaid/penangkap-jawaban-supplier-cek.png" alt="penangkap jawaban cek tagihan" width="100%"></p>
+                        </li>
+                        <li>
+                            Buat <b>IM Hybrid HTH</b> untuk memproses transaksi ke supplier, tata caranya  <a href="setting-jabber-di-otomax.html" target="_blank">klik disini</a>; pada <b>Label</b> isi <b>SUPPLIER-CEK</b> misalnya; dan pada <b>Kelompok Jawaban</b> arahkan ke kelompok <b>SUPPLIER-CEK</b>.
+                            <p><img src="images/ppob-postpaid/im-hybrid-supplier-cek.png" alt="im hybrid supplier cek" width="60%"></p>
+                        </li>
+                        <li>
+                            Masuk menu <b>Administrasi</b> -> <b>Parsing ke Provider</b> -> pada kolom <b>Modul</b> pilih <b>SUPPLIER-CEK</b>; pada <b>Produk</b> isi <b>CEKPLN</b>; pada <b>Perintah</b> isi dengan format cek tagihan supplier (tanyakan ke supplier Anda); dan klik tombol <b>Simpan</b>.
+                            <p><img src="images/ppob-postpaid/parsing-cekpln.png" alt="parsing cekpln" width="80%"></p>
+                        </li>
+                        <li>Selesai.</li>
+                    </ol>
+                    <li><b style="color: sienna;">Membuat kode produk bayar tagihan.</b></li>
+                    <ol type="a">
+                        <li>
+                            Masuk menu <b>Administrasi</b> -> <b>Provider</b> -> pastikan telah tersedia <b>Kode Provider</b> untuk PPOB misalnya <b>PPOB</b>.
+                        </li>
+                        <li>
+                            Masuk menu <b>Administrasi</b> -> <b>Produk</b> -> buat kode produk misalnya <b>BYRPLN</b> (untuk bayar tagihan PLN); pada kolom <b>Provider</b> pilih <b>PPOB</b>; centang checkbox <b>Postpaid</b>; pada kolom <b>Harga Beli</b> isi fee dari supplier diawali tanda minus (-), misalnya Anda mendapat free Rp2.000 isi -2.000; sementara kolom <b>Harga Jual</b> isi fee untuk Reseller Anda diawali tanda minus (-), misalnya Anda ingin memberikan fee Rp1.500 isi -1.500; dan terakhir klik tombol <b>Simpan</b>.
+                            <p><img src="images/ppob-postpaid/produk-byrpln.png" alt="kode produk byrpln" width="80%"></p>
+                        </li>
+                        <li>
+                            Masuk menu <b>Administrasi</b> -> <b>Jawaban dari Provider</b> -> buat penangkap jawaban untuk menangkap balasan cek tagihan dari supplier, tata caranya <a href="jawaban-dari-provider.html" target="_blank">klik disini</a>; pada kolom <b>Kelompok</b> isi <b>SUPPLIER-BYR</b> misalnya; dan pada kolom <b>Status Trx</b> pilih <b>Menunggu Jawaban</b>.
+                            <p><img src="images/ppob-postpaid/penangkap-jawaban-supplier-byr-1.png" alt="penangkap jawaban cek tagihan" width="100%"></p>
+                            <p>
+                                Tangkap total tagihan yang berada di balasan cek tagihan dari supplier dengan menggunakan RegEx dan simpan di parameter <b>tagihan</b> atau <b>bill</b>, tata cara membuat RegEx <a href="http://forum.orisinil.com/index.php/topic,242.msg1973.html#msg1973" target="_blank">klik disini</a> (mohon dibaca dari halaman 1 s/d halaman terakhir). Setelah RegEx dibuat masukkan di kolom <b>Expresi Regular</b>.
+                                <p><img src="images/ppob-postpaid/penangkap-jawaban-supplier-byr-1-regex.png" alt="RegEx total tagihan" width="100%"></p>
+                            </p>
+                            <p>
+                                Arahkan kursor mouse ke kata <b>Kelompok</b> -> klik kanan -> klik <b>Perintah</b> untuk memunculkan kolom <b>Perintah</b>.
+                                <p><img src="images/ppob-postpaid/perintah.png" alt="memunculkan kolom perintah" width="50%"></p>
+                            </p>
+                            <p>
+                                Pada kolom <b>Perintah</b> isi format bayar tagihan supplier (tanyakan ke supplier Anda). Perhatikan gambar di bawah ini:
+                                <p><img src="images/ppob-postpaid/penangkap-jawaban-supplier-byr-1-perintah.png" alt="kolom perintah" width="100%"></p>
+                            </p>
+                            <p>
+                                Buat penangkap jawaban untuk menangkap balasan bayar tagihan dari supplier, tata caranya <a href="jawaban-dari-provider.html" target="_blank">klik disini</a>; pada kolom <b>Kelompok</b> isi <b>SUPPLIER-BYR</b> misalnya; dan pada kolom <b>Status Trx</b> pilih <b>Sukses</b>.
+                                <p><img src="images/ppob-postpaid/penangkap-jawaban-supplier-byr-2.png" alt="penangkap jawaban bayar tagihan" width="100%"></p>
+                            </p>
+                        </li>
+                        <li>
+                            Buat <b>IM Hybrid HTH</b> lagi, tata caranya <a href="setting-jabber-di-otomax.html" target="_blank">klik disini</a>; pada <b>Label</b> isi <b>SUPPLIER-BYR</b> misalnya; dan pada <b>Kelompok Jawaban</b> arahkan ke kelompok <b>SUPPLIER-BYR</b>.
+                            <p><img src="images/ppob-postpaid/im-hybrid-supplier-byr.png" alt="im hybrid supplier byr" width="60%"></p>
+                        </li>
+                        <li>
+                            Masuk menu <b>Administrasi</b> -> <b>Parsing ke Provider</b> -> pada kolom <b>Modul</b> pilih <b>SUPPLIER-BYR</b>; pada <b>Produk</b> isi <b>BYRPLN</b>; pada <b>Perintah</b> isi dengan format cek tagihan supplier (tanyakan ke supplier Anda); dan klik tombol <b>Simpan</b>.
+                            <p><img src="images/ppob-postpaid/parsing-byrpln.png" alt="parsing byrpln" width="80%"></p>
+                        </li>
+                        <li>Selesai.</li>
+                    </ol>
+                </ol>
+            </p>
+
             <p class="note">
                 <b>Catatan 1</b>: <br>
                 Harga Reseller = Tagihan + Harga Jual <br><br>
