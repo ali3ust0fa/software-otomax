@@ -205,6 +205,23 @@
                             Masuk menu <b>Administrasi</b> -> <b>Parsing ke Provider</b> -> pada kolom <b>Modul</b> pilih <b>SUPPLIER-BYR</b>; pada <b>Produk</b> isi <b>BYRPLN</b>; pada <b>Perintah</b> isi dengan format cek tagihan supplier (tanyakan ke supplier Anda); dan klik tombol <b>Simpan</b>.
                             <p><img src="images/ppob-postpaid/parsing-byrpln.png" alt="parsing byrpln" width="80%"></p>
                         </li>
+                        <li>
+                            Masuk menu <b>Alat Penguji</b> -> <b>Penguji Jawaban</b> -> pada box: <b>Jawaban Provider</b> masukkan balasan cek tagihan; pada <b>Kelompok Jawaban</b> pilih <b>SUPPLIER-BYR</b> -> klik tombol <b>Tes</b> -> pastikan di box: <b>Hasil Pengujian</b> berisi:
+                            <p>
+                                <b>Status Trx = </b> <span style="color: green;">MENUNGGU JAWABAN</span>
+                                <br>
+                                <b>Perintah Balasan = </b> <span style="color: green;">BPLN.[tujuan].3478</span> (sesuai format bayar tagihan supplier Anda)
+                            </p>
+                            <p>
+                                Dan kemudian di box: <b>Jawaban Provider</b> masukkan balasan bayar tagihan; pada <b>Kelompok Jawaban</b> pilih <b>SUPPLIER-BYR</b> -> klik tombol <b>Tes</b> -> pastikan di box: <b>Hasil Pengujian</b> berisi:
+                                <p>
+                                    <b>Status Trx =</b> <span style="color: green;">SUKSES</span>
+                                </p>
+                            </p>
+                            <p style="color: indianred;">
+                                Apabila <b>Hasil Pengujian</b> balasan cek tagihan dan balasan bayar tagihan belum seperti diatas, cek kembali penangkap jawaban.
+                            </p>
+                        </li>
                         <li>Selesai.</li>
                     </ol>
                 </ol>
