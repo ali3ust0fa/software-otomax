@@ -94,6 +94,8 @@
             <h3>IP Center</h3>
             
             <p>Transaksi IP merupakan transaksi menggunakan IP Address, untuk mendukung hal itu di versi 3.6.8 OtomaX menghadirkan modul baru bernama <b>IP Center</b>. Modul ini hanya tersedia di OtomaX edisi Enterprise dan Ultimate <a href="price-plan.html" target="_blank">klik disini</a>. Oleh karena itu bila Anda ingin transaksi IP dan edisi OtomaX Anda bukan edisi tersebut silahkan upgrade dahulu <a href="bagaimana-upgrade-otomax.html" target="_blank">klik disini</a>; dan bila ingin membeli OtomaX baru <a href="purchase.html" target="_blank">klik disini</a>.</p>
+
+            <p>Transaksi IP memiliki beberapa metode, diantaranya: XML/Text, HTTP GET, HTTP POST. Nah... untuk <b>IP Center</b> di versi 3.6.8 ini masih mendukung metode HTTP GET, belum mendukung metode lainnya, selengkapnya <a href="spesifikasi-transaksi-ip-otomax.html" target="_blank">klik disini</a>.</p>
             
             <p>
                 Modul ini memiliki 2 fungsi, yaitu
@@ -101,21 +103,47 @@
                     <li>Menerima transaksi IP Sedoter, sehingga Anda dapat menjadi Supplier</li>
                     <li>Menerima report status transaksi IP dari Supplier, sehingga Anda dapat menjadi Sedoter</li>
                 </ol>
-                <br>Dengan demikian Modul ini harus diaktifkan ketika melakukan transaksi IP, baik Anda sebagai Supplier ataupun Sedoter.
             </p>
-        
-            <p>Transaksi IP memiliki beberapa metode, diantaranya: XML/Text, HTTP GET, HTTP POST. Nah... untuk <b>IP Center</b> di versi 3.6.8 ini masih mendukung metode HTTP GET, belum mendukung metode lainnya, selengkapnya <a href="spesifikasi-transaksi-ip-otomax.html" target="_blank">klik disini</a>.</p>
+
+            <p>
+                Dengan demikian Modul ini harus diaktifkan ketika melakukan transaksi IP, baik Anda sebagai Supplier ataupun Sedoter. Berikut ini langkah mengaktifkannya:
+                <ol>
+                    <li>
+                        Pastikan telah menyiapkan hal - hal yang diperlukan untuk transaksi IP, <a href="transaksi-via-ip-otomax.html" target="_blank">klik disini</a>.
+                    </li>
+                    <li>
+                        Pastikan telah melakukan Port Forwarding ke <b>Port Lokal</b> (default: 6969). Anda dapat menentukan <b>Port Lokal</b> yang hendak digunakan di <b>IP Center</b> -> klik kanan -> klik <b>Setting</b> -> box: <b>Port Lokal</b>.
+                        <p>Untuk melakukan Port Forwarding silahkan hubungi ISP (Internet Service Provider) tempat Anda mengambil IP Public Statis, seperti Telkom Indonesia, First Media, Biznet, dan lain - lain.</p>
+                    </li>
+                    <li>
+                        Pilih <b>IP Center</b> -> klik kanan -> klik <b>Aktifkan</b>.
+                    </li>
+                    <li>
+                        Selesai.
+                    </li>
+                </ol>
+            </p>
         
             <p>
-                Di Modul <b>IP Center</b> (pilih <b>IP Center</b> -> klik kanan -> klik <b>Setting</b>) Anda dapat melihat IP dan Port sebagai tujuan transaksi Sedoter (disebut dengan URL Trx) serta IP dan Port sebagai penerima report status transaksi dari Supplier (disebut dengan URL Report)<br><br>
-                <img src="images/ip/ip-center-368.PNG" width="40%">
-                <br><br>
-                URL Trx merupakan hal yang perlu Anda berikan kepada Sedoter ketika Anda menjadi Supplier, selengkapnya <a href="setting-transaksi-ip-ke-otomax.html" target="_blank">klik disini</a>, sementara URL Report merupakan hal yang perlu Anda berikan kepada Supplier ketika Anda menjadi Sedoter, selengkapnya <a href="mendaftarkan-transaksi-ip-sedoter.html" target="_blank">klik disini</a>.
+                Sebagai tambahan informasi, di Modul <b>IP Center</b> (pilih <b>IP Center</b> -> klik kanan -> klik <b>Setting</b>) Anda dapat menentukan:
+                <p><img src="images/ip/ip-center-368.PNG" alt="ip center" width="45%" class="center-img"></p>
+                <ol>
+                    <li>
+                        <b>Port</b> di box: <b>Port Lokal</b>. Defaultnya adalah <b>6969</b>.
+                    </li>
+                    <li>
+                        <b>URL Cek Saldo</b>. Defaultnya adalah <b>balance</b>, sehingga jika Sedoter ingin cek saldo dapat melakukan request ke http://ippublikstatisanda:6969/balance.
+                    </li>
+                    <li>
+                        <b>URL Transaksi</b>. Defaultnya adalah <b>trx</b>, jadi ketika Sedoter hendak bertransaksi ke server Anda dapat melakukan request ke http://ippublikstatisanda:6969/.
+                    </li>
+                    <li>
+                        <b>URL Report</b>. Defaultnya adalah <b>report</b>, sehingga ketika Anda ingin transaksi ke Supplier berikan http://ippublikstatisanda:6969/report.
+                    </li>
+                </ol>
             </p>
         
-            <p>Dengan hanya Modul <b>IP Center</b> tidak serta merta Anda dapat transaksi IP sebagai Supplier atau Sedoter, Anda juga harus memiliki IP Publik Statis selengkapnya <a href="transaksi-via-ip-otomax.html" target="_blank">klik disini</a>.</p>
-        
-            <p>Jika Anda membutuhkan tutorial tentang <b>IP Center</b> silahkan download <a href="download.html" target="_blank">disini</a>. Kemudian bila Anda memiliki pertanyaan seputar transaksi IP silahkan kirimkan ke alamat email <b>support@otomax-software.com</b> atau <a href="support.html" target="_blank">klik disini</a>.</p>
+            <p>Kemudian bila Anda memiliki pertanyaan seputar transaksi IP silahkan kirimkan ke alamat email <b>support@otomax-software.com</b>.</p>
         
             <p class="note">
                 <b>Catatan</b>: <span style="color:orange">Sedoter</span> ialah lawan dari supplier, yakni server yang mengambil stok atau host to host ke server lain; sedangkan <span style="color:orange">Supplier</span> ialah server yang stoknya diambil oleh server lain.
