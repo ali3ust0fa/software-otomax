@@ -28,7 +28,7 @@
             .ask {
                 width: 100%;
                 background-color: #fcdada83;
-                padding: 3px 3px;
+                padding: 10px 10px 10px 10px;
                 box-sizing: border-box;
                 border-style: solid;
                 border-color: lightgoldenrodyellow;
@@ -399,6 +399,15 @@
 
             function setReplyTehnis18() {
                 var x = document.getElementById("replyTehnis18");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+
+            function setReplyTehnis19() {
+                var x = document.getElementById("replyTehnis19");
                 if (x.style.display === "none") {
                     x.style.display = "block";
                 } else {
@@ -1414,6 +1423,30 @@
                 </p>
             </div>
 <!--           end tehnis ask18-->
+
+<!--           tehnis ask19-->
+            <div id="tehnis-ask19" onclick="setReplyTehnis19()" class="ask">
+                <img id="arrow" src="images/down_arrow.svg" alt="tanda panah bawah">
+                <p>
+                    Modul Internet Banking BRI (mulai tanggal 13/06/2020) tidak bisa membaca mutasi dan muncul pesan error seperti di bawah ini, kira - kira disebabkan apa?
+                    <br><br>
+                    <div class="log">
+                        <code>Captcha tidak ditemukan</code>
+                    </div>
+                    <br>
+                </p>
+            </div>
+            <div id="replyTehnis19" class="reply">
+                <p>
+                    Di tanggal tersebut BRI melakukan razia terhadap robot (akses Internet Banking menggunakan aplikasi) dan membatasi akses terhadap yang terjaring razia, akibatnya mengakses Internet Banking BRI menggunakan robot tidak bisa dilakukan. Adapun akses secara manual dapat dilakukan.
+                </p>
+
+                <br>
+                <p>
+                    Dimungkinkan Modul Internet Banking BRI akan normal sendiri manakala BRI telah melonggarkan pembatasan akses kepada robot.
+                </p>
+            </div>
+<!--           end tehnis ask19-->
 
             <div class="bottom-content"></div>
         </div>
