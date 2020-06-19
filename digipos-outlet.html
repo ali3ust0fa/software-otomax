@@ -131,6 +131,7 @@
 
       <p>
         Berikut ini langkah mengintegrasikan sistem <b>DigiPOS Outlet</b> basis USSD dengan OtomaX:
+        <h2>Transaksi Harus Dengan Kode</h2>
         <ol>
           <li>
             Masuk menu <b>Administrasi</b> -> <b>Produk</b> -> buat Kode Produk seperti petunjuk di bawah ini:
@@ -359,6 +360,254 @@
 
       <p class="note">
         <b>Catatan</b>: Dengan setting diatas Reseller harus bertransaksi menggunakan Kode Produk, contoh: DT5.081234567800.1234 (<b>TIDAK BISA TANPA KODE</b>).
+      </p>
+
+      <p>
+        <h2>Transaksi Bisa Tanpa Kode</h2>
+        <ol>
+          <li>
+            Masuk menu <b>Administrasi</b> -> <b>Produk</b> -> buat Kode Produk seperti petunjuk di bawah ini:
+            <p><img src="images/digipos-outlet/kode-produk-tanpa-kode.PNG" alt="kode produk" width="55%"></p>
+          </li>
+          <li>
+            Masuk menu <b>Administrasi</b> -> <b>Jawaban dari Provider</b> -> buat penangkap jawaban seperti di bawah ini:
+            <p>
+              <div style="overflow-x: auto;">
+                <table>
+                  <tr>
+                    <th>Kelompok</th>
+                    <th>Prioritas</th>
+                    <th>Kata Kunci Harus Ada</th>
+                    <th>Kata Kunci Tidak Boleh Ada</th>
+                    <th>Awalan Tujuan</th>
+                    <th>Akhiran Tujuan</th>
+                    <!-- <th>Awalan Nominal</th>
+                    <th>Akhiran Nominal</th> -->
+                    <th>Awalan SN/Ref</th>
+                    <th>Akhiran SN/Ref</th>
+                    <th>Status Trx</th>
+                    <th>Expresi Reguler</th>
+                    <th>Perintah</th>
+                    <th>Parameter Balasan</th>
+                    <th>Catatan</th>
+                  </tr>
+                  <tr>
+                    <td>DIPO</td>
+                    <td>0</td>
+                    <td>Masukkan nomor pelanggan</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <!-- <td></td>
+                    <td></td> -->
+                    <td></td>
+                    <td></td>
+                    <td>Menunggu Jawaban</td>
+                    <td></td>
+                    <td>[tujuan]</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>DIPO</td>
+                    <td>0</td>
+                    <td>5. Paket Lainnya</td>
+                    <td>4. Isi Pulsa Reguler</td>
+                    <td></td>
+                    <td></td>
+                    <!-- <td></td>
+                    <td></td> -->
+                    <td></td>
+                    <td></td>
+                    <td>Menunggu Jawaban</td>
+                    <td></td>
+                    <td>5</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>DIPO</td>
+                    <td>0</td>
+                    <td>4. Isi Pulsa Reguler</td>
+                    <td>5. Paket Lainnya</td>
+                    <td></td>
+                    <td></td>
+                    <!-- <td></td>
+                    <td></td> -->
+                    <td></td>
+                    <td></td>
+                    <td>Menunggu Jawaban</td>
+                    <td></td>
+                    <td>4</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>DIPO</td>
+                    <td>0</td>
+                    <td>7. Denom Lainnya</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <!-- <td></td>
+                    <td></td> -->
+                    <td></td>
+                    <td></td>
+                    <td>Menunggu Jawaban</td>
+                    <td></td>
+                    <td>7</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>DIPO</td>
+                    <td>0</td>
+                    <td>Masukkan Nominal Recharge :</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <!-- <td></td>
+                    <td></td> -->
+                    <td></td>
+                    <td></td>
+                    <td>Menunggu Jawaban</td>
+                    <td></td>
+                    <td>[nominal]000</td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>DIPO</td>
+                    <td>0</td>
+                    <td>Silakan Masukkan PIN :</td> <!-- eligible -->
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <!-- <td></td>
+                    <td></td> -->
+                    <td></td>
+                    <td></td>
+                    <td>Menunggu Jawaban</td>
+                    <td>senilai Rp. (5.700|10.700|20.700|25.700|50.700|100.200)</td>
+                    <td>[pin]</td>
+                    <td></td>
+                    <td>Harga Sesuai Keinginan &gt; Proses</td>
+                  </tr>
+                  <tr>
+                    <td>DIPO</td>
+                    <td>1</td>
+                    <td>Silakan Masukkan PIN :</td> <!-- not eligible -->
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <!-- <td></td>
+                    <td></td> -->
+                    <td></td>
+                    <td></td>
+                    <td>Menunggu Jawaban</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Harga Tidak Sesuai Keinginan &gt; Cek Manual</td>
+                  </tr>
+                  <tr>
+                    <td>DIPO</td>
+                    <td>0</td>
+                    <td>berhasil</td>
+                    <td></td>
+                    <td>62</td>
+                    <td>&lt;spasi&gt;telah</td>
+                    <!-- <td>Rp &lt;spasi&gt;</td>
+                    <td>,000</td> -->
+                    <td>SN&lt;spasi&gt;:&lt;spasi&gt;</td>
+                    <td>&lt;spasi&gt;pada</td>
+                    <td>Sukses</td>
+                    <td></td>
+                    <td></td>
+                    <td>tujuan=0[tujuan]</td>
+                    <td></td>
+                  </tr>
+                  <!-- space table bottom -->
+                  <tr>
+                    <td>DIPO</td>
+                    <td>0</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <!-- <td></td>
+                    <td></td> -->
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>DIPO</td>
+                    <td>0</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <!-- <td></td>
+                    <td></td> -->
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>DIPO</td>
+                    <td>0</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <!-- <td></td>
+                    <td></td> -->
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </table>
+              </div>
+
+              <p>
+                Keterangan:
+                <ol>
+                  <li>Ganti <span style="color: red;">&lt;spasi&gt;</span> dengan menekan tombol spasi di keyboard 1 kali .</li>
+                  <li>Ganti <span style="color: red;">5.700,10.700,20.700,25.700,50.700,100.200</span> dengan harga yang Anda inginkan.</li>
+                  <li>Penangkap jawaban ini untuk memproses transaksi semua denom (5, 10, 20, 25, 50, 100 dan lainnya).</li>
+                </ol>
+              </p>
+          </li>
+          <li>
+            Pilih <b>Dial</b> -> klik kanan -> klik <b>Tambah Dial...</b> -> klik <b>Page 1</b> -> di <b>Label</b> misal isi: <b>DIPO-1</b>; <b>Terminal</b> pilih Terminal berisi chip <b>DigiPOS Outlet</b>; <b>Kelompok Jawaban</b> pilih kelompok <b>DIPO</b>; <b>Parameter Parsing</b> isi: pin=1234 (ganti 1234 dengan pin chip Anda); <b>ID/Nomor Sender/Pengirim Provider</b> isi: <b>TELKOMSEL</b>.
+            <p><img src="images/digipos-outlet/dial-page1.PNG" alt="dial page 1" width="55%"></p>
+            Klik <b>Page 2</b> -> di <b>Default Parsing/Command</b> isi: <b>*181*2*1#</b>.
+            <p><img src="images/digipos-outlet/dial-page2.PNG" alt="dial page 2" width="55%"></p>
+          </li>
+          <li>
+            Klik <b>Administrasi</b> -> klik <b>Parsing ke Provider</b> -> di <b>Modul</b> pilih <b>DIPO-1</b> -> <b>Produk</b> isi misal: <b>DT5</b> -> di kolom <b>Perintah</b> kosongkan; terakhir klik tombol <b>Simpan</b>. Perhatikan gambar di bawah ini:
+            <p><img src="images/digipos-outlet/parsing-ke-provider.PNG" alt="parsing ke provider" width="70%"></p>
+          </li>
+          <li>Selesai.</li>
+        </ol>
+      </p>
+
+      <p class="note">
+        <b>Catatan</b>: Dengan setting diatas Reseller dapat bertransaksi tanpa Kode Produk, contoh: 5.081234567800.1234 (<b>BISA TANPA KODE</b>).
       </p>
 
       <div class="bottom-content"></div>
