@@ -915,6 +915,221 @@
         </ol>
       </p>
 
+      <p>
+        Kemudian mungkin muncul pertanyaan dalam hati, kalau harga dinamis sesuai zona, bagaimana Reseller melakukan cek harga? bagaimana mendapatkan harga dinamisnya? apa bukan laba kita nanti yang muncul?
+      </p>
+
+      <p>
+        Di OtomaX hal itu lagi - lagi dapat dilakukan, Reseller dapat melakukan cek harga dan harga yang disajikan adalah harga dinamis sesuai zona, bukan laba kita. Sudah mulai penasaran? yuk mulai dibahas, simak baik - baik.
+      </p>
+
+      <ol>
+        <li>
+          Masuk menu <b>Administrasi</b> -> <b>Produk</b> -> buat Kode Produk seperti petunjuk di bawah ini:
+          <p><img src="images/digipos-outlet/kode-produk-cek-harga.PNG" alt="kode produk cek harga"></p>
+          <p>
+            Keterangan:
+            <ol>
+              <li>
+                Pastikan checkbox <b>Harga Tetap</b> dicentang. Untuk memunculkannya arahkan kursor mouse ke judul tabel <b>Produk</b> -> klik kanan -> pilih <b>Harga Tetap</b>.
+              </li>
+              <li>Pastikan <b>Hrg Beli</b> dan <b>Hrg Jual</b> isi: 0.</li>
+            </ol>
+          </p>
+        </li>
+        <li>
+          Masuk menu <b>Administrasi</b> -> <b>Jawaban dari Provider</b> -> buat penangkap jawaban lagi dengan nama kelompok <b>DIPO-CH</b> seperti di bawah ini:
+          <p>
+            <div style="overflow-x: auto;">
+              <table>
+                <tr>
+                  <th>Kelompok</th>
+                  <th>Prioritas</th>
+                  <th>Kata Kunci Harus Ada</th>
+                  <th>Kata Kunci Tidak Boleh Ada</th>
+                  <th>Awalan Tujuan</th>
+                  <th>Akhiran Tujuan</th>
+                  <th>Awalan Nominal</th>
+                  <th>Akhiran Nominal</th>
+                  <th>Awalan SN/Ref</th>
+                  <th>Akhiran SN/Ref</th>
+                  <th>Status Trx</th>
+                  <th>Expresi Reguler</th>
+                  <th>Perintah</th>
+                  <th>Parameter Balasan</th>
+                  <th>Catatan</th>
+                </tr>
+                <tr>
+                  <td>DIPO-CH</td>
+                  <td>0</td>
+                  <td>Masukkan nomor pelanggan</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>Menunggu Jawaban</td>
+                  <td></td>
+                  <td>[tujuan]</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>DIPO-CH</td>
+                  <td>0</td>
+                  <td>5. Paket Lainnya</td>
+                  <td>4. Isi Pulsa Reguler</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>Menunggu Jawaban</td>
+                  <td></td>
+                  <td>5</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>DIPO-CH</td>
+                  <td>0</td>
+                  <td>4. Isi Pulsa Reguler</td>
+                  <td>5. Paket Lainnya</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>Menunggu Jawaban</td>
+                  <td></td>
+                  <td>4</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>DIPO-CH</td>
+                  <td>0</td>
+                  <td>7. Denom Lainnya</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>Menunggu Jawaban</td>
+                  <td></td>
+                  <td>7</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>DIPO-CH</td>
+                  <td>0</td>
+                  <td>Masukkan Nominal Recharge :</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>Menunggu Jawaban</td>
+                  <td></td>
+                  <td>[nominal]000</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>DIPO-CH</td>
+                  <td>0</td>
+                  <td>Silakan Masukkan PIN :</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>Sukses</td>
+                  <td>pulsa Rp. (?&lt;nominal&gt;\d+).000.*nilai Rp. (?&lt;harga&gt;[.,\d]+) ke.*mor (?&lt;tujuan&gt;\d+)</td>
+                  <td></td>
+                  <td>jawaban=Harga pulsa [nominal].000 nomor [tujuan] adalah Rp. [harga]|sn=Harga Rp. [harga] + biaya ADM</td>
+                  <td>Harga Dinamis akan muncul di SN</td>
+                </tr>
+                <!-- space table bottom -->
+                <tr>
+                  <td>DIPO-CH</td>
+                  <td>0</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>DIPO-CH</td>
+                  <td>0</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>DIPO-CH</td>
+                  <td>0</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </p>
+        </li>
+        <li>
+          Pilih <b>Dial</b> -> klik kanan -> klik <b>Tambah Dial...</b> -> klik <b>Page 1</b> -> di <b>Label</b> misal isi: <b>DIPO-CH</b>; <b>Terminal</b> pilih Terminal berisi chip <b>DigiPOS Outlet</b>; <b>Kelompok Jawaban</b> pilih kelompok <b>DIPO-CH</b>.
+          <p><img src="images/digipos-outlet/depo-ch-dial-page1.PNG" alt="depo-ch dial page1" width="55%"></p>
+          Klik <b>Page 2</b> -> di <b>Default Parsing/Command</b> isi: <b>*181*2*1#</b>.
+          <p><img src="images/digipos-outlet/depo-ch-dial-page2.PNG" alt="depo-ch dial page2" width="55%"></p>
+        </li>
+        <li>
+          Klik <b>Administrasi</b> -> klik <b>Parsing ke Provider</b> -> di <b>Modul</b> pilih <b>DIPO-CH</b> -> <b>Produk</b> isi misal: <b>CDT5</b> -> di kolom <b>Perintah</b> kosongkan; terakhir klik tombol <b>Simpan</b>. Perhatikan gambar di bawah ini:
+          <p><img src="images/digipos-outlet/depo-ch-parsing-ke-provider.PNG" alt="depo-ch parsing ke provider" width="70%"></p>
+        </li>
+        <li>Selesai. Reseller dapat melakukan cek harga dengan mengirimkan CDT5.081234567800.1234 misalnya.</li>
+      </ol>
+
       <div class="bottom-content"></div>
     </div>
 
