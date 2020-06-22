@@ -1291,6 +1291,7 @@
         </ol>
       </p>
 
+      <h2>Cek Harga Dinamis</h2>
       <p>
         Kemudian mungkin muncul pertanyaan dalam hati, kalau harga dinamis sesuai zona, bagaimana Reseller melakukan cek harga? bagaimana mendapatkan harga dinamisnya? apa bukan laba kita nanti yang muncul?
       </p>
@@ -1432,9 +1433,9 @@
                   <td></td>
                   <td></td>
                   <td>Sukses</td>
-                  <td>pulsa Rp. (?&lt;nominal&gt;\d+).000.*nilai Rp. (?&lt;harga&gt;[.,\d]+) ke.*mor (?&lt;tujuan&gt;\d+)</td>
+                  <td>pulsa Rp. (?&lt;nominal&gt;\d+).000.*nilai Rp. (?&lt;hargabeli&gt;[.,\d]+) ke.*mor (?&lt;tujuan&gt;\d+)</td>
                   <td>[]</td>
-                  <td>jawaban=Harga pulsa [nominal].000 nomor [tujuan] adalah Rp. [harga]|sn=Harga Rp. [harga] + biaya ADM</td>
+                  <td>jawaban=Harga pulsa [nominal].000 nomor [tujuan] adalah Rp. [hargabeli]|sn=Harga Rp. [hargabeli] + biaya ADM</td>
                   <td>Harga Dinamis akan muncul di SN</td>
                 </tr>
                 <!-- space table bottom -->
