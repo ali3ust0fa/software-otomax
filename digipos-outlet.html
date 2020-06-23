@@ -1620,6 +1620,214 @@
         <li>Selesai.</li>
       </ol>
 
+      <h2>Metode Transaksi Cepat</h2>
+
+      <p>
+        Sebagian orang mungkin menginginkan transaksi isi Pulsa Reguler <b>DigiPOS Outlet</b> Telkomsel cepat seperti kilat, namun ketika kilat menyambar umumnya menimbulkan kerugian. Jika Anda sudah siap dengan sambaran kilat berikut langkahnya.
+      </p>
+
+      <p>
+        Tata caranya sama seperti yang telah dibahas diatas, poin pentingnya adalah:
+      </p>
+
+      <ol>
+        <li>Siapkan modem yang performanya masih bagus; kalau tidak, akan kena +CUSD: 2 atau +CUSD: 4.</li>
+        <li>Pastikan di <b>Administrasi</b> -> <b>Produk</b> -> kolom <b>Nominal</b> -> terisi sesuai nominal pulsa, contoh: 5, 10, 20, 25, 50, 100 dan lainnya.</li>
+        <li>
+          Di <b>Administrasi</b> -> <b>Jawaban dari Provider</b> -> buat penangkap jawaban seperti di bawah ini:
+          <p>
+            <div style="overflow-x: auto;">
+              <table>
+                <tr>
+                  <th>Kelompok</th>
+                  <th>Prioritas</th>
+                  <th>Kata Kunci Harus Ada</th>
+                  <th>Kata Kunci Tidak Boleh Ada</th>
+                  <th>Awalan Tujuan</th>
+                  <th>Akhiran Tujuan</th>
+                  <th>Awalan Nominal</th>
+                  <th>Akhiran Nominal</th>
+                  <th>Awalan SN/Ref</th>
+                  <th>Akhiran SN/Ref</th>
+                  <th>Status Trx</th>
+                  <th>Expresi Reguler</th>
+                  <th>Perintah</th>
+                  <th>Parameter Balasan</th>
+                  <th>Catatan</th>
+                </tr>
+                <tr>
+                  <td>DIPO</td>
+                  <td>0</td>
+                  <td>Paket Lainnya</td>
+                  <td>Isi Pulsa Reguler</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>Menunggu Jawaban</td>
+                  <td>(?&lt;kodedial&gt;\d+). Paket Lainnya</td>
+                  <td>[kodedial],4,7,[nominal]000</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>DIPO</td>
+                  <td>0</td>
+                  <td>Isi Pulsa Reguler</td>
+                  <td>Paket Lainnya</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>Menunggu Jawaban</td>
+                  <td>(?&lt;kodedial&gt;\d+). Isi Pulsa Reguler</td>
+                  <td>[kodedial],7,[nominal]000</td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>DIPO</td>
+                  <td>0</td>
+                  <td>Silakan Masukkan PIN :</td> <!-- eligible -->
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>Menunggu Jawaban</td>
+                  <td>senilai Rp. (5.400|5.500|5.600|5.700|10.700|20.700|25.700|50.700|100.200)</td>
+                  <td>[pin]</td>
+                  <td></td>
+                  <td>Harga Sesuai Keinginan &gt; Diproses</td>
+                </tr>
+                <tr>
+                  <td>DIPO</td>
+                  <td>1</td>
+                  <td>Silakan Masukkan PIN :</td> <!-- not eligible -->
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>Gagal</td>
+                  <td>senilai Rp. (?&lt;hargabeli&gt;\S+) ke</td>
+                  <td>[]</td>
+                  <td>jawaban=Tidak diproses, [hargabeli] belum tercantum di Expresi Reguler|keterangan=Nomor di luar zona.</td>
+                  <td>Harga Tidak Sesuai Keinginan &gt; Tidak Diproses</td>
+                </tr>
+                <tr>
+                  <td>DIPO</td>
+                  <td>0</td>
+                  <td>Terima kasih permintaan Anda sedang diproses</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>Menunggu Jawaban</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>DIPO</td>
+                  <td>0</td>
+                  <td>berhasil</td>
+                  <td></td>
+                  <td>62</td>
+                  <td>&lt;spasi&gt;telah</td>
+                  <td>Rp&lt;spasi&gt;</td>
+                  <td>,000</td>
+                  <td>SN&lt;spasi&gt;:&lt;spasi&gt;</td>
+                  <td>&lt;spasi&gt;pada</td>
+                  <td>Sukses</td>
+                  <td></td>
+                  <td></td>
+                  <td>tujuan=0[tujuan]</td>
+                  <td></td>
+                </tr>
+                <!-- space table bottom -->
+                <tr>
+                  <td>DIPO</td>
+                  <td>0</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>DIPO</td>
+                  <td>0</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>DIPO</td>
+                  <td>0</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </p>
+          <p>
+            Keterangan:
+            <ol>
+              <li>Ganti <span style="color: red;">&lt;spasi&gt;</span> dengan menekan tombol spasi di keyboard 1 kali .</li>
+              <li>Ganti <span style="color: red;">5.400,5.500,5.600,5.700,10.700,20.700,25.700,50.700,100.200</span> dengan harga yang Anda inginkan.</li>
+            </ol>
+          </p>
+        </li>
+        <li>Pilih modul <b>Dial</b> untuk transaksi <b>DigiPOS Outlet</b> -> klik kanan -> klik <b>Setting</b> -> klik <b>Page 2</b> -> di box: <b>Default Parsing / Command</b> isi: <b>*181*2*1#,[tujuan]</b></li>
+        <li>Selesai.</li>
+      </ol>
+
+      <p class="note">
+        <b>Catatan</b>: Dengan setting diatas, manakala ada perubahan UMB (kode dial) di <b>DigiPOS Outlet</b> bisa mengakibatkan kerugian.
+      </p>
+
       <div class="bottom-content"></div>
     </div>
 
