@@ -1507,6 +1507,119 @@
         <li>Selesai. Reseller dapat melakukan cek harga dengan mengirimkan CDT5.081234567800.1234 misalnya.</li>
       </ol>
 
+      <h2>Sisa Saldo LINKAJA</h2>
+
+      <p>
+        Di balasan sukses transaksi di <b>DigiPOS Outlet</b> secara alami tidak melampirkan sisa saldo. Hal ini tentu akan menyulitkan dalam mengontrol penggunaan saldo. Apakah bisa sesaat setelah transaksi sukses otomatis melakukan cek saldo?
+      </p>
+
+      <p>
+        Ingin seperti itu, Anda dapat melakukan hal berikut ini:
+      </p>
+
+      <ol>
+        <li>
+          Pilih modul <b>Dial</b> untuk transaksi <b>DigiPOS Outlet</b>, pada contoh ini <b>DIPO-1</b> -> klik kanan -> klik <b>Setting</b> -> klik <b>Page 2</b> -> di box: <b>Pause Per Transaksi (detik)</b> misal isi: 5.
+          <p><img src="images/digipos-outlet/dial-page2-pause-per-trx.PNG" alt="dial page2 - pause per trx" width="55%"></p>
+        </li>
+        <li>
+          Pada baris penangkap jawaban dengan <b>Kata Kunci Harus Ada</b>: <b style="color: red;">berhasil</b> di kolom <b>Perintah</b> isi: <b>*181*1*5*1#</b> atau <b>*181#,1,5,1</b>
+          <p>
+            <div style="overflow-x: auto;">
+              <table>
+                <tr>
+                  <th>Kelompok</th>
+                  <th>Prioritas</th>
+                  <th>Kata Kunci Harus Ada</th>
+                  <th>Kata Kunci Tidak Boleh Ada</th>
+                  <th>Awalan Tujuan</th>
+                  <th>Akhiran Tujuan</th>
+                  <th>Awalan Nominal</th>
+                  <th>Akhiran Nominal</th>
+                  <th>Awalan SN/Ref</th>
+                  <th>Akhiran SN/Ref</th>
+                  <th>Status Trx</th>
+                  <th>Expresi Reguler</th>
+                  <th>Perintah</th>
+                  <th>Parameter Balasan</th>
+                  <th>Catatan</th>
+                </tr>
+                <tr>
+                  <td>DIPO</td>
+                  <td>0</td>
+                  <td>berhasil</td>
+                  <td>&nbsp;</td>
+                  <td>62</td>
+                  <td>&lt;spasi&gt;telah</td>
+                  <td>Rp&lt;spasi&gt;</td>
+                  <td>,000</td>
+                  <td>SN&lt;spasi&gt;:&lt;spasi&gt;</td>
+                  <td>&lt;spasi&gt;pada</td>
+                  <td>Sukses</td>
+                  <td></td>
+                  <td>*181*1*5*1#</td>
+                  <td>tujuan=0[tujuan]</td>
+                  <td></td>
+                </tr>
+                <!-- space table bottom -->
+                <tr>
+                  <td>DIPO</td>
+                  <td>0</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>DIPO</td>
+                  <td>0</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>DIPO</td>
+                  <td>0</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+          </p>
+        </li>
+        <li>Selesai.</li>
+      </ol>
+
       <div class="bottom-content"></div>
     </div>
 
