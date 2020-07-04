@@ -15,6 +15,30 @@
                 position: fixed;
                 margin-left: 67.4%;
             }
+
+            /* table style */
+            table {
+                border-collapse: collapse;
+                /* overflow-x: auto; */
+                width: 300%;
+            }
+            
+            table, th, td {
+                border: 1px solid black;
+            }
+            
+            table th {
+                height: 50px;
+            }
+
+            table tr:nth-child(even){
+                background-color: rgb(210, 228, 217);
+            }
+
+            table tr:hover {
+                background-color:pink;
+            }
+            /* end table style */
         </style>
 <!--        GA-->
         <script>
@@ -99,26 +123,312 @@
                 Bagaimana cara setting Vtri Web? Berikut ulasannya...
                 <ol>
                     <li>
-                        Download Query untuk membuat penangkap jawaban Vtri Web dibawah ini (<span style="color:red;">pilih salah satu</span>): <br>
-                        <a href="http://www.mediafire.com/download/wxs7ffczidk08sj/penangkap_jawaban_dengan_sisa_saldo.txt">Download disini</a> untuk membuat penangkap jawaban dengan melampirkan sisa saldo Vtri <br>
-                        <a href="http://www.mediafire.com/download/5l556swwrxacc86/penangkap_jawaban_tanpa_sisa_saldo.txt">Download disini</a> untuk membuat penangkap jawaban tanpa melampirkan sisa saldo Vtri <br><br>
-                    </li>
-                    <li>
-                        Jalankan <b>SQL Server Management Studio</b> -> Klik Tombol <b>Connect</b> <br><br>
-                        <img src="images/vtri-web/pic01.png" width="45%" alt="sql management studio"> <br><br>
-                        
-                        Klik Icon <b>New Query</b> <br><br>
-                        <img src="images/vtri-web/pic02.png" width="50%" alt="sql management studio"> <br><br>
-                        
-                        Dan akan muncul seperti berikut: <br><br>
-                        <img src="images/vtri-web/pic03.png" width="80%" alt="sql management studio"> <br><br>
-                        
-                        <img src="images/vtri-web/pic04.png" width="70%" alt="sql management studio"> <br><br>
-                    </li>
-                    <li>
-                        Masuk Menu <b>Administrasi</b> -> <b>Jawaban dari Provider</b> -> Pada Box: <b>Kelompok</b> ketik: vtri web -> Klik tombol <b>Refresh</b>. Penangkap jawaban yang baru Anda buat tampil: <br><br>
-                        
-                        <img src="images/vtri-web/pic05.png" width="100%" alt="kelompok jawaban"> <br><br>
+                        Buat penangkap jawaban di <b>Administrasi</b> -> <b>Jawaban dari Provider</b> seperti di bawah ini:
+                        <p>
+                            <div style="overflow-x: auto;">
+                                <table>
+                                    <tr>
+                                        <th>Kelompok</th>
+                                        <th>Prioritas</th>
+                                        <th>Kata Kunci Harus Ada</th>
+                                        <th>Kata Kunci Tidak Boleh Ada</th>
+                                        <th>Awalan Tujuan</th>
+                                        <th>Akhiran Tujuan</th>
+                                        <th>Awalan Nominal</th>
+                                        <th>Akhiran Nominal</th>
+                                        <th>Awalan SN/Ref</th>
+                                        <th>Akhiran SN/Ref</th>
+                                        <th>Status Trx</th>
+                                        <th>Expresi Reguler</th>
+                                        <th>Perintah</th>
+                                        <th>Parameter Balasan</th>
+                                        <th>Catatan</th>
+                                    </tr>
+                                    <tr>
+                                        <td>VTRI WEB</td>
+                                        <td>0</td>
+                                        <td>form name=redirect</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Menunggu Jawaban</td>
+                                        <td>name=redirect action=\&quot;(?&lt;direct&gt;.+)\&quot; method|name=redirect action=\&quot;(?&lt;direct&gt;.+)\&quot; target&#9;</td>
+                                        <td>https://v-tri.tri.co.id:8434[direct]</td>
+                                        <td>jawaban=Direct Page</td>
+                                        <td>direct page</td>
+                                    </tr>
+                                    <tr>
+                                        <td>VTRI WEB</td>
+                                        <td>2</td>
+                                        <td>user_login</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Menunggu Jawaban</td>
+                                        <td>&lt;form name=&quot;form1&quot; action=&quot;(?&lt;direct&gt;.+)&quot; method</td>
+                                        <td>[direct]?userName=[user]&amp;passWord=[pass]&amp;language=in</td>
+                                        <td>jawaban=Prepaire Login</td>
+                                        <td>kirim login</td>
+                                    </tr>
+                                    <tr>
+                                        <td>VTRI WEB</td>
+                                        <td>0</td>
+                                        <td>The subscriber has been locked</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Gagal</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>jawaban=The subscriber has been locked</td>
+                                        <td>gagal login</td>
+                                    </tr>
+                                    <tr>
+                                        <td>VTRI WEB</td>
+                                        <td>0</td>
+                                        <td>The entered MSISDN or Password is incorrect</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Gagal</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>jawaban=The entered MSISDN or Password is incorrect</td>
+                                        <td>gagal login</td>
+                                    </tr>
+                                    <tr>
+                                        <td>VTRI WEB</td>
+                                        <td>0</td>
+                                        <td>welcome</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Menunggu Jawaban</td>
+                                        <td></td>
+                                        <td>/insms/dealer/en/Recharge.do?case.menuid=050116</td>
+                                        <td>jawaban=Login Sukses</td>
+                                        <td>login sukses, siap transaksi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>VTRI WEB</td>
+                                        <td>0</td>
+                                        <td>name=&quot;OPERATOR_LOG_ID&quot;</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Menunggu Jawaban</td>
+                                        <td>name=&quot;OPERATOR_LOG_ID&quot; value=&quot;(?&lt;logid&gt;\d+)</td>
+                                        <td>insms/dealer/en/Recharge.do?case.step=3|case.internal.step=3&amp;case.hidden.always=case.menuid&amp;case.menuid=050116&amp;case.hidden.always=OPERATOR_LOG_ID&amp;OPERATOR_LOG_ID=[logid]&amp;case.hidden.always=case.menuid&amp;case.menuid=050116&amp;labTransMsisdn=[tujuan]&amp;labAccountName=RP&amp;labTransMoney=[nominal]%2C000&amp;pin=[pin]&amp;pin_min_len=4&amp;pin_max_len=6&amp;trans_msisdn=[tujuan]&amp;account_name=0&amp;trans_money=[nominal]000&amp;rechargeType=&amp;sub=Lanjut</td>
+                                        <td>jawaban=do Purchase</td>
+                                        <td>beli pulsa</td>
+                                    </tr>
+                                    <tr>
+                                        <td>VTRI WEB</td>
+                                        <td>0</td>
+                                        <td>anda bisa lihat history</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Menunggu Jawaban</td>
+                                        <td>&gt;(?&lt;jawaban&gt;(?&lt;tujuan&gt;\d{8,}) [^&lt;]+ ID \D+(?&lt;sn&gt;\d+))</td>
+                                        <td>/insms/dealer/en/QueryOwnStock.do?case.menuid=050107</td>
+                                        <td></td>
+                                        <td>sukses beli</td>
+                                    </tr>
+                                    <tr>
+                                        <td>VTRI WEB</td>
+                                        <td>0</td>
+                                        <td>tidak dapat diminta berulang kali</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Menunggu Jawaban</td>
+                                        <td>&gt;(?&lt;jawaban&gt;[a-z0-9., ]+)&lt;/font&gt;</td>
+                                        <td>/insms/dealer/en/QueryOwnStock.do?case.menuid=050107</td>
+                                        <td>sn=[trxid]</td>
+                                        <td>sukses beli</td>
+                                    </tr>
+                                    <tr>
+                                        <td>VTRI WEB</td>
+                                        <td>200</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Gagal</td>
+                                        <td>&lt;td nowrap align=&quot;center&quot;&gt;.+&lt;font.+\&gt;(?&lt;keterangan&gt;.+)&lt;/font&gt;</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>gagal beli</td>
+                                    </tr>
+                                    <tr>
+                                        <td>VTRI WEB</td>
+                                        <td>0</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Sukses</td>
+                                        <td>nama denominasi.+nilai.+brand.+&gt;rp&lt;/td&gt;\D*(?&lt;saldoakhir&gt;[0-9,. ]+)</td>
+                                        <td></td>
+                                        <td>jawaban=[tujuan] diIsi Ulang dengan [nominal]000 Rupiah.Anda bisa lihat history berdasarkan ID Transaksi:[sn] Sisa Saldo [saldoakhir]</td>
+                                        <td>sukses setelah cek saldo</td>
+                                    </tr>
+                                    <tr>
+                                        <td>VTRI WEB</td>
+                                        <td>0</td>
+                                        <td>
+                                            Sistem error, Silahkan Kontak HCPT untuk Teknikal Support
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Menunggu Jawaban</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>jawaban=Error, Mohon ganti password</td>
+                                        <td>minta ganti password</td>
+                                    </tr>
+                                    <tr>
+                                        <td>VTRI WEB</td>
+                                        <td>0</td>
+                                        <td>
+                                            &lt;table width=&quot;80%&quot; border=&quot;0&quot; align=&quot;center&quot; cellpadding=&quot;0&quot; cellspacing=&quot;0&quot; class=&quot;m_t10&quot;&gt; &lt;tr&gt; &lt;/tr&gt;
+                                        </td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Menunggu Jawaban</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>jawaban=Error, Mohon ganti password</td>
+                                        <td>minta ganti password</td>
+                                    </tr>
+                                    <tr>
+                                        <td>VTRI WEB</td>
+                                        <td>0</td>
+                                        <td>admin_i_title</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>Menunggu Jawaban</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>jawaban=Error, Mohon cek saldo</td>
+                                        <td>error</td>
+                                    </tr>
+                                    <!-- space table bottom -->
+                                    <tr>
+                                        <td>VTRI WEB</td>
+                                        <td>0</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>VTRI WEB</td>
+                                        <td>0</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>VTRI WEB</td>
+                                        <td>0</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </p>
+                        <p>
+                            <a href="http://www.mediafire.com/download/wxs7ffczidk08sj/penangkap_jawaban_dengan_sisa_saldo.txt" style="color: #fcfbfc;">Ref#1</a>
+                            <br>
+                            <a href="http://www.mediafire.com/download/5l556swwrxacc86/penangkap_jawaban_tanpa_sisa_saldo.txt" style="color: #fcfbfc;">Ref#2</a>
+                        </p>
                     </li>
                     <li>
                         Selanjutnya ke Modul <b>IP Client</b> -> Klik kanan -> Klik <b>Tambah IP...</b> <br><br>
