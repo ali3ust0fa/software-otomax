@@ -85,6 +85,58 @@
             
             <p class="change-log">
 
+                4.0.0 @04-Jul-2020<br>
+                - Dibutuhkan Runtime .Net Framework 4.5 (atau terbaru 4.8).<br>
+                Terbaru: https://dotnet.microsoft.com/download/dotnet-framework<br>
+                4.5: https://www.microsoft.com/en-us/download/details.aspx?id=30653<br>
+                - Dibutuhkan Selenium WebDriver dan ChromeDriver untuk modul internet banking Mandiri Online dan Mandiri Bisnis.<br>
+                WebDriver: https://selenium.dev/downloads/<br>
+                ChromeDriver: https://chromedriver.chromium.org/downloads<br>
+                - New: Produk fisik jika kosong akan otomatis dialihkan ke modul lain (jika ada parsing). Untuk edisi standard atau lebih tinggi.<br>
+                - New: Bisa memilih modul tertentu saat mengirim ulang semua transaksi pending modul IM Hybrid atau IP.<br>
+                - New: Koding ulang Trx Processor (TrxMan) untuk peningkatan kecepatan.<br>
+                - New: Koding ulang Outbox Processor untuk peningkatan kecepatan.<br>
+                - New: Koding ulang Inbox Processor untuk peningkatan kecepatan dan keamanan.<br>
+                - New: Koding ulang library Jabber/XMPP.<br>
+                - New: Internet Banking kini bisa dinikmati juga untuk edisi Standard dan Pro.<br>
+                - New: Mandiri Online (berbasis ChromeDriver) dan Mandiri Bisnis.<br>
+                - New: Otomatis mengingat layout (urutan dan lebar) kolom pada tabel-tabel.<br>
+                - New: Auto kirim ulang bisa diatur untuk masing-masing modul. Untuk menjaga beban server di sisi supplier, interval tercepat adalah 10 detik.<br>
+                - New: Optimasi kecepatan saat refresh datagrid.<br>
+                - New: Data mutasi bank dilengkapi kolom nomor rekening.<br>
+                - New: OtomaX akan berusaha membagi rata jumlah transaksi pada parsing yang memiliki prioritas sama.<br>
+                - New: Seting untuk mengheningkan jendela-jendela Log Modul sehingga tidak popup dan beep. Setting - Lain-lain - SilentModuleLogs.<br>
+                - New: Mengambil tiket deposit melalui IP. Format: ?cmd=ticket&memberid=[memberid]&amount=100000&sign=[sign]<br>
+                Format alternatif: ?cmd=ticket&memberid=[memberid]&amount=100000<br>
+                - New: Metode Standard USSD (GSM 7bit encoding) agar mendukung lebih banyak modem.<br>
+                - New: Alamat IP untuk reseller bisa lebih dari 1 (satu), pisahkan dengan tanda koma. Kosong berarti IP tidak dicek.<br>
+                - New: Pada seting lain-lain, CutoffStart dan CutoffEnd = periode jam cutoff, CutoffMessage = isi parameter "keterangan" pada balasan.<br>
+                - New: "TujuanAdaHuruf" pada seting lain-lain agar tujuan transaksi bisa mengandung huruf. Untuk edisi Ultimate.<br>
+                - New: Pemanfaatan "PanjangMinimalTujuan" pada seting lain-lain agar bisa digunakan saat mengenali format dan jawaban supplier.<br>
+                - New: Kolom Cutoff di tabel Provider. Untuk edisi Ultimate.<br>
+                - New: Kolom Akses pada tabel Pengirim.<br>
+                - New: Sistem unit. Untuk edisi Ultimate.<br>
+                - New: Kolom Grup di tabel Markup Produk.<br>
+                - New: IP Center untuk semua edisi. Edisi dibawah Enterprise hanya bisa proses report (callback) transaksi.<br>
+                - New: Kolom Saldo Supplier di tabel transaksi.<br>
+                - New: Modul Terkait di setting terminal sehingga SMS bisa juga diproses oleh modul IM, IP, atau lainnya. Untuk edisi Standard atau lebih tinggi.<br>
+                - New: Variabel HTTP GET/POST bisa dipakai di perintah parsing. Tambahkan awalan var_ pada nama variabelnya. Untuk edisi Ultimate.<br>
+                - New: Input Password IP, IP Address, dan URL Report di form pendaftaran.<br>
+                - New: Pengamanan IP Center dari serangan brute force.<br>
+                - New: Karena alasan keamanan, seting tanpa SIGN di IP Center dihilangkan. Diganti dengan seting secara individual di tabel reseller.<br>
+                - New: HTTP Request Timeout pada seting modul (page 3) IP Client.<br>
+                - New: HTTP URL Report pada seting modul (page 3) IP Client.<br>
+                - New: Cek transaksi dobel dengan refid juga mencocokkan kode produk.<br>
+                - Fix: Sekarang pemakaian Voucher Fisik diprioritaskan berdasarkan tanggal kadaluarsa dan tanggal entri.<br>
+                - Fix: Harga beli 0 pada transaksi fisik melalui IP Center.<br>
+                - Fix: Tidak menghapus data markup saat hapus reseller.<br>
+                - Fix: Kode Produk bisa menampung 20 karakter.<br>
+                - Fix: Centang "Not allow to change markup" diubah menjadi "Tidak bisa ubah markup". Menolak proses format UbahMarkup dan UbahMarkupProduk.<br>
+                - Fix: Save spreadsheet menyimpan tanggal dengan format jam lokal.<br>
+                - Fix: Parsing Auto Off saat harga naik hanya dilakukan jika seting modul Update harga parsing dicentang.<br>
+                - Fix: Tiket dari APK apabila settle tidak ada outbox.<br>
+                - Fix: Internet Banking BRI. Karena menggunakan komponen IE, mungkin tidak bisa bekerja di beberapa OS Windows (lama).<br><br>
+
                 3.9.1 @14-Aug-2019<br>
                 - Fix: Cannot insert value NULL into column 'bonus' saat tambah Grup Reseller.<br>
                 - Fix: Not allow to change markup di tabel grup reseller belum bekerja dengan baik.<br>
