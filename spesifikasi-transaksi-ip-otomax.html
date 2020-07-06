@@ -135,6 +135,12 @@
                                 <td>trx?memberID=[memberid]&amp;product=[product]&amp;dest=[tujuan]&amp;refID=[trxid]&amp;sign=[sign]&amp;check=1</td>
                             </tr>
                             <tr>
+                                <td>Mengambil Tiket Deposit <sup style="color: red;">(**)</td>
+                                <td>
+                                    ?cmd=ticket&amp;memberid=[memberid]&amp;amount=100000&amp;sign=[sign] atau ?cmd=ticket&amp;memberid=[memberid]&amp;amount=100000
+                                </td>
+                            </tr>
+                            <tr>
                                 <td>Rumus Sign</td>
                                 <td>encodeBase64(sha1("OtomaX|" + memberId + "|" + product + "|" + dest + "|" + refID + "|" + pin + "|" + password))</td>
                             </tr>
@@ -142,6 +148,10 @@
 
                         <sup style="color: red; font-style: italic;">
                             (*) Khusus untuk mitra atau sedoter (pengambil stok) yang menggunakan software OtomaX.
+                        </sup>
+                        <br>
+                        <sup style="color: red; font-style: italic;">
+                            (**) Tersedia mulai versi 4.0.0.
                         </sup>
 
                         <br><br>
