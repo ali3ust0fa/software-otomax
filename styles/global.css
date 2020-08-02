@@ -207,19 +207,11 @@ div#content p.note {
 
 div#content p.note {
   background-color: #9dcdbf;
-  padding: 10px;
-  border: 3px solid #93a368;
+  padding: 20px;
   border-radius: 5px;
   font-style: italic;
   color: white;
-}
-
-div#content p.note:hover {
-  background-color: #9dcdbf;
-  padding: 10px;
-  border: 3px solid #93a368;
-  font-style: italic;
-  color: white;
+  border-left: solid 20px green;
 }
 
 div#content p.note a {
