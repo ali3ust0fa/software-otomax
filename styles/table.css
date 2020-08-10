@@ -1,0 +1,49 @@
+/* common table */
+
+table.common,
+table.common th,
+table.common td {
+  border: 1px solid goldenrod;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+table.common th {
+  background-color: goldenrod;
+  color: white;
+  height: 40px;
+}
+
+table.common .th-style {
+  text-align: center;
+  padding: 10px;
+  width: 50%;
+}
+
+/* faq table */
+
+table.faq,
+table.faq th,
+table.faq td {
+  border: 1px solid salmon;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+table.faq th {
+  background-color: salmon;
+  color: white;
+  height: 40px;
+}
+
+table.faq td {
+  padding: 10px;
+  text-align: left;
+  color: darksalmon;
+}
+
+table.faq .th-style {
+  text-align: center;
+  padding: 10px;
+  width: 50%;
+}

@@ -1,117 +1,89 @@
 <!DOCTYPE html>
 <html lang="id">
-    <head>
-        <title>Setting Aplikasi Android | OtomaX - Software Server Pulsa</title>
-        <meta charset="utf-8">
-<!--        <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-        <link rel="stylesheet" type="text/css" href="styles/global.css" />
-        <style>
-            table {
-                width: 70%;
-                border-collapse: collapse;
-/*                text-align: center;*/
-            }
-            
-            table th {
-                background-color: black;
-                color: bisque;
-                height: 40px;
-                padding: 10px;
-            }
-            
-            table tr:hover {
-                background-color: dimgray;
-                color: darkorange;
-            }
-            
-            table tr:nth-child(even){
-                background-color: darkgray;
-            }
-            
-            table td {
-                padding: 10px;
-            }
-            
-            table tr td.key {
-                color: green;
-            }
-            
-            .format {
-                font-size: 20px;
-            }
 
-/*            for table in icon alternatif*/
-            table.icon tr {
-                background-color: #EEEEEE;
-                color: brown;
-            }
-            
-/*          for coloring text to blue */
-            .color-blue {
-                color: blue;
-            }
-            
-/*            for table in faq*/
-            .faq {
-                border: 1;
-                width: 95%;
-                margin: auto;
-                background-color: cadetblue;
-                color: azure;
-            }
-            
-            .faq-td {
-                text-align: center;
-            }
-        </style>
-        <!--        GA-->
-        <script>
-            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-            })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+<head>
+    <title>Setting Aplikasi Android | OtomaX - Software Server Pulsa</title>
+    <meta charset="utf-8">
+    <!--        <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <link rel="stylesheet" type="text/css" href="styles/global.css" />
+    <link rel="stylesheet" type="text/css" href="styles/table.css" />
+    <style>
+        .format {
+            font-size: 20px;
+        }
 
-            ga('create', 'UA-80250152-1', 'auto');
-            ga('send', 'pageview');
+        table.icon {
+            margin-left: auto;
+            margin-right: auto;
+            border-color: #b7daf8;
+            border-collapse: collapse;
+        }
 
-        </script>
-            <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div id="banner-jualan">
-            <a href="aplikasi-android.html#pemesanan" target="_blank"><img src="images/banner/penjualan-apk.png" width=""></a>
-        </div>
-        
-<!--        begin promo-->
-<!--
+        table.icon,
+        table.icon th,
+        table.icon td {
+            border: 1px solid salmon;
+            padding: 10px;
+        }
+
+        /*          for coloring text to blue */
+        .color-blue {
+            color: blue;
+        }
+    </style>
+    <!--        GA-->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-80250152-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="banner-jualan">
+        <a href="aplikasi-android.html#pemesanan" target="_blank"><img src="images/banner/penjualan-apk.png"
+                width=""></a>
+    </div>
+
+    <!--        begin promo-->
+    <!--
         <div id="promo">
             <a href="promo10.html"><img src="images/promo/hari-diskon-terakhir2.png" style="width:100%; height:160%;"></a>
         </div>
 -->
-<!--        end promo-->
-        <div id="split-header">
-            <marquee style="padding:6px;">Selamat Datang di Virtual Office M.A.M (Reseller OtomaX Original Indonesia), melayani: Pembelian Baru, Upgrade, Iuran, Ganti SIMCard, Balik Nama dan Support Premium OtomaX</marquee>
+    <!--        end promo-->
+    <div id="split-header">
+        <marquee style="padding:6px;">Selamat Datang di Virtual Office M.A.M (Reseller OtomaX Original Indonesia),
+            melayani: Pembelian Baru, Upgrade, Iuran, Ganti SIMCard, Balik Nama dan Support Premium OtomaX</marquee>
+    </div>
+
+    <div id="header">
+        <div>
+            <img src="images/logo_otomax.png">
         </div>
-        
-        <div id="header">
-            <div>
-                 <img src="images/logo_otomax.png" >
-            </div>
-        </div>
-        
-        <div id="sidebar">
-            <ul class="nav">
-                <li><a href="home.html">Home</a></li>
-                <li><a href="download.html">Download</a></li>
-                <li><a href="price-plan.html">Price & Plan</a></li>
-                <li><a href="documentation.html">Documentation</a></li>
-                <li><a href="change-log.html">Change Log</a></li>
-                <li><a href="purchase.html">Purchase</a></li>
-                <li><a href="support.html">Support</a></li>
-            </ul>
-            
-<!--            begin widget yahoo-->
-<!--
+    </div>
+
+    <div id="sidebar">
+        <ul class="nav">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="download.html">Download</a></li>
+            <li><a href="price-plan.html">Price & Plan</a></li>
+            <li><a href="documentation.html">Documentation</a></li>
+            <li><a href="change-log.html">Change Log</a></li>
+            <li><a href="purchase.html">Purchase</a></li>
+            <li><a href="support.html">Support</a></li>
+        </ul>
+
+        <!--            begin widget yahoo-->
+        <!--
             <div style="color:yellow; font-size:10pt; text-align:center; text-decoration:none;">
                 <a href="ymsgr:sendIM?mam_service"><img src="http://opi.yahoo.com/online?u=mam_service&amp;m=g&amp;t=2&amp;l=us"/></a>
                 <br>
@@ -120,590 +92,688 @@
                 HP/WA: +628-5258-1112-30
             </div>
 -->
-<!--            end widget yahoo-->
-            
-<!--            begin widget telegram-->
-            <div style="color:yellow; font-size:10pt; text-align:center;">
-                <a href="http://telegram.me/mam_service"  target="_blank"><img src="images/Telegram-icon%2048x48.png"></a>
-                <br>
-                Telegram:
-                <br>
-                @mam_service
-                <br><br>
-                HP | WA | TG:
-                <br>
-                +628-5258-1112-30
-            </div>
-<!--            end widget telegram-->
-            
+        <!--            end widget yahoo-->
+
+        <!--            begin widget telegram-->
+        <div style="color:yellow; font-size:10pt; text-align:center;">
+            <a href="http://telegram.me/mam_service" target="_blank"><img src="images/Telegram-icon%2048x48.png"></a>
+            <br>
+            Telegram:
+            <br>
+            @mam_service
+            <br><br>
+            HP | WA | TG:
+            <br>
+            +628-5258-1112-30
         </div>
+        <!--            end widget telegram-->
+
+    </div>
 
 
-        
-        <div id="content">
-            <h1>Setting Aplikasi Android</h1>
 
-            <p>
-                Setelah memesan <b>Aplikasi Android</b> OtomaX dan telah jadi, Anda perlu melakukan beberapa langkah. Namun apabila Anda belum mempunyai <b>Aplikasi Android</b> OtomaX silahkan memesan dahulu <a href="aplikasi-android.html" target="_blank">klik disini</a>. Berikut ini langkah yang perlu Anda lakukan:
-                <ol>
-                    <li>
-                        Pastikan telah menggunakan OtomaX v3.9.0 atau lebih tinggi; kalau belum, update dahulu <a href="bagaimana-melakukan-update-otomax.html" target="_blank">klik disini</a>.
-                    </li>
-                    <li>
-                        Pastikan telah menggunakan OtomaX Online Backup v3.22 atau lebih tinggi; kalau belum, update dahulu <a href="http://forum.orisinil.com/index.php/topic,17896.msg300031.html#msg300031" target="_blank">klik disini</a>.
-                    </li>
-                    <li>
-                        Pastikan semua checkbox <b>Table to backup</b> di OtomaX Online Backup -> <b>Settings</b> telah dicentang, perhatikan gambar di bawah ini:
-                        <p><img src="images/apk/ob-setting.png" alt="ob setting table to backup" width="35%"></p> 
-                    </li>
-                    <li>
-                        Buka <b>OtomaX Online Backup</b> > Klik 3 tanda titik bertumpuk di sisi kiri atas > Klik <b>Manage APK</b>. Disini Anda dapat mengatur Aplikasi Android OtomaX. Perhatikan gambar di bawah ini:
-                        
-                        <p><img src="images/apk/manage-apk-lokasi.png" alt="manage apk" width="20%"></p>
-                        
-                    </li>
-                    <li>
-                        Berikut ini kegunaan pilihan setting di <b>Manage APK...</b>
-                        <br><br>
-                        <ol type="I">
-                            <li><b>General.</b>
-                              <p><img src="images/apk/manage-apk-general.png" alt="manage apk general" width="90%"></p>
-                            </li>
-                                <ol type="a">
-                                    <li><b>Disable APK service</b>.
-                                        <br>
-                                        Mematikan layanan APK sehingga member tidak bisa login.</li>
-                                    <li><b>Disable new member registration</b>.
-                                        <br>
-                                        Mematikan fungsi pendaftaran member baru sehingga calon member tidak bisa mendaftar.</li>
-                                    <li><b>Disable forgot pin</b>.
-                                        <br>
-                                        Mematikan fungsi pemulihan pin ketika member lupa.</li>
-                                    <li><b>Hide menu text</b>.
-                                        <br>
-                                        Menyembunyikan teks pada menu produk. Biasanya digunakan jika teks sudah terdapat pada icon agar tidak dobel teks.</li>
-                                    <li><b>Login banner</b>
-                                        <br>
-                                        Opsional. Banner yang ditampilkan pada halaman login. Kosongkan jika menggunakan default banner APK. Apabila ingin menggunakan banner milik Anda sendiri, isi dengan URL yang menuju ke banner Anda, contoh: https://domain.com/banner_login.png, perhatikan gambar di bawah ini:
-                                        
-                                        <p><img src="images/apk/banner_login.png" alt="banner_login" width="90%"></p>
-                                        
-                                        <p class="color-blue">Sebagai informasi, ukuran ideal <b>Login banner</b> kisaran 360 x 120 px dengan format *.PNG. Untuk mendapatkan banner yang bagus ketika dipasang di APK, silahkan hubungi penyedia jasa desain grafis asset gambar APK.</p>
-                                        </li>
-                                    <li><b>Strings (loaded before login)</b>.
-                                        <br>
-                                        Optional. Untuk mengganti String (untaian kata) yang terletak sebelum login.</li>
-                                    <li><b>Strings (loaded after login)</b>.
-                                        <br>
-                                        Optional. Untuk mengganti String (untaian kata) yang terletak setelah login.</li>
-                                        <br>
-                                        2 Strings (f dan g) diatas dapat digunakan untuk mengganti teks kotak input, tombol dan lain - lain pada APK dengan format:
-                                         
-                                        <p><code class="format"><span style="color: green">Key</span><span style="color: red">=</span><span style="color: blue">Teks</span></code></p>
-                                        
-                                        <p><span style="color: green">Key</span> tidak dapat diganti (besar kecil huruf, ejaan berpengaruh), sementara <span style="color: blue">Teks</span> dapat diganti sesuai keinginan Anda; serta diantara keduanya (<span style="color: green">Key</span> dan <span style="color: blue">Teks</span>) terdapat tanda <span style="color: red">=</span>. Tambahkan baris baru atau tanda \n untuk mengganti Strings lebih dari 1. Berikut ini tabel <span style="color: green">Key</span> yang tersedia beserta contoh <span style="color: blue">Teks</span>-nya:</p>
+    <div id="content">
+        <h1>Setting Aplikasi Android</h1>
 
-                                        <table>
-                                           <caption><b>Strings (loaded before login)</b></caption>
-                                            <tr>
-                                                <th>Key</th>
-                                                <th>Teks</th>
-                                            </tr>
-                                            <tr>
-                                                <td class="key">nomorHp</td>
-                                                <td>Mobile Number</td>
-                                            </tr>
-                                            <tr>
-                                                <td  class="key">pin</td>
-                                                <td>Password</td>
-                                            </tr>
-                                            <tr>
-                                                <td  class="key">login</td>
-                                                <td>Sign In</td>
-                                            </tr>
-                                            <tr>
-                                                <td  class="key">daftarSini</td>
-                                                <td>Not a member? Register here</td>
-                                            </tr>
-                                            <tr>
-                                                <td  class="key">hubungiKami</td>
-                                                <td>Contact us at…</td>
-                                            </tr>
-                                            <tr>
-                                                <td  class="key">namaLengkap</td>
-                                                <td>Fullname</td>
-                                            </tr>
-                                            <tr>
-                                                <td  class="key">alamat</td>
-                                                <td>Address</td>
-                                            </tr>
-                                            <tr>
-                                                <td  class="key">infoOtp</td>
-                                                <td>We are sending OTP</td>
-                                            </tr>
-                                            <tr>
-                                                <td  class="key">daftar</td>
-                                                <td>Register</td>
-                                            </tr>
-                                            <tr>
-                                                <td  class="key">enterOtp</td>
-                                                <td>Enter OTP</td>
-                                            </tr>
-                                            <tr>
-                                                <td  class="key">konfirm</td>
-                                                <td>Confirm</td>
-                                            </tr>
-                                        </table>
-                                        
-                                        <br><br>
-                                           
-                                        <table>
-                                           <caption><b>Strings (loaded after login)</b></caption>
-                                            <tr>
-                                                <th>Key</th>
-                                                <th>Teks</th>
-                                            </tr>
-                                            
-                                            <tr>
-                                                <td  class="key">formatRp</td>
-                                                <td>$</td>
-                                            </tr>
-                                            <tr>
-                                                <td  class="key">naviHome</td>
-                                                <td>Home</td>
-                                            </tr>
-                                            <tr>
-                                                <td  class="key">naviHistory</td>
-                                                <td>History</td>
-                                            </tr>
-                                            <tr>
-                                                <td  class="key">naviStatement</td>
-                                                <td>Statement</td>
-                                            </tr>
-                                            <tr>
-                                                <td  class="key">naviLogout</td>
-                                                <td>Sign out</td>
-                                            </tr>
-                                            <tr>
-                                                <td  class="key">topup</td>
-                                                <td>Topup</td>
-                                            </tr>
-                                            <tr>
-                                                <td  class="key">pilihProduk</td>
-                                                <td>Choose product</td>
-                                            </tr>
-                                            <tr>
-                                                <td  class="key">tujuan</td>
-                                                <td>Destination number</td>
-                                            </tr>
-                                            <tr>
-                                                <td  class="key">produk</td>
-                                                <td>Product</td>
-                                            </tr>
-                                            <tr>
-                                                <td  class="key">quantity</td>
-                                                <td>Amount</td>
-                                            </tr>
-                                            <tr>
-                                                <td  class="key">beli</td>
-                                                <td>Buy</td>
-                                            </tr>
-                                            <tr>
-                                                <td  class="key">detilTransaksi</td>
-                                                <td>Transaction Detail</td>
-                                            </tr>
-                                            <tr>
-                                                <td  class="key">harga</td>
-                                                <td>Price</td>
-                                            </tr>
-                                            <tr>
-                                                <td  class="key">keterangan</td>
-                                                <td>Remarks</td>
-                                            </tr>
-                                            <tr>
-                                                <td  class="key">cetakStruk</td>
-                                                <td>Print receipt</td>
-                                            </tr>
-                                        </table>
+        <p>
+            Setelah memesan <b>Aplikasi Android</b> OtomaX dan telah jadi, Anda perlu melakukan beberapa langkah. Namun
+            apabila Anda belum mempunyai <b>Aplikasi Android</b> OtomaX silahkan memesan dahulu <a
+                href="aplikasi-android.html" target="_blank">klik disini</a>. Berikut ini langkah yang perlu Anda
+            lakukan:
+        <ol>
+            <li>
+                Pastikan telah menggunakan OtomaX v3.9.0 atau lebih tinggi; kalau belum, update dahulu <a
+                    href="bagaimana-melakukan-update-otomax.html" target="_blank">klik disini</a>.
+            </li>
+            <li>
+                Pastikan telah menggunakan OtomaX Online Backup v3.22 atau lebih tinggi; kalau belum, update dahulu <a
+                    href="http://forum.orisinil.com/index.php/topic,17896.msg300031.html#msg300031" target="_blank">klik
+                    disini</a>.
+            </li>
+            <li>
+                Pastikan semua checkbox <b>Table to backup</b> di OtomaX Online Backup -> <b>Settings</b> telah
+                dicentang, perhatikan gambar di bawah ini:
+                <p><img src="images/apk/ob-setting.png" alt="ob setting table to backup" width="35%"></p>
+            </li>
+            <li>
+                Buka <b>OtomaX Online Backup</b> > Klik 3 tanda titik bertumpuk di sisi kiri atas > Klik <b>Manage
+                    APK</b>. Disini Anda dapat mengatur Aplikasi Android OtomaX. Perhatikan gambar di bawah ini:
 
-                                        <br>
-                                        Misalnya, Anda ingin mengganti teks: nomor hp dan teks: tombol di halaman login, maka pada box: <b>Strings (loaded before login)</b> isi dengan:
-                                        
-                                        <p>
-                                            <code>nomorHp=Mobile Number</code>
-                                            <br>
-                                            <code>login=Masuk</code>
-                                        </p>
-                                        
-                                        Perhatikan gambar di bawah ini:
-                                        <p><img src="images/apk/strings.png" alt="strings" width="90%"></p>
-                                        
-                                    <li><b>Slider banners.</b>
-                                        <br>
-                                        Menampilkan banner pada halaman utama. Banner ditampilkan dengan menggunakan format:
-                                        <p><code class="format"><span style="color: green">Teks</span><span style="color: red">|</span><span style="color: blue">Url</span></code></p>
-                                            
-                                        Tambahkan baris baru untuk menambahkan banner lebih dari 1. Contoh:
-                                        <p>
-                                            <code><span style="color: green">slider banner #1</span> <span style="color: red">|</span> <span style="color: blue">https://domain.com/slider-banner-1.png</span></code><br><code><span style="color: green">slider banner #2</span> <span style="color: red">|</span> <span style="color: blue">https://domain.com/slider-banner-2.png</span></code>
-                                        </p>
-                                        
-                                        <p>
-                                            <code>slider banner #1</code> dan <code>slider banner #2</code> adalah <span style="color: green">Teks</span>, adapun <code>https://domain.com/slider-banner-1.png</code> dan <code>https://domain.com/slider-banner-2.png</code> adalah <span style="color: blue">Url</span> yang mengarah ke lokasi penyimpanan banner; serta diantara keduanya (<span style="color: green">Teks</span> dan <span style="color: blue">Url</span>) terdapat tanda <span style="color: red">|</span>. Perhatikan gambar di bawah ini:
-                                        </p>
-                                        
-                                        <p><img src="images/apk/slider-banner.png" alt="slider banner" width="90%"></p>
-                                        
-                                        <p class="color-blue">Sebagai informasi, ukuran ideal <b>Slider banners</b> kisaran 360 x 120 px dengan format *.PNG. Untuk mendapatkan banner yang bagus ketika dipasang di APK, silahkan hubungi penyedia jasa desain grafis asset gambar APK.</p>
-                                    </li>
-                                </ol>
-                                
-                            <li><b>Menu.</b>
-                                <p style="color: red">Harap diperhatikan dengan seksama dan teliti gambar contoh pembuatan <b>Menu</b> yang akan tampil di <b>Aplikasi Android</b> OtomaX di bawah ini:</p>
-                                <p><img src="images/apk/manage-apk-menu-isian.png" alt="manage apk menu" width="100%"></p>
-                            </li>
-                                <ol type="a">
-                                    <li><b>Kode.</b>
-                                        <br>
-                                        Kode unik untuk menu, misal isi dengan: A, B, C, D atau lainnya.</li>
-                                    <li><b>Label.</b>
-                                        <br>
-                                        Teks yang akan ditampilkan di bawah icon menu. Dapat disembunyikan dengan mencentang cekbox: <b>Hide menu text</b>. Misal isi dengan: Pulsa, Paket Data, Token, Telkom atau lainnya.</li>
-                                    <li><b>Order.</b>
-                                        <br>
-                                        Urutan tampil menu. Isi dengan 1, 2, 3 dan seterusnya.</li>
-                                    <li><b>Show Qty.</b>
-                                        <br>
-                                        Menampilkan isian Quantity.</li>
-                                    <li><b>Postpaid.</b>
-                                        <br>
-                                        Untuk transaksi jenis postpaid/billing. Beri centang untuk menu produk PLN Paskabayar, Tagihan Telkom dan yang sejenis.</li>
-                                    <li><b>Hide tujuan.</b>
-                                        <br>
-                                        Menyembunyikan isian tujuan.</li>
-                                    <li><b>Hide produk.</b>
-                                        <br>
-                                        Menyembunyikan isian produk.</li>
-                                    <li><b>Icon</b>
-                                        <br>
-                                        Ikon yang ditampilkan pada menu. Tersedia icon built-in yang dapat digunakan, kode iconnya: <code style="color: red">bank, bpjs, emoney, fisik, flight, game, gojek, gopay, grab, ovo, pdam, phone, pln, postpaid, telkom, train, wifi</code>.
-                                        
-                                        <p><img src="images/apk/icon_builtin_2.png" alt="icon built-in" width="60%"></p>
-                                        
-                                        Misalnya Anda ingin menggunakan icon pln, maka masukkan kode icon <code style="color: red;">pln</code> di kolom <b>Icon</b>; ingin menggunakan icon phone, maka masukkan kode icon <code style="color: red;">phone</code> di kolom <b>Icon</b>; dan seterusnya.
-                                        
-                                        <p>
-                                            <b>Icon</b> dapat juga diisi dengan icon milik Anda sendiri dengan memasukkan URL yang mengarah ke lokasi icon Anda, contoh: https://domain.com/icon_phone.png, perhatikan gambar di bawah ini:
-                                        </p>
-                                        
-                                        <p><img src="images/apk/icon-url.png" alt="icon" width="100%"></p>
-                                        
-                                        <p class="color-blue">Sebagai informasi, ukuran ideal untuk <b>Icon</b> menu kisaran 72 x 72 px dengan format *.PNG serta mendukung alpha/transparan. Untuk mendapatkan Icon yang bagus ketika dipasang di APK, silahkan hubungi penyedia jasa desain grafis asset gambar APK.</p>
-                                    </li>
-                                    <li><b>Activity Title.</b>
-                                        <br>
-                                        Judul yang ditampilkan di halaman setelah menu diklik.</li>
-                                    <li><b>Kode Operator</b>
-                                        <br>
-                                        Daftar kode operator yang masuk ke kelompok menu ini. Pisahkan kode dengan koma.</li>
-                                    <li><b>Kode Produk</b>
-                                        <br>
-                                        Daftar kode produk yang masuk ke kelompok menu ini. Pisahkan kode dengan koma.</li>
-                                    <li><b>Number Buttons</b>
-                                        <br>
-                                        Pilihan tombol nomor yang bisa diklik untuk isian Produk atau Quantity. Misal diisi 5, 10, 20, 25 dan lain sebagainya.</li>
-                                    <li><b>Target Url</b>
-                                        <br>
-                                        Jika diisi, aplikasi akan menuju url tersebut saat menu diklik. Contoh: isi dengan url yang mengarah ke halaman web berisi news.</li>
-                                    <li><b>Tujuan Hint</b>
-                                        <br>
-                                        Teks petunjuk yang muncul pada isian tujuan dan akan hilang ketika tujuan diisi.</li>
-                                    <li><b>Produk Hint</b>
-                                        <br>
-                                        Teks petunjuk yang muncul pada isian produk dan akan hilang saat produk diisi.</li>
-                                    <li><b>Quantity Hint</b>
-                                        <br>
-                                        Teks petunjuk yang muncul pada isian Quantity dan akan hilang tatkala quantity diisi.</li>
-                                    <li><b>Beli Text</b>
-                                        <br>
-                                        Teks untuk tombol beli.</li>
-                                    <li><b>Cek Text</b>
-                                        <br>
-                                        Teks untuk tombol cek.</li>
-                                </ol>
-                        </ol>
+                <p><img src="images/apk/manage-apk-lokasi.png" alt="manage apk" width="20%"></p>
+
+            </li>
+            <li>
+                Berikut ini kegunaan pilihan setting di <b>Manage APK...</b>
+                <br><br>
+                <ol type="I">
+                    <li><b>General.</b>
+                        <p><img src="images/apk/manage-apk-general.png" alt="manage apk general" width="90%"></p>
                     </li>
-                    <li>Klik tombol <b>Save</b> untuk menyimpan pengaturan.</li>
-                    <li>Selesai.</li>
-                </ol>
-            </p>
-            
-            <p class="note"><b>Catatan 1</b>: Untuk mendapatkan URL <b>Login banner</b>, <b>Slider banner</b> atau <b>Icon</b> menu, upload gambar banner dan icon Anda ke hosting <a href="http://bit.ly/2BjBSSw" target="_blank">klik disini</a> atau hosting pribadi Anda, lalu catat URL (link) lokasinya, kemudian masukkan URL itu ke box: <b>Login banner</b>, <b>Slider banner</b> atau <b>Icon</b> menu sesuai petunjuk diatas. Adapun contoh tata cara upload gambar ke hosting <a href="upload-gambar-ke-hosting.html" target="_blank">klik disini</a>.</p>
-            
-            <p class="note"><b>Catatan 2</b>: Mengubah <b>Login Banner</b>, <b>Slider Banner</b> atau <b>Icon</b> menu sesuai gambar yang Anda inginkan terkadang memerlukan waktu sinkronisasi data antara OB + hosting + APK agak lama (tidak langsung muncul di APK) estimasi maksimal 1x48 jam, silahkan ditunggu. Kalau telah melewati estimasi tersebut namun belum muncul juga, cek kembali setting dan URL Anda, pastikan telah sesuai petunjuk diatas (baca petunjuk diatas berulang kali); atau upload gambar ke hosting yang lain.</p>
-            
-            <p class="note"><b>Catatan 3</b>: Cepat atau lambatnya SMS OTP (On Time Password) tergantung SMS Sender di server Anda. Jika saat di cek di server, SMS berisi OTP gagal terkirim, masuk ke OtomaX klik <b>Setting</b> -> klik <b>Format Balasan</b> -> key: <b>ApkOtp</b> pada kolom <b>Format</b> ganti kosa katanya, misalnya diganti: <code style="color: red;">KODE MASUK Anda: [otp], berlaku lima menit.</code>.
-            <br><br>    
-            Apabila SMS Sender sudah dipastikan normal tetapi SMS OTP tidak kunjung didapatkan, maka lakukan restart OtomaX Online Backup (Open OtomaX Online Backup -> Klik 3 tanda titik bertumpuk sebelah kiri atas -> klik <b>Restart Engine</b>).</p>
-            
-            <p class="note"><b>Catatan 4</b>: Apabila Anda mengisi <b>Number Buttons</b> sebagai isian nominal, pastikan angka - angka yang dimasukkan sesuai dengan nominal yang tersedia di <b>OtomaX Online Backup</b> -> <b>Manage APK</b> -> <b>Menu</b> -> <b>Kode Produk</b> dan pastikan juga di OtomaX -> <b>Administrasi</b> -> <b>Produk</b>, Checbox: <b>Tanpa kode</b> dari Kode Produk tersebut telah dicentang. Agar lebih flexible kosongkan kolom <b>Number Buttons</b> sehingga Reseller dapat langsung memilih Produk dari daftar kode produk yang tersedia (bukan memasukkan nominal).</p>
-            
-            <h2 id="icon-alternatif">Icon Alternatif</h2>
-            
-            <p>Icon alternatif merupakan Icon menu yang disediakan sebagai alternatif dari Icon default Aplikasi Android OtomaX, dapat digunakan langsung tanpa perlu membuat dan meng-uploadnya ke hosting terlebih dahulu.</p>
-            
-            <p>Untuk menggunakannya cukup copy Url Icon yang Anda inginkan dan ganti <span style="color: red">nama-icon</span> dengan nama icon sesuai pada gambar, kemudian masukkan Url tersebut di kolom <b>Icon</b> (OtomaX Online Backup -> Manage APK -> Menu -> Icon).</p>
-            
-            <p>
-                <ol type="A">
-                    <li><b>Square</b>
-                        <table class="icon" style="margin-left: auto; margin-right: auto; border-color: #b7daf8" border="1">
-                           <caption>Square Icon</caption>
+                    <ol type="a">
+                        <li><b>Disable APK service</b>.
+                            <br>
+                            Mematikan layanan APK sehingga member tidak bisa login.</li>
+                        <li><b>Disable new member registration</b>.
+                            <br>
+                            Mematikan fungsi pendaftaran member baru sehingga calon member tidak bisa mendaftar.</li>
+                        <li><b>Disable forgot pin</b>.
+                            <br>
+                            Mematikan fungsi pemulihan pin ketika member lupa.</li>
+                        <li><b>Hide menu text</b>.
+                            <br>
+                            Menyembunyikan teks pada menu produk. Biasanya digunakan jika teks sudah terdapat pada icon
+                            agar tidak dobel teks.</li>
+                        <li><b>Login banner</b>
+                            <br>
+                            Opsional. Banner yang ditampilkan pada halaman login. Kosongkan jika menggunakan default
+                            banner APK. Apabila ingin menggunakan banner milik Anda sendiri, isi dengan URL yang menuju
+                            ke banner Anda, contoh: https://domain.com/banner_login.png, perhatikan gambar di bawah ini:
+
+                            <p><img src="images/apk/banner_login.png" alt="banner_login" width="90%"></p>
+
+                            <p class="color-blue">Sebagai informasi, ukuran ideal <b>Login banner</b> kisaran 360 x 120
+                                px dengan format *.PNG. Untuk mendapatkan banner yang bagus ketika dipasang di APK,
+                                silahkan hubungi penyedia jasa desain grafis asset gambar APK.</p>
+                        </li>
+                        <li><b>Strings (loaded before login)</b>.
+                            <br>
+                            Optional. Untuk mengganti String (untaian kata) yang terletak sebelum login.</li>
+                        <li><b>Strings (loaded after login)</b>.
+                            <br>
+                            Optional. Untuk mengganti String (untaian kata) yang terletak setelah login.</li>
+                        <br>
+                        2 Strings (f dan g) diatas dapat digunakan untuk mengganti teks kotak input, tombol dan lain -
+                        lain pada APK dengan format:
+
+                        <p><code
+                                class="format"><span style="color: green">Key</span><span style="color: red">=</span><span style="color: blue">Teks</span></code>
+                        </p>
+
+                        <p><span style="color: green">Key</span> tidak dapat diganti (besar kecil huruf, ejaan
+                            berpengaruh), sementara <span style="color: blue">Teks</span> dapat diganti sesuai keinginan
+                            Anda; serta diantara keduanya (<span style="color: green">Key</span> dan <span
+                                style="color: blue">Teks</span>) terdapat tanda <span style="color: red">=</span>.
+                            Tambahkan baris baru atau tanda \n untuk mengganti Strings lebih dari 1. Berikut ini tabel
+                            <span style="color: green">Key</span> yang tersedia beserta contoh <span
+                                style="color: blue">Teks</span>-nya:</p>
+
+                        <table class="common" style="width: 70%;">
+                            <caption><b>Strings (loaded before login)</b></caption>
                             <tr>
-                                <td>Url Icon</td>
-                                <td>https://software-otomax.com/ic_apk/square/<span style="color: red">nama-icon</span>.png</td>
+                                <th class="th-style">Key</th>
+                                <th class="th-style">Teks</th>
                             </tr>
                             <tr>
-                                <td>Contoh</td>
-                                <td>https://software-otomax.com/ic_apk/square/<span style="color: red">grab</span>.png</td>
+                                <td class="key">nomorHp</td>
+                                <td>Mobile Number</td>
+                            </tr>
+                            <tr>
+                                <td class="key">pin</td>
+                                <td>Password</td>
+                            </tr>
+                            <tr>
+                                <td class="key">login</td>
+                                <td>Sign In</td>
+                            </tr>
+                            <tr>
+                                <td class="key">daftarSini</td>
+                                <td>Not a member? Register here</td>
+                            </tr>
+                            <tr>
+                                <td class="key">hubungiKami</td>
+                                <td>Contact us at…</td>
+                            </tr>
+                            <tr>
+                                <td class="key">namaLengkap</td>
+                                <td>Fullname</td>
+                            </tr>
+                            <tr>
+                                <td class="key">alamat</td>
+                                <td>Address</td>
+                            </tr>
+                            <tr>
+                                <td class="key">infoOtp</td>
+                                <td>We are sending OTP</td>
+                            </tr>
+                            <tr>
+                                <td class="key">daftar</td>
+                                <td>Register</td>
+                            </tr>
+                            <tr>
+                                <td class="key">enterOtp</td>
+                                <td>Enter OTP</td>
+                            </tr>
+                            <tr>
+                                <td class="key">konfirm</td>
+                                <td>Confirm</td>
                             </tr>
                         </table>
-                        <img src="ic_apk/square/square-board.png" alt="square icon" width="60%" class="center-image">
-                    <li><b>Circle</b>
-                       <table class="icon" style="margin-left: auto; margin-right: auto; border-color: #b7daf8" border="1">
-                           <caption>Circle Icon</caption>
+
+                        <br><br>
+
+                        <table class="common" style="width: 70%;">
+                            <caption><b>Strings (loaded after login)</b></caption>
                             <tr>
-                                <td>Url Icon</td>
-                                <td>https://software-otomax.com/ic_apk/circle/<span style="color: red">nama-icon</span>.png</td>
+                                <th class="th-style">Key</th>
+                                <th class="th-style">Teks</th>
+                            </tr>
+
+                            <tr>
+                                <td class="key">formatRp</td>
+                                <td>$</td>
                             </tr>
                             <tr>
-                                <td>Contoh</td>
-                                <td>https://software-otomax.com/ic_apk/circle/<span style="color: red">grab</span>.png</td>
+                                <td class="key">naviHome</td>
+                                <td>Home</td>
+                            </tr>
+                            <tr>
+                                <td class="key">naviHistory</td>
+                                <td>History</td>
+                            </tr>
+                            <tr>
+                                <td class="key">naviStatement</td>
+                                <td>Statement</td>
+                            </tr>
+                            <tr>
+                                <td class="key">naviLogout</td>
+                                <td>Sign out</td>
+                            </tr>
+                            <tr>
+                                <td class="key">topup</td>
+                                <td>Topup</td>
+                            </tr>
+                            <tr>
+                                <td class="key">pilihProduk</td>
+                                <td>Choose product</td>
+                            </tr>
+                            <tr>
+                                <td class="key">tujuan</td>
+                                <td>Destination number</td>
+                            </tr>
+                            <tr>
+                                <td class="key">produk</td>
+                                <td>Product</td>
+                            </tr>
+                            <tr>
+                                <td class="key">quantity</td>
+                                <td>Amount</td>
+                            </tr>
+                            <tr>
+                                <td class="key">beli</td>
+                                <td>Buy</td>
+                            </tr>
+                            <tr>
+                                <td class="key">detilTransaksi</td>
+                                <td>Transaction Detail</td>
+                            </tr>
+                            <tr>
+                                <td class="key">harga</td>
+                                <td>Price</td>
+                            </tr>
+                            <tr>
+                                <td class="key">keterangan</td>
+                                <td>Remarks</td>
+                            </tr>
+                            <tr>
+                                <td class="key">cetakStruk</td>
+                                <td>Print receipt</td>
                             </tr>
                         </table>
-                        <img src="ic_apk/circle/circle-board.png" alt="square icon" width="60%" class="center-image">
+
+                        <br>
+                        Misalnya, Anda ingin mengganti teks: nomor hp dan teks: tombol di halaman login, maka pada box:
+                        <b>Strings (loaded before login)</b> isi dengan:
+
+                        <p>
+                            <code>nomorHp=Mobile Number</code>
+                            <br>
+                            <code>login=Masuk</code>
+                        </p>
+
+                        Perhatikan gambar di bawah ini:
+                        <p><img src="images/apk/strings.png" alt="strings" width="90%"></p>
+
+                        <li><b>Slider banners.</b>
+                            <br>
+                            Menampilkan banner pada halaman utama. Banner ditampilkan dengan menggunakan format:
+                            <p><code
+                                    class="format"><span style="color: green">Teks</span><span style="color: red">|</span><span style="color: blue">Url</span></code>
+                            </p>
+
+                            Tambahkan baris baru untuk menambahkan banner lebih dari 1. Contoh:
+                            <p>
+                                <code><span style="color: green">slider banner #1</span> <span style="color: red">|</span> <span style="color: blue">https://domain.com/slider-banner-1.png</span></code><br><code><span style="color: green">slider banner #2</span> <span style="color: red">|</span> <span style="color: blue">https://domain.com/slider-banner-2.png</span></code>
+                            </p>
+
+                            <p>
+                                <code>slider banner #1</code> dan <code>slider banner #2</code> adalah <span
+                                    style="color: green">Teks</span>, adapun
+                                <code>https://domain.com/slider-banner-1.png</code> dan
+                                <code>https://domain.com/slider-banner-2.png</code> adalah <span
+                                    style="color: blue">Url</span> yang mengarah ke lokasi penyimpanan banner; serta
+                                diantara keduanya (<span style="color: green">Teks</span> dan <span
+                                    style="color: blue">Url</span>) terdapat tanda <span style="color: red">|</span>.
+                                Perhatikan gambar di bawah ini:
+                            </p>
+
+                            <p><img src="images/apk/slider-banner.png" alt="slider banner" width="90%"></p>
+
+                            <p class="color-blue">Sebagai informasi, ukuran ideal <b>Slider banners</b> kisaran 360 x
+                                120 px dengan format *.PNG. Untuk mendapatkan banner yang bagus ketika dipasang di APK,
+                                silahkan hubungi penyedia jasa desain grafis asset gambar APK.</p>
+                        </li>
+                    </ol>
+
+                    <li><b>Menu.</b>
+                        <p style="color: red">Harap diperhatikan dengan seksama dan teliti gambar contoh pembuatan
+                            <b>Menu</b> yang akan tampil di <b>Aplikasi Android</b> OtomaX di bawah ini:</p>
+                        <p><img src="images/apk/manage-apk-menu-isian.png" alt="manage apk menu" width="100%"></p>
                     </li>
+                    <ol type="a">
+                        <li><b>Kode.</b>
+                            <br>
+                            Kode unik untuk menu, misal isi dengan: A, B, C, D atau lainnya.</li>
+                        <li><b>Label.</b>
+                            <br>
+                            Teks yang akan ditampilkan di bawah icon menu. Dapat disembunyikan dengan mencentang cekbox:
+                            <b>Hide menu text</b>. Misal isi dengan: Pulsa, Paket Data, Token, Telkom atau lainnya.</li>
+                        <li><b>Order.</b>
+                            <br>
+                            Urutan tampil menu. Isi dengan 1, 2, 3 dan seterusnya.</li>
+                        <li><b>Show Qty.</b>
+                            <br>
+                            Menampilkan isian Quantity.</li>
+                        <li><b>Postpaid.</b>
+                            <br>
+                            Untuk transaksi jenis postpaid/billing. Beri centang untuk menu produk PLN Paskabayar,
+                            Tagihan Telkom dan yang sejenis.</li>
+                        <li><b>Hide tujuan.</b>
+                            <br>
+                            Menyembunyikan isian tujuan.</li>
+                        <li><b>Hide produk.</b>
+                            <br>
+                            Menyembunyikan isian produk.</li>
+                        <li><b>Icon</b>
+                            <br>
+                            Ikon yang ditampilkan pada menu. Tersedia icon built-in yang dapat digunakan, kode iconnya:
+                            <code
+                                style="color: red">bank, bpjs, emoney, fisik, flight, game, gojek, gopay, grab, ovo, pdam, phone, pln, postpaid, telkom, train, wifi</code>.
+
+                            <p><img src="images/apk/icon_builtin_2.png" alt="icon built-in" width="60%"></p>
+
+                            Misalnya Anda ingin menggunakan icon pln, maka masukkan kode icon <code
+                                style="color: red;">pln</code> di kolom <b>Icon</b>; ingin menggunakan icon phone, maka
+                            masukkan kode icon <code style="color: red;">phone</code> di kolom <b>Icon</b>; dan
+                            seterusnya.
+
+                            <p>
+                                <b>Icon</b> dapat juga diisi dengan icon milik Anda sendiri dengan memasukkan URL yang
+                                mengarah ke lokasi icon Anda, contoh: https://domain.com/icon_phone.png, perhatikan
+                                gambar di bawah ini:
+                            </p>
+
+                            <p><img src="images/apk/icon-url.png" alt="icon" width="100%"></p>
+
+                            <p class="color-blue">Sebagai informasi, ukuran ideal untuk <b>Icon</b> menu kisaran 72 x 72
+                                px dengan format *.PNG serta mendukung alpha/transparan. Untuk mendapatkan Icon yang
+                                bagus ketika dipasang di APK, silahkan hubungi penyedia jasa desain grafis asset gambar
+                                APK.</p>
+                        </li>
+                        <li><b>Activity Title.</b>
+                            <br>
+                            Judul yang ditampilkan di halaman setelah menu diklik.</li>
+                        <li><b>Kode Operator</b>
+                            <br>
+                            Daftar kode operator yang masuk ke kelompok menu ini. Pisahkan kode dengan koma.</li>
+                        <li><b>Kode Produk</b>
+                            <br>
+                            Daftar kode produk yang masuk ke kelompok menu ini. Pisahkan kode dengan koma.</li>
+                        <li><b>Number Buttons</b>
+                            <br>
+                            Pilihan tombol nomor yang bisa diklik untuk isian Produk atau Quantity. Misal diisi 5, 10,
+                            20, 25 dan lain sebagainya.</li>
+                        <li><b>Target Url</b>
+                            <br>
+                            Jika diisi, aplikasi akan menuju url tersebut saat menu diklik. Contoh: isi dengan url yang
+                            mengarah ke halaman web berisi news.</li>
+                        <li><b>Tujuan Hint</b>
+                            <br>
+                            Teks petunjuk yang muncul pada isian tujuan dan akan hilang ketika tujuan diisi.</li>
+                        <li><b>Produk Hint</b>
+                            <br>
+                            Teks petunjuk yang muncul pada isian produk dan akan hilang saat produk diisi.</li>
+                        <li><b>Quantity Hint</b>
+                            <br>
+                            Teks petunjuk yang muncul pada isian Quantity dan akan hilang tatkala quantity diisi.</li>
+                        <li><b>Beli Text</b>
+                            <br>
+                            Teks untuk tombol beli.</li>
+                        <li><b>Cek Text</b>
+                            <br>
+                            Teks untuk tombol cek.</li>
+                    </ol>
                 </ol>
-            </p>
-            
-            <h2 id="faq">FAQ</h2>
-            
-            <table class="faq"
-                <th>
-                    <td class="faq-td">No.</td>
-                    <td class="faq-td">Pesan</td>
-                    <td class="faq-td">Kronologi</td>
-                    <td class="faq-td">Petunjuk</td>
-                </th>
-                <tr>
-                    <td>1</td>
-                    <td>Error, no data</td>
-                    <td>Muncul saat mengklik icon daftar kode produk di halaman setelah menu utama dan daftar kode produk tidak tampil</td>
-                    <td>Buka OtomaX Online Backup -> klik 3 tanda titik bertumpuk sebelah kiri atas -> klik Settings -> pastikan cekbox dibawah tulisan table to backup telah dicentang semua dan klik tombol simpan</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Error, NonMemberRegGrup is not set</td>
-                    <td>Muncul saat mendaftar sebagai calon reseller baru melalui APK</td>
-                    <td>Di OtomaX -> klik Administrasi -> Grup Reseller -> catat Kode Grup yang akan dijadikan sebagai grup untuk reseller yang daftar melalui APK -> klik Setting -> lain - lain -> key: NonMemberRegGroup pada kolom nilai isi dengan Kode Grup yang telah Anda catat tadi -> klik tombol simpan</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>Error, Invalid session</td>
-                    <td>Muncul saat hendak bertransaksi</td>
-                    <td>Logout dari APK, kemudian Login kembali</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>Error, serverHost is not set yet</td>
-                    <td>Muncul saat hendak melakukan transaksi</td>
-                    <td>Logout dari APK, kemudian Login kembali</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>Tidak ada</td>
-                    <td>Saldo reseller dan harga pada daftar kode produk di halaman setelah menu utama tidak muncul</td>
-                    <td>Buka OtomaX Online Backup -> klik 3 tanda titik bertumpuk sebelah kiri atas -> klik Manage APK -> klik General -> Pastikan di box: Strings (loaded after login) tidak ada isian: formatRp=Rp; kalau ada hapus -> klik tombol save -> Uninstall APK di HP dan kemudian install ulang</td>
-                </tr>
-                <tr>
-                    <td>6</td>
-                    <td>"nama apk" telah berhenti <br> atau <br> "nama apk" has stopped <br> dan sejenis</td>
-                    <td>Muncul saat mengklik Icon menu</td>
-                    <td>
-                        Pastikan angka - angka yang dimasukkan di Number Buttons sesuai dengan nominal yang tersedia di OtomaX Online Backup -> Manage APK -> Menu -> Kode Produk semua Operator; dan pastikan juga di OtomaX -> Administrasi -> Produk, Checbox: Tanpa kode dari Kode Produk tersebut telah dicentang;
-                        <br><br>
-                        atau hapus isian pada kolom Number Buttons dari menu yang bermasalah tersebut.
-                    </td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>Error, Silahkan ubah pin dahulu</td>
-                    <td>Muncul ketika hendak login di APK</td>
-                    <td>Di OtomaX, ubah PIN reseller yang akan login tersebut dengan PIN yang lain</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>Error, Invalid colomn name 'kode_reseller' SET NOCOUNT ON</td>
-                    <td>Muncul saat akan mengambil tiket deposit</td>
-                    <td>Update OtomaX ke versi 3.8.7 atau lebih tinggi dan update OtomaX Online Backup ke versi 3.17 atau lebih tinggi</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>Tidak ada</td>
-                    <td>Muncul ketika transaksi menggunakan nomor tujuan dengan awalan +62 keterangannya produk salah</td>
-                    <td>Edit +62 dengan angka 0 saat memasukkan nomor tujuan, baru kemudian klik tombol beli</td>
-                </tr>
-                <tr>
-                    <td>10</td>
-                    <td>deviceInfo is too short</td>
-                    <td>Muncul saat mendaftar sebagai calon reseller baru melalui APK</td>
-                    <td>HP tidak didukung, gunakan HP yang lain</td>
-                </tr>
-                <tr>
-                    <td>11</td>
-                    <td>Tidak ada</td>
-                    <td>Reseller yang mengambil tiket deposit melalui APK datanya tidak muncul di OtomaX -> Transaksi -> Mutasi Saldo</td>
-                    <td>Buka OtomaX Online Backup -> klik 3 tanda titik bertumpuk sebelah kiri atas -> klik Settings -> pastikan cekbox dibawah tulisan table to backup telah dicentang semua dan klik tombol simpan</td>
-                </tr>
-                <tr>
-                    <td>12</td>
-                    <td>Tidak ada</td>
-                    <td>Slider Banner tidak tampil secara penuh di APK</td>
-                    <td>Perbesar ukuran gambar -> pasang di OB tunggu 2x24 jam -> cek tampilan Slider Banner di APK -> kurang pernuh? -> perbesar lagi ukuran gambar -> pasang di OB tunggu 2x24 jam -> cek tampilan Slider Banner di APK -> kurang penuh? -> perbesar lagi ukuran gambar dan seterusnya sampai ketemu tampilan yang diinginkan.</td>
-                </tr>
-                <tr>
-                    <td>13</td>
-                    <td>Tidak ada</td>
-                    <td>Status transaksi di menu Riwayat APK <span style="color: aquamarine">menunggu jawaban</span>, namun di OtomaX status sudah <span style="color: aquamarine">Sukses</span></td>
-                    <td>
-                        Restart Online Backup
-                        <br><br>
-                        Di OtomaX pilih transaksi tersebut -> klik kanan -> klik Menunggu jawaban -> tunggu 60 detik -> pilih transaksi tersebut lagi -> klik kanan -> klik Sukses -> klik OK -> tunggu 60 detik
-                        <br><br>
-                        Di APK Reseller -> Logout dari APK -> Login kembali
-                    </td>
-                </tr>
-                <tr>
-                    <td>14</td>
-                    <td>Tidak ada</td>
-                    <td>Loading saat hendak transaksi di APK lama</td>
-                    <td>Cek atau ganti koneksi internet di HP</td>
-                </tr>
-                <tr>
-                    <td>15</td>
-                    <td>Error, Failed to connect to /ip:port</td>
-                    <td>Muncul saat hendak login ke APK atau transaksi</td>
-                    <td>Pastikan HP terhubung dengan internet; atau APK sedang gangguan, tunggu normal</td>
-                </tr>
-                <tr>
-                    <td>16</td>
-                    <td>
-                        Error
-                        <br><br> 
-                        &lt;HEAD&gt;&lt;TITLE&gt;Connection timed out&lt;/TITLE&gt;&lt;/HEAD&gt;&lt;BODY BGCOLOR=&quot;white&quot; FGCOLOR=&quot;black&quot;&gt;&lt;FONT FACE=&quot;Helvetica, Arial&quot;&gt;&lt;B&gt;Connection timed out&lt;/B&gt;&lt;/FONT&gt;
-                        <br><br>
-                        &lt;!-- default &quot;Connection timed out&quot; response(502) --&gt;&lt;/BODY&gt;
-                    </td>
-                    <td>Muncul saat hendak login ke APK atau transaksi</td>
-                    <td>Cek atau ganti koneksi internet di HP; atau APK sedang gangguan, tunggu normal</td>
-                </tr>
-                <tr>
-                    <td>17</td>
-                    <td>Tidak ada</td>
-                    <td>Reseller tambah saldo melalui tiket, di APK Reseller belum ada keterangan saldo bertambah, sementara di OtomaX sudah</td>
-                    <td>Di APK Reseller -> Logout dari APK -> Login kembali</td>
-                </tr>
-                <tr>
-                    <td>18</td>
-                    <td>Tidak ada</td>
-                    <td>Gambar icon menu terkadang muncul dan terkadang tidak</td>
-                    <td>Ganti koneksi internet pada HP; atau upload gambar icon menu ke hosting yang lain</td>
-                </tr>
-                <tr>
-                    <td>19</td>
-                    <td>Tidak ada</td>
-                    <td>Tombol beli ketika diklik tidak ada respon apapun</td>
-                    <td>Di OtomaX Online Backup -> Manage APK -> Menu -> pastikan chekbox hide tujuan tidak dicentang</td>
-                </tr>
-                <tr>
-                    <td>20</td>
-                    <td>Tidak ada</td>
-                    <td>Ketika transaksi via APK, di inbox OtomaX status transaksinya Bukan Reseller</td>
-                    <td>Update OtomaX ke versi 3.8.7 atau lebih tinggi dan update OtomaX Online Backup ke versi 3.17 atau lebih tinggi</td>
-                </tr>
-                <tr>
-                    <td>21</td>
-                    <td>Tidak ada</td>
-                    <td>Ketika transaksi via APK, di inbox OtomaX status transaksi gagal</td>
-                    <td>Di OtomaX Online Backup -> Manage APK -> Kode Produk, pastikan diisi Kode Produk secara utuh, contoh: S5,S10,S20 dan seterusnya; jangan cuma huruf S saja</td>
-                </tr>
-                <tr>
-                    <td>22</td>
-                    <td>Tidak ada</td>
-                    <td>SMS berisi OTP (On Time Password) tidak diterima Reseller</td>
-                    <td>Ganti SMS Sender di OtomaX dengan kartu yang lain; atau di OtomaX -> Setting -> Format Balasan -> key: ApkOtp pada kolom format ganti kalimat SMS OTP dengan kalimat yang lain</td>
-                </tr>
-                <tr>
-                    <td>23</td>
-                    <td>Tidak ada</td>
-                    <td>Icon notifikasi APK yang muncul di HP gambarnya tidak tampil secara jelas (kosong)</td>
-                    <td>Tunggu update APK selanjutnya</td>
-                </tr>
-                <tr>
-                    <td>24</td>
-                    <td>Error: Index was outside the bounds of the array</td>
-                    <td>Muncul di APK setelah memasukkan kode OTP (On Time Password)</td>
-                    <td>APK sedang gangguan, tunggu normal</td>
-                </tr>
-                <tr>
-                    <td>25</td>
-                    <td>Error: recvfrom failed: ECONNRESET (Connection reset by peer)</td>
-                    <td>Muncul saat hendak login ke APK atau transaksi</td>
-                    <td>APK sedang gangguan, tunggu normal</td>
-                </tr>
-                <tr>
-                    <td>26</td>
-                    <td>Error: unexpected end of stream on com.android.okhttp.Address@8fhds98</td>
-                    <td>Muncul saat hendak login ke APK atau transaksi</td>
-                    <td>APK sedang gangguan, tunggu normal; atau cek koneksi internet di HP</td>
-                </tr>
-                <tr>
-                    <td>27</td>
-                    <td>Error: Level [NAMA-LEVEL] is not found</td>
-                    <td>Muncul saat mendaftar sebagai calon reseller baru melalui APK</td>
-                    <td>Di OtomaX -> klik Administrasi -> Grup Reseller -> catat Kode Grup yang akan dijadikan sebagai grup untuk reseller yang daftar melalui APK -> klik Setting -> lain - lain -> key: NonMemberRegGroup pada kolom nilai isi dengan Kode Grup yang telah Anda catat tadi -> klik tombol simpan</td>
-                </tr>
-                <tr>
-                    <td>28</td>
-                    <td>Error: APK is expired</td>
-                    <td>Muncul saat akan login</td>
-                    <td>Lakukan pembayaran iuran tahunan APK</td>
-                </tr>
-                <tr>
-                    <td>29</td>
-                    <td>Error: Please update APK or try again</td>
-                    <td>Muncul saat akan melakukan transaksi</td>
-                    <td>Uninstall APK versi lama dan install APK versi terbaru. Untuk mengetahui versi terbaru APK <a href="aplikasi-android.html" target="_blank">klik disini</a> -> Riwayat. Untuk mendapatkan APK versi terbaru kirim email ke <b>support@otomax-software.com</b></td>
-                </tr>
-                <tr>
-                    <td>30</td>
-                    <td>Error: OB is expired</td>
-                    <td>Muncul saat akan login APK</td>
-                    <td>Lakukan pembayaran iuran bulanan OB (Online Backup)</td>
-                </tr>
-            </table>
-            
-<!--
+            </li>
+            <li>Klik tombol <b>Save</b> untuk menyimpan pengaturan.</li>
+            <li>Selesai.</li>
+        </ol>
+        </p>
+
+        <p class="note"><b>Catatan 1</b>: Untuk mendapatkan URL <b>Login banner</b>, <b>Slider banner</b> atau
+            <b>Icon</b> menu, upload gambar banner dan icon Anda ke hosting <a href="http://bit.ly/2BjBSSw"
+                target="_blank">klik disini</a> atau hosting pribadi Anda, lalu catat URL (link) lokasinya, kemudian
+            masukkan URL itu ke box: <b>Login banner</b>, <b>Slider banner</b> atau <b>Icon</b> menu sesuai petunjuk
+            diatas. Adapun contoh tata cara upload gambar ke hosting <a href="upload-gambar-ke-hosting.html"
+                target="_blank">klik disini</a>.</p>
+
+        <p class="note"><b>Catatan 2</b>: Mengubah <b>Login Banner</b>, <b>Slider Banner</b> atau <b>Icon</b> menu
+            sesuai gambar yang Anda inginkan terkadang memerlukan waktu sinkronisasi data antara OB + hosting + APK agak
+            lama (tidak langsung muncul di APK) estimasi maksimal 1x48 jam, silahkan ditunggu. Kalau telah melewati
+            estimasi tersebut namun belum muncul juga, cek kembali setting dan URL Anda, pastikan telah sesuai petunjuk
+            diatas (baca petunjuk diatas berulang kali); atau upload gambar ke hosting yang lain.</p>
+
+        <p class="note"><b>Catatan 3</b>: Cepat atau lambatnya SMS OTP (On Time Password) tergantung SMS Sender di
+            server Anda. Jika saat di cek di server, SMS berisi OTP gagal terkirim, masuk ke OtomaX klik <b>Setting</b>
+            -> klik <b>Format Balasan</b> -> key: <b>ApkOtp</b> pada kolom <b>Format</b> ganti kosa katanya, misalnya
+            diganti: <code style="color: red;">KODE MASUK Anda: [otp], berlaku lima menit.</code>.
+            <br><br>
+            Apabila SMS Sender sudah dipastikan normal tetapi SMS OTP tidak kunjung didapatkan, maka lakukan restart
+            OtomaX Online Backup (Open OtomaX Online Backup -> Klik 3 tanda titik bertumpuk sebelah kiri atas -> klik
+            <b>Restart Engine</b>).</p>
+
+        <p class="note"><b>Catatan 4</b>: Apabila Anda mengisi <b>Number Buttons</b> sebagai isian nominal, pastikan
+            angka - angka yang dimasukkan sesuai dengan nominal yang tersedia di <b>OtomaX Online Backup</b> ->
+            <b>Manage APK</b> -> <b>Menu</b> -> <b>Kode Produk</b> dan pastikan juga di OtomaX -> <b>Administrasi</b> ->
+            <b>Produk</b>, Checbox: <b>Tanpa kode</b> dari Kode Produk tersebut telah dicentang. Agar lebih flexible
+            kosongkan kolom <b>Number Buttons</b> sehingga Reseller dapat langsung memilih Produk dari daftar kode
+            produk yang tersedia (bukan memasukkan nominal).</p>
+
+        <h2 id="icon-alternatif">Icon Alternatif</h2>
+
+        <p>Icon alternatif merupakan Icon menu yang disediakan sebagai alternatif dari Icon default Aplikasi Android
+            OtomaX, dapat digunakan langsung tanpa perlu membuat dan meng-uploadnya ke hosting terlebih dahulu.</p>
+
+        <p>Untuk menggunakannya cukup copy Url Icon yang Anda inginkan dan ganti <span
+                style="color: red">nama-icon</span> dengan nama icon sesuai pada gambar, kemudian masukkan Url tersebut
+            di kolom <b>Icon</b> (OtomaX Online Backup -> Manage APK -> Menu -> Icon).</p>
+
+        <p>
+        <ol type="A">
+            <li><b>Square</b>
+                <table class="icon">
+                    <caption>Square Icon</caption>
+                    <tr>
+                        <td>Url Icon</td>
+                        <td>https://software-otomax.com/ic_apk/square/<span style="color: red">nama-icon</span>.png</td>
+                    </tr>
+                    <tr>
+                        <td>Contoh</td>
+                        <td>https://software-otomax.com/ic_apk/square/<span style="color: red">grab</span>.png</td>
+                    </tr>
+                </table>
+                <img src="ic_apk/square/square-board.png" alt="square icon" width="60%" class="center-image">
+            <li><b>Circle</b>
+                <table class="icon">
+                    <caption>Circle Icon</caption>
+                    <tr>
+                        <td>Url Icon</td>
+                        <td>https://software-otomax.com/ic_apk/circle/<span style="color: red">nama-icon</span>.png</td>
+                    </tr>
+                    <tr>
+                        <td>Contoh</td>
+                        <td>https://software-otomax.com/ic_apk/circle/<span style="color: red">grab</span>.png</td>
+                    </tr>
+                </table>
+                <img src="ic_apk/circle/circle-board.png" alt="square icon" width="60%" class="center-image">
+            </li>
+        </ol>
+        </p>
+
+        <h2 id="faq">FAQ</h2>
+
+        <table class="faq">
+            <tr>
+                <th>No.</th>
+                <th>Pesan</th>
+                <th class="th-style">Kronologi</th>
+                <th class="th-style">Petunjuk</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Error, no data</td>
+                <td>Muncul saat mengklik icon daftar kode produk di halaman setelah menu utama dan daftar kode produk
+                    tidak tampil</td>
+                <td>Buka OtomaX Online Backup -> klik 3 tanda titik bertumpuk sebelah kiri atas -> klik Settings ->
+                    pastikan cekbox dibawah tulisan table to backup telah dicentang semua dan klik tombol simpan</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Error, NonMemberRegGrup is not set</td>
+                <td>Muncul saat mendaftar sebagai calon reseller baru melalui APK</td>
+                <td>Di OtomaX -> klik Administrasi -> Grup Reseller -> catat Kode Grup yang akan dijadikan sebagai grup
+                    untuk reseller yang daftar melalui APK -> klik Setting -> lain - lain -> key: NonMemberRegGroup pada
+                    kolom nilai isi dengan Kode Grup yang telah Anda catat tadi -> klik tombol simpan</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Error, Invalid session</td>
+                <td>Muncul saat hendak bertransaksi</td>
+                <td>Logout dari APK, kemudian Login kembali</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Error, serverHost is not set yet</td>
+                <td>Muncul saat hendak melakukan transaksi</td>
+                <td>Logout dari APK, kemudian Login kembali</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Tidak ada</td>
+                <td>Saldo reseller dan harga pada daftar kode produk di halaman setelah menu utama tidak muncul</td>
+                <td>Buka OtomaX Online Backup -> klik 3 tanda titik bertumpuk sebelah kiri atas -> klik Manage APK ->
+                    klik General -> Pastikan di box: Strings (loaded after login) tidak ada isian: formatRp=Rp; kalau
+                    ada hapus -> klik tombol save -> Uninstall APK di HP dan kemudian install ulang</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>"nama apk" telah berhenti <br> atau <br> "nama apk" has stopped <br> dan sejenis</td>
+                <td>Muncul saat mengklik Icon menu</td>
+                <td>
+                    Pastikan angka - angka yang dimasukkan di Number Buttons sesuai dengan nominal yang tersedia di
+                    OtomaX Online Backup -> Manage APK -> Menu -> Kode Produk semua Operator; dan pastikan juga di
+                    OtomaX -> Administrasi -> Produk, Checbox: Tanpa kode dari Kode Produk tersebut telah dicentang;
+                    <br><br>
+                    atau hapus isian pada kolom Number Buttons dari menu yang bermasalah tersebut.
+                </td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Error, Silahkan ubah pin dahulu</td>
+                <td>Muncul ketika hendak login di APK</td>
+                <td>Di OtomaX, ubah PIN reseller yang akan login tersebut dengan PIN yang lain</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Error, Invalid colomn name 'kode_reseller' SET NOCOUNT ON</td>
+                <td>Muncul saat akan mengambil tiket deposit</td>
+                <td>Update OtomaX ke versi 3.8.7 atau lebih tinggi dan update OtomaX Online Backup ke versi 3.17 atau
+                    lebih tinggi</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Tidak ada</td>
+                <td>Muncul ketika transaksi menggunakan nomor tujuan dengan awalan +62 keterangannya produk salah</td>
+                <td>Edit +62 dengan angka 0 saat memasukkan nomor tujuan, baru kemudian klik tombol beli</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>deviceInfo is too short</td>
+                <td>Muncul saat mendaftar sebagai calon reseller baru melalui APK</td>
+                <td>HP tidak didukung, gunakan HP yang lain</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Tidak ada</td>
+                <td>Reseller yang mengambil tiket deposit melalui APK datanya tidak muncul di OtomaX -> Transaksi ->
+                    Mutasi Saldo</td>
+                <td>Buka OtomaX Online Backup -> klik 3 tanda titik bertumpuk sebelah kiri atas -> klik Settings ->
+                    pastikan cekbox dibawah tulisan table to backup telah dicentang semua dan klik tombol simpan</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Tidak ada</td>
+                <td>Slider Banner tidak tampil secara penuh di APK</td>
+                <td>Perbesar ukuran gambar -> pasang di OB tunggu 2x24 jam -> cek tampilan Slider Banner di APK ->
+                    kurang pernuh? -> perbesar lagi ukuran gambar -> pasang di OB tunggu 2x24 jam -> cek tampilan Slider
+                    Banner di APK -> kurang penuh? -> perbesar lagi ukuran gambar dan seterusnya sampai ketemu tampilan
+                    yang diinginkan.</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Tidak ada</td>
+                <td>Status transaksi di menu Riwayat APK <span style="color: aquamarine">menunggu jawaban</span>, namun
+                    di OtomaX status sudah <span style="color: aquamarine">Sukses</span></td>
+                <td>
+                    Restart Online Backup
+                    <br><br>
+                    Di OtomaX pilih transaksi tersebut -> klik kanan -> klik Menunggu jawaban -> tunggu 60 detik ->
+                    pilih transaksi tersebut lagi -> klik kanan -> klik Sukses -> klik OK -> tunggu 60 detik
+                    <br><br>
+                    Di APK Reseller -> Logout dari APK -> Login kembali
+                </td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Tidak ada</td>
+                <td>Loading saat hendak transaksi di APK lama</td>
+                <td>Cek atau ganti koneksi internet di HP</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Error, Failed to connect to /ip:port</td>
+                <td>Muncul saat hendak login ke APK atau transaksi</td>
+                <td>Pastikan HP terhubung dengan internet; atau APK sedang gangguan, tunggu normal</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>
+                    Error
+                    <br><br>
+                    &lt;HEAD&gt;&lt;TITLE&gt;Connection timed out&lt;/TITLE&gt;&lt;/HEAD&gt;&lt;BODY
+                    BGCOLOR=&quot;white&quot; FGCOLOR=&quot;black&quot;&gt;&lt;FONT FACE=&quot;Helvetica,
+                    Arial&quot;&gt;&lt;B&gt;Connection timed out&lt;/B&gt;&lt;/FONT&gt;
+                    <br><br>
+                    &lt;!-- default &quot;Connection timed out&quot; response(502) --&gt;&lt;/BODY&gt;
+                </td>
+                <td>Muncul saat hendak login ke APK atau transaksi</td>
+                <td>Cek atau ganti koneksi internet di HP; atau APK sedang gangguan, tunggu normal</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>Tidak ada</td>
+                <td>Reseller tambah saldo melalui tiket, di APK Reseller belum ada keterangan saldo bertambah, sementara
+                    di OtomaX sudah</td>
+                <td>Di APK Reseller -> Logout dari APK -> Login kembali</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>Tidak ada</td>
+                <td>Gambar icon menu terkadang muncul dan terkadang tidak</td>
+                <td>Ganti koneksi internet pada HP; atau upload gambar icon menu ke hosting yang lain</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>Tidak ada</td>
+                <td>Tombol beli ketika diklik tidak ada respon apapun</td>
+                <td>Di OtomaX Online Backup -> Manage APK -> Menu -> pastikan chekbox hide tujuan tidak dicentang</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>Tidak ada</td>
+                <td>Ketika transaksi via APK, di inbox OtomaX status transaksinya Bukan Reseller</td>
+                <td>Update OtomaX ke versi 3.8.7 atau lebih tinggi dan update OtomaX Online Backup ke versi 3.17 atau
+                    lebih tinggi</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>Tidak ada</td>
+                <td>Ketika transaksi via APK, di inbox OtomaX status transaksi gagal</td>
+                <td>Di OtomaX Online Backup -> Manage APK -> Kode Produk, pastikan diisi Kode Produk secara utuh,
+                    contoh: S5,S10,S20 dan seterusnya; jangan cuma huruf S saja</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Tidak ada</td>
+                <td>SMS berisi OTP (On Time Password) tidak diterima Reseller</td>
+                <td>Ganti SMS Sender di OtomaX dengan kartu yang lain; atau di OtomaX -> Setting -> Format Balasan ->
+                    key: ApkOtp pada kolom format ganti kalimat SMS OTP dengan kalimat yang lain</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>Tidak ada</td>
+                <td>Icon notifikasi APK yang muncul di HP gambarnya tidak tampil secara jelas (kosong)</td>
+                <td>Tunggu update APK selanjutnya</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>Error: Index was outside the bounds of the array</td>
+                <td>Muncul di APK setelah memasukkan kode OTP (On Time Password)</td>
+                <td>APK sedang gangguan, tunggu normal</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>Error: recvfrom failed: ECONNRESET (Connection reset by peer)</td>
+                <td>Muncul saat hendak login ke APK atau transaksi</td>
+                <td>APK sedang gangguan, tunggu normal</td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>Error: unexpected end of stream on com.android.okhttp.Address@8fhds98</td>
+                <td>Muncul saat hendak login ke APK atau transaksi</td>
+                <td>APK sedang gangguan, tunggu normal; atau cek koneksi internet di HP</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>Error: Level [NAMA-LEVEL] is not found</td>
+                <td>Muncul saat mendaftar sebagai calon reseller baru melalui APK</td>
+                <td>Di OtomaX -> klik Administrasi -> Grup Reseller -> catat Kode Grup yang akan dijadikan sebagai grup
+                    untuk reseller yang daftar melalui APK -> klik Setting -> lain - lain -> key: NonMemberRegGroup pada
+                    kolom nilai isi dengan Kode Grup yang telah Anda catat tadi -> klik tombol simpan</td>
+            </tr>
+            <tr>
+                <td>28</td>
+                <td>Error: APK is expired</td>
+                <td>Muncul saat akan login</td>
+                <td>Lakukan pembayaran iuran tahunan APK</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>Error: Please update APK or try again</td>
+                <td>Muncul saat akan melakukan transaksi</td>
+                <td>Uninstall APK versi lama dan install APK versi terbaru. Untuk mengetahui versi terbaru APK <a
+                        href="aplikasi-android.html" target="_blank">klik disini</a> -> Riwayat. Untuk mendapatkan APK
+                    versi terbaru kirim email ke <b>support@otomax-software.com</b></td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>Error: OB is expired</td>
+                <td>Muncul saat akan login APK</td>
+                <td>Lakukan pembayaran iuran bulanan OB (Online Backup)</td>
+            </tr>
+        </table>
+
+        <!--
             <p class="note">
                 <b>Catatan</b>: 
             </p>
 -->
-            
-            <div class="bottom-content"></div>
-        </div>
-        
-        <div id="footer">
-        
-        </div>
-    </body>
+
+        <div class="bottom-content"></div>
+    </div>
+
+    <div id="footer">
+
+    </div>
+</body>
+
 </html>
