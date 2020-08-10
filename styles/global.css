@@ -66,14 +66,13 @@ div#sidebar {
   float: left;
   width: 250px;
   height: 106%;
-  background-color: #93a368;
+  background-image: linear-gradient(to bottom right, #93a368, #fcfbfc);
   font-size: 20px;
   display: block;
 }
 
 div#sidebar .nav a {
   color: white;
-  background-color: #93a368;
   padding: 10px;
   display: block;
   border: 1px solid yellow;
@@ -96,7 +95,7 @@ div#sidebar ul.nav a {
 }
 
 div#sidebar a:hover {
-  background-color: #9dcdbf;
+  background-image: linear-gradient(to top right, #93a368, #fcfbfc);
 }
 
 /*
