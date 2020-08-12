@@ -1106,6 +1106,32 @@
         install <a href="instalasi-pendukung-win7-win8.html#chrome-driver" target="_blank">klik disini</a>.</p>
     </div>
 
+    <div class="accordion">
+      <p>Di log modul internet banking (umumnya di v4.0.0 atau lebih tinggi) muncul pesan error seperti di bawah:
+      <p class="log">
+        <code>ObjectDisposedException: Cannot access a disposed object.&#10;Object name: &apos;#=zOs7BIj6c1_yoR6vvercKzeJUjg4N&apos;.</code>
+      </p>
+      </p>
+    </div>
+    <div class="panel">
+      <p>Tutup buka OtomaX.</p>
+    </div>
+
+    <div class="accordion">
+      <p>Di log modul internet banking BRI mulai tanggal 12/08/2020 (umumnya di v4.0.0 atau lebih tinggi) muncul pesan
+        error seperti di bawah dan tidak dapat membaca mutasi:
+      <p class="log">
+        <code>ArgumentOutOfRangeException: Parameter must be positive and < Width. Parameter name: x.</code>
+      </p>
+      </p>
+    </div>
+    <div class="panel">
+      <p>Di tanggal tersebut BRI memperbaharui metode untuk mem-breaking robot agar Captcha tidak muncul ketika internet
+        banking BRI diakses oleh robot, yang kemudian mengakibatkan mutasi transaksi tidak muncul.
+      </p>
+      <p>Abaikan pesan tersebut, nanti di saat robot lolos breaking, mutasi akan terbaca; dan atau tunggu update.</p>
+    </div>
+
     <!-- END TEHNIS -->
 
     <div class="bottom-content"></div>
