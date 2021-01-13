@@ -1107,19 +1107,26 @@
     </div>
 
     <div class="accordion">
-      <p>Di log modul internet banking Mandiri muncul pesan error:
+      <p>Di log modul internet banking Mandiri muncul pesan error seperti di bawah atau sejenis:
       <p class="log">
         <code>InvalidOperationException: session not created: This version of Chrome Driver only supports Chrome version 78 (SessionNotCreated)</code>
       </p>
       </p>
     </div>
     <div class="panel">
-      <p>Silahkan install Chrome Driver yang versinya sama dengan versi Google Chrome yang Anda gunakan, tata cara
-        install <a href="instalasi-pendukung-win7-win8.html#chrome-driver" target="_blank">klik disini</a>.</p>
+      <p>Sesuaikan versi Chrome Driver dengan versi Google Chrome yang digunakan, langkahnya:
+      <ol>
+        <li>Klik <b>Alat Bantu</b> -> klik <b>Kill All Chromes</b>
+        </li>
+        <li>Cari file bernama chromedriver di folder lokasi instalasi OtomaX dan kemudian hapus.</li>
+        <li>Install Chrome Driver yang versinya sama dengan versi Google Chrome, <a
+            href="instalasi-pendukung-tambahan.html#chrome-driver" target="_blank">klik disini</a>.</li>
+      </ol>
+      </p>
     </div>
 
     <div class="accordion">
-      <p>Di log modul internet banking (umumnya di v4.0.0 atau lebih tinggi) muncul pesan error seperti di bawah:
+      <p>Di log modul internet banking (umumnya di v4.0.0) muncul pesan error seperti di bawah:
       <p class="log">
         <code>ObjectDisposedException: Cannot access a disposed object.&#10;Object name: &apos;#=zOs7BIj6c1_yoR6vvercKzeJUjg4N&apos;.</code>
       </p>
@@ -1130,7 +1137,7 @@
     </div>
 
     <div class="accordion">
-      <p>Di log modul internet banking BRI mulai tanggal 12/08/2020 (umumnya di v4.0.0 atau lebih tinggi) muncul pesan
+      <p>Di log modul internet banking BRI mulai tanggal 12/08/2020 (umumnya di v4.0.0) muncul pesan
         error seperti di bawah dan tidak dapat membaca mutasi:
       <p class="log">
         <code>ArgumentOutOfRangeException: Parameter must be positive and < Width. Parameter name: x.</code>
@@ -1141,7 +1148,8 @@
       <p>Di tanggal tersebut BRI memperbaharui metode untuk mem-breaking robot agar Captcha tidak muncul ketika internet
         banking BRI diakses oleh robot, yang kemudian mengakibatkan mutasi transaksi tidak muncul.
       </p>
-      <p>Abaikan pesan tersebut, nanti di saat robot lolos breaking, mutasi akan terbaca; dan atau tunggu update.</p>
+      <p>Abaikan pesan tersebut, nanti di saat robot lolos breaking, mutasi akan terbaca; atau update ke v4.0.1 <a
+          href="bagaimana-melakukan-update-otomax.html" target="_blank">klik disini</a>.</p>
     </div>
 
     <div class="accordion">
@@ -1152,9 +1160,9 @@
       </p>
     </div>
     <div class="panel">
-      <p>Silahkan install Selenium WebDriver, <a
-          href="https://software-otomax.com/instalasi-pendukung-win7-win8.html#webdriver" target="_blank">klik
-          disini</a>.</p>
+      <p>Hal tersebut disebabkan di komputer belum terinstall Selenium WebDriver <a
+          href="instalasi-pendukung-tambahan.html#webdriver" target="_blank">klik
+          disini untuk install</a>.</p>
     </div>
 
     <!-- END TEHNIS -->
