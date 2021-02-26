@@ -90,6 +90,41 @@
 
         <p class="change-log">
 
+            4.0.2 @26-Feb-2021<br>
+            - New: Setting SpreadsheetSaveInterval tidak berfungsi lagi. Perubahan saldo akan otomatis tersimpan secara
+            realtime.<br>
+            - New: Centang Auto Print Receipt on Kiosk pada tabel Propvider. Saat transaksi sukses, Kiosk akan otomatis
+            mencetak struk.<br>
+            - New: Format TransferSaldo mendukung parameter [keterangan] sebagai tambahan catatan pada mutasi.<br>
+            - New: Kolom Nomor KTP dan NPWP di tabel Reseller.<br>
+            - New: Modul KlikBCA Bisnis pada edisi Ultimate.<br>
+            - New: Setting Ticket.MaxOpen untuk menentukan maksimal jumlah tiket yang berstatus open.<br>
+            - New: Menentukan simbol desimal pada masing-masing modul untuk pengenalan bilangan yang lebih baik.<br>
+            - New: Tambah kolom ke tabel Reseller (di database) dengan awalan x__ akan menampilkan kolom tersebut di
+            aplikasi. Khusus edisi Ultimate.<br>
+            - New: Setting WaAddOnRegDL agar otomatis menambahkan nomor WA saat reseller mendaftarkan downline dengan
+            nomor SMS.<br>
+            - New: Format balasan Cutoff bahwa transaksi tidak diproses karena produk sedang cutoff.<br>
+            - Fix: Error saat ubah kode reseller dari tabel Reseller.<br>
+            - Fix: NullReferenceException Cache.TglData.Modul.<br>
+            - Fix: IP Gateway tidak bekerja pada edisi dibawah Enterprise.<br>
+            - Fix: Update transaksi sukses/gagal mengirim ulang laporan ke reseller.<br>
+            - Fix: Reset pin dari upline ke downline tidak berdampak.<br>
+            - Fix: Penambahan reseller secara langsung ke database menyebabkan respon Bukan Reseller.<br>
+            - Fix: Setting MinPanjangPin tidak berpengaruh saat pembuatan pin secara acak (PinStandar = kosong).<br>
+            - Fix: Sekarang update harga beli parsing pada modul OH hanya terjadi jika bukan postpaid dan qty = 1.<br>
+            - Fix: Otomatis hapus file update balance (spreadsheet) yang sudah lama.<br>
+            - Fix: WA Center.<br><br>
+
+            CATATAN: Saat menangkap jawaban, hampir semua bilangan seperti 1,523.00, 1.523,00, dll akan dikenali secara
+            otomatis. Namun untuk bilangan yang memiliki kurang dari 4 digit di depan simbol dan 3 digit di belakang
+            simbol seperti 1.523 atau 12,523, hasil pengenalan bisa tidak sesuai yang diharapkan. Untuk itu silakan
+            tentukan decimal symbol pada seting modul tersebut.<br><br>
+
+            Decimal symbol adalah simbol yang menunjukkan bahwa angka setelah simbol tersebut adalah bilangan
+            desimal/pecahan. Untuk Indonesia umumnya menggunakan , (koma) sebagai simbol desimal, sedangkan Inggris
+            menggunakan . (titik).<br><br>
+
             4.0.1 @14-Dec-2020<br>
             - New: Kinerja lebih cepat dan ringan.<br>
             - New: WA Center. Pesan lewat dari 30 detik dianggap kadaluarsa. Mini, Lite, Standard: 1, Pro: 2, Advanced:
