@@ -90,6 +90,26 @@
 
         <p class="change-log">
 
+            4.0.3 @10-Mar-2021<br>
+            - New: Simbol desimal kosong berarti mata uang tidak mengandung sen (desimal). Angka 3,000 dan 3.000 akan
+            dianggap sama yaitu 3 ribu.<br>
+            - New: Format balasan UnitTidakCukup.<br>
+            - New: Parameter [saldoawal] pada balasan transaksi. Berbeda dengan dengan [saldo] yang menampilkan saldo
+            terakhir saat sistem membalas,
+            [saldoawal] adalah saldo saat transaksi terinput ke sistem, nilainya sama dengan kolom Saldo Awal di tabel
+            transaksi.<br>
+            - New: Data nomor rekening di mutasi saldo tiket deposit.<br>
+            - Fix: Kotak Corp ID, User ID, dan PIN bisa menampung hingga 50 karakter.<br>
+            - Fix: Balasan WA/Telegram terpotong jika jumlah karakter > 4K.<br>
+            - Fix: Pada kondisi tertentu, kolom-kolom yang seharusnya tidak bisa diedit menjadi bisa diedit jika ganti
+            login.<br>
+            - Fix: Sisa stok unit di balasan transaksi sukses atau gagal.<br>
+            - Fix: Balasan "No Response" pada IP jika stok unit tidak cukup.<br>
+            - Fix: Pada kondisi tertentu outbox jabber tidak mau terkirim (kuning). Biasanya terjadi karena menggunakan
+            addon WA.<br>
+            - Fix: InvalidOperationException saat login Mandiri Online.<br>
+            - Fix: OtomaX hang saat ikon jabber diklik.<br><br>
+
             4.0.2 @26-Feb-2021<br>
             - New: Setting SpreadsheetSaveInterval tidak berfungsi lagi. Perubahan saldo akan otomatis tersimpan secara
             realtime.<br>
