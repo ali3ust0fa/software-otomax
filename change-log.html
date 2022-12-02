@@ -89,6 +89,27 @@
         <h1>Change Log</h1>
 
         <p class="change-log">
+
+            4.1.1 @18-Okt-2022<br>
+            New: Kotak produk di halaman transaksi mendukung pencarian kode secara utuh, dengan ditutup tanda petik (');
+            Isian TS akan mencari kode yang berawalan TS, sedangkan isian 'TS' akan mencari kode yang = TS.
+            Mendukung juga pencarian lebih dari 1 kode dengan pemisah koma (,); misalnya 'TS10','TS5'.<br>
+            New: MaxLength kotak produk di halaman transaksi menjadi 255.<br>
+            New: Parameter qtypermil yang bisa digunakan di parsing. qtypermil adalah nilai qty dibagi 1000 dengan
+            pembulatan ke bawah.<br>
+            New: Increases database Max Pool Size to 200.<br>
+            Fix: TambahYM/TambahGTalk tidak mendukung parameter kodereseller.<br>
+            Fix: Validasi qty saat transaksi masuk untuk produk yang kolom Qty diizinkan tidak diisi.<br>
+            Fix: Sekarang saldo pada balasan transaksi gagal adalah saldo dari tabel reseller.<br>
+            Fix: Pengingat Saldo tidak bekerja.<br>
+            Fix: Parameter [waktu] pada balasan status transaksi menampilkan tanggal hari ini.<br>
+            Fix: Improves pengecekan jawaban supplier saat saldo tidak cukup di postpaid, dan penghentian proses saat
+            mendeteksi saldo tidak cukup.<br>
+            Fix: Pengecekan nomor pengirim saat menerima inbox WA (untuk nomor beda negara).<br>
+            Fix: Saldo akhir pada form Tambah Saldo terisi padahal belum ada reseller yang terpilih.<br>
+            Fix: Pembacaan harga grup tidak membaca harga grup uplinenya.<br>
+            Fix: Fitur Cek Parsing di halaman parsing tidak bekerja dengan baik.<br><br>
+
             4.1.0 @8-Sep-2022<br>
             New: Kolom Tanpa Komisi dan Parameter Balasan di tabel Grup. Khusus untuk edisi Ultimate.<br>
             New: Modul internet banking BSI.<br>
