@@ -90,6 +90,25 @@
 
         <p class="change-log">
 
+            4.1.2 @31-Jan-2023<br>
+            - New: Transaksi yang masuk dari IP bisa meneruskan parameter query string ke parsing. Untuk edisi
+            Ultimate.<br>
+            Contoh inbox:
+            trx?product=xx10&dest=081241517200&refID=61CBa&memberID=yusuf&sign=xWrYsbEnL2KSBEChVbrFiuh2amk&combo=27135
+            Maka parameter [combo] bisa digunakan di parsing (TANPA awalan ver_, bukan [ver_combo]).<br>
+            - New: Menu File - Hapus File Koneksi Database.<br>
+            - New: API SiDOMPUL.<br>
+            - New: Mendukung tipe data Bigint di tabel transaksi, inbox, dan outbox.<br>
+            - New: Informasi versi di kotak Login.<br>
+            - New: Menampilkan harga beli dan harga jual produk di halaman Harga Grup.<br>
+            - Fix: Auto update daftar transaksi di Kiosk tidak berjalan jika format waktu menggunakan Indonesia
+            (mengandung titik).<br>
+            - Fix: Error saat proses mutasi bank yang keterangan mengandung karakter *.<br>
+            - Fix: Tidak ada pilihan WA di Kirim laporan pada dialog Tambah Unit.<br>
+            - Fix: Lambat saat klik menu Putuskan Semua Terminal.<br>
+            - Fix: Optimasi query pada halaman Transaksi.<br>
+            - Fix: OtomaX tetiba close akibat data pada tabel grup menyebabkan infinite loop.<br><br>
+
             4.1.1 @18-Okt-2022<br>
             New: Kotak produk di halaman transaksi mendukung pencarian kode secara utuh, dengan ditutup tanda petik (');
             Isian TS akan mencari kode yang berawalan TS, sedangkan isian 'TS' akan mencari kode yang = TS.
