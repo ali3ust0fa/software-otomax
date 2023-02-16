@@ -90,6 +90,28 @@
 
         <p class="change-log">
 
+            4.1.3 @16-Feb-2023<br>
+            - New: Filter mutasi bank yang mengandung teks tertentu. Mutasi tetap terbaca tapi tidak diproses ke bagian
+            input saldo otomatis.<br>
+            - New: Menyembunyikan nilai pin pada inbox.<br>
+            - New: Transaksi postpaid akan memproses parameter hargabeli sebagai harga beli transaksi.<br>
+            - Fix: Tidak bisa memilih daftar kolom pada halaman Harga Grup.<br>
+            - Fix: Tidak ada<br>
+            - Fix: Uncheck auto refresh tabel transaksi tidak bekerja.<br>
+            - Fix: Username/ID minimum 4 characters (modul internet banking).<br>
+            - Fix: Counter tembak berubah saat transaksi dikirim ulang.<br>
+            - Fix: Optimasi proses pengecekan jawaban supplier.<br>
+            - Fix: Parameter pada keterangan transaksi tidak terisi.<br>
+            - Fix: Parameter qty tidak tertangkap jika jawaban langsung (synchronous).<br>
+            - Fix: Respon API SiDOMPUL kini tampil lebih lengkap.<br>
+            - Fix: Parameter di regex jawaban tidak bekerja.<br>
+            - Fix: Perhitungan qty tidak sesuai jika harga jual minus.<br>
+            - Fix: Update saldo saat initial commands tidak bekerja.<br>
+            - Fix: Sebelumnya pesan jabber dibatasi maks 800 karakter. Skrg mengikuti tipe data di inbox.<br>
+            - Fix: Modul terkait pada terminal tidak bekerja untuk modul API SiDOMPUL.<br>
+            - Fix: Tiket deposit berstatus Cancelled jika ada input saldo manual dengan jumlah yang sama.<br>
+            - Fix: Data voucher tidak muncul pada halaman transaksi.<br><br>
+
             4.1.2 @31-Jan-2023<br>
             - New: Transaksi yang masuk dari IP bisa meneruskan parameter query string ke parsing. Untuk edisi
             Ultimate.<br>
