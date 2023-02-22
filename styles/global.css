@@ -213,6 +213,15 @@ div#content p.note {
   border-left: solid 20px green;
 }
 
+div#content p.red-note {
+  background-color: palevioletred;
+  padding: 20px;
+  border-radius: 5px;
+  font-style: italic;
+  color: white;
+  border-left: solid 20px red;
+}
+
 div#content p.note a {
   color: red;
 }
