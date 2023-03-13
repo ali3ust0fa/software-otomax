@@ -147,9 +147,23 @@
         </p>
         <p><img src="images/transfer-pulsa/jawaban-provider-angka-unik.png" alt="penangkap jawaban angka unik"
             width="95%"></p>
+        <ul>
+          <li>
+            Nomor tujuan dan nominal ditangkap dengan menu <b>Awalan/Akhiran Tujuan/Nominal</b>.
+          </li>
+          <li>
+            Angka unik (<span style="color: blue;">3554</span>) ditangkap menu <b>Ekspresi Reguler</b> dengan RegEx:
+            <span style="color: blue;">angka
+              (?&lt;angka&gt;\d+)</span> dan disimpan dalam parameter <span style="color: blue;">&lt;angka&gt;</span>.
+          </li>
+          <li>
+            Angka unik yang tersimpan diambil pakai parameter <span style="color: blue;">[angka]</span> dan dikirim
+            balik menggunakan menu <b>Perintah</b>.
+          </li>
+        </ul>
         <p>
-          Tata cara membuat penangkap jawaban silahkan <a href="jawaban-dari-provider.html" target="_blank">klik
-            disini</a>.
+          Kemudian pilih menu <b>Alat Penguji</b> -> <b>Penguji Jawaban</b> -> lakukan pengujian penangkap jawaban
+          diatas.
         </p>
         <p><img src="images/transfer-pulsa/penguji-jawaban-angka-unik.png" alt="penguji jawaban angka unik" width="60%">
         </p>
