@@ -1,96 +1,76 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <title>DigiPOS - Kuota Nelpon | OtomaX - Software Server Pulsa</title>
-    <meta charset="utf-8" />
-    <!--        <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-    <link rel="stylesheet" type="text/css" href="styles/global.css" />
-    <style>
-      table {
-        border-collapse: collapse;
-        /* overflow-x: auto; */
-        width: 300%;
-      }
-      
-      table, th, td {
-        border: 1px solid black;
-      }
-      
-      table th {
-        height: 50px;
-      }
 
-      table tr:nth-child(even){
-        background-color: rgb(210, 228, 217);
-      }
+<head>
+  <title>DigiPOS - Kuota Nelpon | OtomaX - Software Server Pulsa</title>
+  <meta charset="utf-8" />
+  <!--        <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <link rel="stylesheet" type="text/css" href="styles/global.css" />
+  <style>
+    table {
+      border-collapse: collapse;
+      /* overflow-x: auto; */
+      width: 300%;
+    }
 
-      table tr:hover {
-        background-color:pink;
-      }
-    </style>
-    <!--        GA-->
-    <script>
-      (function (i, s, o, g, r, a, m) {
-        i["GoogleAnalyticsObject"] = r;
-        (i[r] =
-          i[r] ||
-          function () {
-            (i[r].q = i[r].q || []).push(arguments);
-          }),
-          (i[r].l = 1 * new Date());
-        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m);
-      })(
-        window,
-        document,
-        "script",
-        "https://www.google-analytics.com/analytics.js",
-        "ga"
-      );
+    table,
+    th,
+    td {
+      border: 1px solid black;
+    }
 
-      ga("create", "UA-80250152-1", "auto");
-      ga("send", "pageview");
-    </script>
-    <link
-      href="https://fonts.googleapis.com/css?family=Exo+2&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div id="banner-jualan">
-      <a href="purchase.html" target="_blank"
-        ><img src="images/banner-penjualan-otomax.png" width=""
-      /></a>
+    table th {
+      height: 50px;
+    }
+
+    table tr:nth-child(even) {
+      background-color: rgb(210, 228, 217);
+    }
+
+    table tr:hover {
+      background-color: pink;
+    }
+  </style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-6VTFYY1K45"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-6VTFYY1K45'); 
+  </script>
+  <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <div id="banner-jualan">
+    <a href="purchase.html" target="_blank"><img src="images/banner-penjualan-otomax.png" width="" /></a>
+  </div>
+
+  <div id="split-header">
+    <marquee style="padding: 6px;">Selamat Datang di Virtual Office M.A.M (Reseller OtomaX Original
+      Indonesia), melayani: Pembelian Baru, Upgrade, Iuran, Ganti SIMCard,
+      Balik Nama dan Support Premium OtomaX</marquee>
+  </div>
+
+  <div id="header">
+    <div>
+      <img src="images/logo_otomax.png" />
     </div>
+  </div>
 
-    <div id="split-header">
-      <marquee style="padding: 6px;"
-        >Selamat Datang di Virtual Office M.A.M (Reseller OtomaX Original
-        Indonesia), melayani: Pembelian Baru, Upgrade, Iuran, Ganti SIMCard,
-        Balik Nama dan Support Premium OtomaX</marquee
-      >
-    </div>
-
-    <div id="header">
-      <div>
-        <img src="images/logo_otomax.png" />
-      </div>
-    </div>
-
-    <div id="sidebar">
-      <ul class="nav">
-        <li><a href="home.html">Home</a></li>
-        <li><a href="download.html">Download</a></li>
-        <li><a href="price-plan.html">Price & Plan</a></li>
-        <li><a href="documentation.html">Documentation</a></li>
-        <li><a href="change-log.html">Change Log</a></li>
-        <li><a href="purchase.html">Purchase</a></li>
-        <li><a href="support.html">Support</a></li>
-      </ul>
-      <!--            begin widget yahoo-->
-      <!--
+  <div id="sidebar">
+    <ul class="nav">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="download.html">Download</a></li>
+      <li><a href="price-plan.html">Price & Plan</a></li>
+      <li><a href="documentation.html">Documentation</a></li>
+      <li><a href="change-log.html">Change Log</a></li>
+      <li><a href="purchase.html">Purchase</a></li>
+      <li><a href="support.html">Support</a></li>
+    </ul>
+    <!--            begin widget yahoo-->
+    <!--
             <div style="color:yellow; font-size:10pt; text-align:center; text-decoration:none;">
                 <a href="ymsgr:sendIM?mam_service"><img src="http://opi.yahoo.com/online?u=mam_service&amp;m=g&amp;t=2&amp;l=us"/></a>
                 <br>
@@ -99,515 +79,536 @@
                 HP/WA: +628-5258-1112-30
             </div>
 -->
-      <!--            end widget yahoo-->
+    <!--            end widget yahoo-->
 
-      <!--            begin widget telegram-->
-      <div style="color: yellow; font-size: 10pt; text-align: center;">
-        <a href="http://telegram.me/mam_service" target="_blank"
-          ><img src="images/Telegram-icon%2048x48.png"
-        /></a>
-        <br />
-        Telegram:
-        <br />
-        @mam_service
-        <br /><br />
-        HP | WA | TG:
-        <br />
-        +628-5258-1112-30
-      </div>
-      <!--            end widget telegram-->
+    <!--            begin widget telegram-->
+    <div style="color: yellow; font-size: 10pt; text-align: center;">
+      <a href="http://telegram.me/mam_service" target="_blank"><img src="images/Telegram-icon%2048x48.png" /></a>
+      <br />
+      Telegram:
+      <br />
+      @mam_service
+      <br /><br />
+      HP | WA | TG:
+      <br />
+      +628-5258-1112-30
     </div>
+    <!--            end widget telegram-->
+  </div>
 
-    <div id="content">
-      <h1>DigiPOS - Kuota Nelpon</h1>
+  <div id="content">
+    <h1>DigiPOS - Kuota Nelpon</h1>
 
-      <p>
-        <b>Kuota Nelpon</b> merupakan salah satu produk yang dapat dijual di <b>DigiPOS Outlet</b> selain <a href="digipos-outlet.html" target="_blank"><b>Pulsa Reguler</b></a> dan <a href="digipos-pulsa-int.html" target="_blank"><b>Pulsa Internet Bulk</b></a> atau Paket Data. <b>Kuota Nelpon</b> terdapat beberapa pilihan, diantaranya <i>Kuota Nelpon Bulk</i>, <i>Kuota Nelpon Pas</i>, yang akan dibahas ialah <i>Kuota Nelpon Bulk</i>. 
-      </p>
+    <p>
+      <b>Kuota Nelpon</b> merupakan salah satu produk yang dapat dijual di <b>DigiPOS Outlet</b> selain <a
+        href="digipos-outlet.html" target="_blank"><b>Pulsa Reguler</b></a> dan <a href="digipos-pulsa-int.html"
+        target="_blank"><b>Pulsa Internet Bulk</b></a> atau Paket Data. <b>Kuota Nelpon</b> terdapat beberapa pilihan,
+      diantaranya <i>Kuota Nelpon Bulk</i>, <i>Kuota Nelpon Pas</i>, yang akan dibahas ialah <i>Kuota Nelpon Bulk</i>.
+    </p>
 
-      <p>
-        Berikut ini langkah setting Kuota Nelpon <b>DigiPOS Outlet</b> Telkomsel basis <b>UMB</b> dan metode pembayaran <b>LINKAJA</b> di OtomaX:
-      </p>
+    <p>
+      Berikut ini langkah setting Kuota Nelpon <b>DigiPOS Outlet</b> Telkomsel basis <b>UMB</b> dan metode pembayaran
+      <b>LINKAJA</b> di OtomaX:
+    </p>
 
-      <p>
-        <ol>
-          <li>
-            Masuk menu <b>Administrasi</b> -> <b>Produk</b> -> buat Kode Produk seperti petunjuk di bawah ini:
-            <p><img src="#" alt="kode produk" width="55%"></p>
-          </li>
-          <li>
-            Masuk menu <b>Administrasi</b> -> <b>Jawaban dari Provider</b> -> buat penangkap jawaban seperti di bawah ini:
-            <p>
-              <div style="overflow-x: auto;">
-                <table>
-                  <tr>
-                    <th>Kelompok</th>
-                    <th>Prioritas</th>
-                    <th>Kata Kunci Harus Ada</th>
-                    <th>Kata Kunci Tidak Boleh Ada</th>
-                    <th>Awalan Tujuan</th>
-                    <th>Akhiran Tujuan</th>
-                    <!-- <th>Awalan Nominal</th>
+    <p>
+    <ol>
+      <li>
+        Masuk menu <b>Administrasi</b> -> <b>Produk</b> -> buat Kode Produk seperti petunjuk di bawah ini:
+        <p><img src="#" alt="kode produk" width="55%"></p>
+      </li>
+      <li>
+        Masuk menu <b>Administrasi</b> -> <b>Jawaban dari Provider</b> -> buat penangkap jawaban seperti di bawah ini:
+        <p>
+        <div style="overflow-x: auto;">
+          <table>
+            <tr>
+              <th>Kelompok</th>
+              <th>Prioritas</th>
+              <th>Kata Kunci Harus Ada</th>
+              <th>Kata Kunci Tidak Boleh Ada</th>
+              <th>Awalan Tujuan</th>
+              <th>Akhiran Tujuan</th>
+              <!-- <th>Awalan Nominal</th>
                     <th>Akhiran Nominal</th> -->
-                    <th>Awalan SN/Ref</th>
-                    <th>Akhiran SN/Ref</th>
-                    <th>Status Trx</th>
-                    <th>Expresi Reguler</th>
-                    <th>Perintah</th>
-                    <th>Parameter Balasan</th>
-                    <th>Catatan</th>
-                  </tr>
-                  <tr>
-                    <td>DIPO-NEL</td>
-                    <td>0</td>
-                    <td>Masukkan nomor pelanggan</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <!-- <td></td>
+              <th>Awalan SN/Ref</th>
+              <th>Akhiran SN/Ref</th>
+              <th>Status Trx</th>
+              <th>Expresi Reguler</th>
+              <th>Perintah</th>
+              <th>Parameter Balasan</th>
+              <th>Catatan</th>
+            </tr>
+            <tr>
+              <td>DIPO-NEL</td>
+              <td>0</td>
+              <td>Masukkan nomor pelanggan</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <!-- <td></td>
                     <td></td> -->
-                    <td></td>
-                    <td></td>
-                    <td>Menunggu Jawaban</td>
-                    <td></td>
-                    <td>[tujuan]</td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>DIPO-NEL</td>
-                    <td>0</td>
-                    <td>Paket Lainnya</td>
-                    <td>Paket Bulanan (Bulk)</td>
-                    <td></td>
-                    <td></td>
-                    <!-- <td></td>
+              <td></td>
+              <td></td>
+              <td>Menunggu Jawaban</td>
+              <td></td>
+              <td>[tujuan]</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>DIPO-NEL</td>
+              <td>0</td>
+              <td>Paket Lainnya</td>
+              <td>Paket Bulanan (Bulk)</td>
+              <td></td>
+              <td></td>
+              <!-- <td></td>
                     <td></td> -->
-                    <td></td>
-                    <td></td>
-                    <td>Menunggu Jawaban</td>
-                    <td>(?&lt;kodedial&gt;\d+).\D*Paket\D*Lainnya</td>
-                    <td>[kodedial]</td>
-                    <td></td>
-                    <td>
-                      Combo SAKTI 15GB/30hr/Rp75rb
-                      <br>
-                      1. Beli
-                      <br>
-                      2. Combo SAKTI 2GB/30hr/Rp25rb
-                      <br>
-                      3. Combo SAKTI 1GB/30hr/Rp15rb
-                      <br>
-                      4. Hot Offer
-                      <br>
-                      5. Paket Lainnya
-                      <br>
-                      9.Back
-                      <br>
-                      0.Home
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>DIPO-NEL</td>
-                    <td>0</td>
-                    <td>Pulsa Int (Bulk)</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <!-- <td></td>
+              <td></td>
+              <td></td>
+              <td>Menunggu Jawaban</td>
+              <td>(?&lt;kodedial&gt;\d+).\D*Paket\D*Lainnya</td>
+              <td>[kodedial]</td>
+              <td></td>
+              <td>
+                Combo SAKTI 15GB/30hr/Rp75rb
+                <br>
+                1. Beli
+                <br>
+                2. Combo SAKTI 2GB/30hr/Rp25rb
+                <br>
+                3. Combo SAKTI 1GB/30hr/Rp15rb
+                <br>
+                4. Hot Offer
+                <br>
+                5. Paket Lainnya
+                <br>
+                9.Back
+                <br>
+                0.Home
+              </td>
+            </tr>
+            <tr>
+              <td>DIPO-NEL</td>
+              <td>0</td>
+              <td>Pulsa Int (Bulk)</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <!-- <td></td>
                     <td></td> -->
-                    <td></td>
-                    <td></td>
-                    <td>Menunggu Jawaban</td>
-                    <td>(?&lt;kodedial&gt;\d+).\D*Pulsa\D*Int\D*\(Bulk\)</td>
-                    <td>[kodedial]</td>
-                    <td></td>
-                    <td>
-                      1. Paket Akuisisi
-                      <br>
-                      2. Pulsa Int (Bulk)
-                      <br>
-                      3. Kuota Nelpon
-                      <br>
-                      4. Isi Pulsa Reguler
-                      <br>
-                      5. Digital
-                      <br>
-                      6. Paket SMS
-                      <br>
-                      7. Roaming
-                      <br>
-                      8. Paket Int Fix
-                      <br>
-                      0.Home
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>DIPO-NEL</td>
-                    <td>0</td>
-                    <td>Paket Bulanan</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <!-- <td></td>
+              <td></td>
+              <td></td>
+              <td>Menunggu Jawaban</td>
+              <td>(?&lt;kodedial&gt;\d+).\D*Pulsa\D*Int\D*\(Bulk\)</td>
+              <td>[kodedial]</td>
+              <td></td>
+              <td>
+                1. Paket Akuisisi
+                <br>
+                2. Pulsa Int (Bulk)
+                <br>
+                3. Kuota Nelpon
+                <br>
+                4. Isi Pulsa Reguler
+                <br>
+                5. Digital
+                <br>
+                6. Paket SMS
+                <br>
+                7. Roaming
+                <br>
+                8. Paket Int Fix
+                <br>
+                0.Home
+              </td>
+            </tr>
+            <tr>
+              <td>DIPO-NEL</td>
+              <td>0</td>
+              <td>Paket Bulanan</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <!-- <td></td>
                     <td></td> -->
-                    <td></td>
-                    <td></td>
-                    <td>Menunggu Jawaban</td>
-                    <td>(?&lt;kodedial&gt;\d+).\D*Paket\D*Bulanan</td>
-                    <td>[kodedial]</td>
-                    <td></td>
-                    <td>
-                      Pulsa Internet (Bulk)
-                      <br>
-                      1. Paket Bulanan
-                      <br>
-                      2. Combo Bulanan
-                      <br>
-                      3. Paket Mingguan
-                      <br>
-                      4. Paket Harian
-                      <br>
-                      5. Paket Malam
-                      <br>
-                      6. Paket Ketengan
-                      <br>
-                      9.Back
-                      <br>
-                      0.Home
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>DIPO-NEL</td>
-                    <td>0</td>
-                    <td>
-                      Paket Bulanan (Bulk)
-                      <br>
-                      1. 3GB & 1GB OMG!
-                      <br>
-                      2. 5GB &2GB OMG!
-                      <br>
-                      3. 8GB & 2GB OMG!
-                      <br>
-                      4. 12GB &2GB OMG!
-                      <br>
-                      5. 25GB &2GB OMG!
-                      <br>
-                      6. 50GB &2GB OMG!
-                    </td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <!-- <td></td>
+              <td></td>
+              <td></td>
+              <td>Menunggu Jawaban</td>
+              <td>(?&lt;kodedial&gt;\d+).\D*Paket\D*Bulanan</td>
+              <td>[kodedial]</td>
+              <td></td>
+              <td>
+                Pulsa Internet (Bulk)
+                <br>
+                1. Paket Bulanan
+                <br>
+                2. Combo Bulanan
+                <br>
+                3. Paket Mingguan
+                <br>
+                4. Paket Harian
+                <br>
+                5. Paket Malam
+                <br>
+                6. Paket Ketengan
+                <br>
+                9.Back
+                <br>
+                0.Home
+              </td>
+            </tr>
+            <tr>
+              <td>DIPO-NEL</td>
+              <td>0</td>
+              <td>
+                Paket Bulanan (Bulk)
+                <br>
+                1. 3GB & 1GB OMG!
+                <br>
+                2. 5GB &2GB OMG!
+                <br>
+                3. 8GB & 2GB OMG!
+                <br>
+                4. 12GB &2GB OMG!
+                <br>
+                5. 25GB &2GB OMG!
+                <br>
+                6. 50GB &2GB OMG!
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <!-- <td></td>
                     <td></td> -->
-                    <td></td>
-                    <td></td>
-                    <td>Menunggu Jawaban</td>
-                    <td></td>
-                    <td>[nominal]</td>
-                    <td></td>
-                    <td>
-                      Paket Bulanan (Bulk)
-                      <br>
-                      1. 3GB & 1GB OMG!
-                      <br>
-                      2. 5GB &2GB OMG!
-                      <br>
-                      3. 8GB & 2GB OMG!
-                      <br>
-                      4. 12GB &2GB OMG!
-                      <br>
-                      5. 25GB &2GB OMG!
-                      <br>
-                      6. 50GB &2GB OMG!
-                      <br>
-                      7. Paket Lainnya
-                      <br>
-                      9.Back
-                      <br>
-                      0.Home</td>
-                  </tr>
-                  <tr>
-                    <td>DIPO-NEL</td>
-                    <td>0</td>
-                    <td>Silakan Masukkan PIN :</td> <!-- eligible -->
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <!-- <td></td>
+              <td></td>
+              <td></td>
+              <td>Menunggu Jawaban</td>
+              <td></td>
+              <td>[nominal]</td>
+              <td></td>
+              <td>
+                Paket Bulanan (Bulk)
+                <br>
+                1. 3GB & 1GB OMG!
+                <br>
+                2. 5GB &2GB OMG!
+                <br>
+                3. 8GB & 2GB OMG!
+                <br>
+                4. 12GB &2GB OMG!
+                <br>
+                5. 25GB &2GB OMG!
+                <br>
+                6. 50GB &2GB OMG!
+                <br>
+                7. Paket Lainnya
+                <br>
+                9.Back
+                <br>
+                0.Home
+              </td>
+            </tr>
+            <tr>
+              <td>DIPO-NEL</td>
+              <td>0</td>
+              <td>Silakan Masukkan PIN :</td> <!-- eligible -->
+              <td></td>
+              <td></td>
+              <td></td>
+              <!-- <td></td>
                     <td></td> -->
-                    <td></td>
-                    <td></td>
-                    <td>Menunggu Jawaban</td>
-                    <td>harga Rp. (43.400|43.500|43.600|50.200|61.300)</td>
-                    <td>[pin]</td>
-                    <td></td>
-                    <td>Harga Sesuai Keinginan &gt; Diproses</td>
-                  </tr>
-                  <tr>
-                    <td>DIPO-NEL</td>
-                    <td>1</td>
-                    <td>Silakan Masukkan PIN :</td> <!-- not eligible -->
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <!-- <td></td>
+              <td></td>
+              <td></td>
+              <td>Menunggu Jawaban</td>
+              <td>harga Rp. (43.400|43.500|43.600|50.200|61.300)</td>
+              <td>[pin]</td>
+              <td></td>
+              <td>Harga Sesuai Keinginan &gt; Diproses</td>
+            </tr>
+            <tr>
+              <td>DIPO-NEL</td>
+              <td>1</td>
+              <td>Silakan Masukkan PIN :</td> <!-- not eligible -->
+              <td></td>
+              <td></td>
+              <td></td>
+              <!-- <td></td>
                     <td></td> -->
-                    <td></td>
-                    <td></td>
-                    <td>Menunggu Jawaban</td>
-                    <td>harga Rp. (?&lt;hargabeli&gt;\S+) ke</td>
-                    <td></td> <!-- tidak diisi [] agar jawaban di parameter balasan muncul dan tidak tertimpa balasan provider -->
-                    <td>jawaban=Tidak diproses, [hargabeli] belum tercantum di Expresi Reguler</td>
-                    <td>Harga Tidak Sesuai Keinginan &gt; Tidak Diproses</td>
-                  </tr>
-                  <tr>
-                    <td>DIPO-NEL</td>
-                    <td>0</td>
-                    <td>Terima kasih permintaan Anda sedang diproses</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <!-- <td></td>
+              <td></td>
+              <td></td>
+              <td>Menunggu Jawaban</td>
+              <td>harga Rp. (?&lt;hargabeli&gt;\S+) ke</td>
+              <td></td>
+              <!-- tidak diisi [] agar jawaban di parameter balasan muncul dan tidak tertimpa balasan provider -->
+              <td>jawaban=Tidak diproses, [hargabeli] belum tercantum di Expresi Reguler</td>
+              <td>Harga Tidak Sesuai Keinginan &gt; Tidak Diproses</td>
+            </tr>
+            <tr>
+              <td>DIPO-NEL</td>
+              <td>0</td>
+              <td>Terima kasih permintaan Anda sedang diproses</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <!-- <td></td>
                     <td></td> -->
-                    <td></td>
-                    <td></td>
-                    <td>Menunggu Jawaban</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>DIPO-NEL</td>
-                    <td>0</td>
-                    <td>berhasil</td>
-                    <td></td>
-                    <td>62</td>
-                    <td>&lt;spasi&gt;telah</td>
-                    <!-- <td>Rp &lt;spasi&gt;</td>
+              <td></td>
+              <td></td>
+              <td>Menunggu Jawaban</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>DIPO-NEL</td>
+              <td>0</td>
+              <td>berhasil</td>
+              <td></td>
+              <td>62</td>
+              <td>&lt;spasi&gt;telah</td>
+              <!-- <td>Rp &lt;spasi&gt;</td>
                     <td>,000</td> -->
-                    <td>SN&lt;spasi&gt;:&lt;spasi&gt;</td>
-                    <td>&lt;spasi&gt;pada</td>
-                    <td>Sukses</td>
-                    <td></td>
-                    <td></td>
-                    <td>tujuan=0[tujuan]</td>
-                    <td></td>
-                  </tr>
-                  <!-- space table bottom -->
-                  <tr>
-                    <td>DIPO-NEL</td>
-                    <td>0</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <!-- <td></td>
+              <td>SN&lt;spasi&gt;:&lt;spasi&gt;</td>
+              <td>&lt;spasi&gt;pada</td>
+              <td>Sukses</td>
+              <td></td>
+              <td></td>
+              <td>tujuan=0[tujuan]</td>
+              <td></td>
+            </tr>
+            <!-- space table bottom -->
+            <tr>
+              <td>DIPO-NEL</td>
+              <td>0</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <!-- <td></td>
                     <td></td> -->
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>DIPO-NEL</td>
-                    <td>0</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <!-- <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>DIPO-NEL</td>
+              <td>0</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <!-- <td></td>
                     <td></td> -->
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>DIPO-NEL</td>
-                    <td>0</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <!-- <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>DIPO-NEL</td>
+              <td>0</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <!-- <td></td>
                     <td></td> -->
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                </table>
-              </div>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </table>
+        </div>
 
-              <p>
-                Keterangan:
-                <ol>
-                  <li>Ganti <span style="color: red;">&lt;spasi&gt;</span> dengan menekan tombol spasi di keyboard 1 kali .</li>
-                  <li>Ganti <span style="color: red;">43.400,43.500,43.600,50.200,61.300</span> dengan harga yang Anda inginkan.</li>
-                </ol>
-              </p>
-            </p>
-          </li>
-
-          <li>
-            Pilih <b>Dial</b> -> klik kanan -> klik <b>Tambah Dial...</b> -> klik <b>Page 1</b> -> di <b>Label</b> misal isi: <b>DIPO-NEL</b>; <b>Terminal</b> pilih Terminal berisi chip <b>DigiPOS Outlet</b>; <b>Kelompok Jawaban</b> pilih kelompok <b>DIPO-NEL</b>; <b>Parameter Parsing</b> isi: pin=1234 (ganti 1234 dengan pin chip Anda); <b>ID/Nomor Sender/Pengirim Provider</b> isi: <b>TELKOMSEL</b>.
-            <p><img src="#" alt="dial page 1" width="55%"></p>
-            Klik <b>Page 2</b> -> di <b>Default Parsing/Command</b> isi: <b>*181*2*1#</b>.
-            <p><img src="#" alt="dial page 2" width="55%"></p>
-          </li>
-          <li>
-            Klik <b>Administrasi</b> -> klik <b>Parsing ke Provider</b> -> di <b>Modul</b> pilih <b>DIPO-NEL</b> -> <b>Produk</b> isi misal: <b>DI31</b> -> di kolom <b>Perintah</b> kosongkan; terakhir klik tombol <b>Simpan</b>. Perhatikan gambar di bawah ini:
-            <p><img src="#" alt="parsing ke provider" width="70%"></p>
-          </li>
-          <li>Selesai.</li>
-        </ol>
-      </p>
-
-      <h2 id="harga-dinamis">Harga Dinamis Sesuai Zona</h2>
-
-      <p>
-        Sama halnya dengan <b>Pulsa Reguler</b> <a href="digipos-outlet.html#harga-dinamis" target="_blank">klik disini</a>, harga <b>Pulsa Internet Bulk</b> (Paket Data) di <b>DigiPOS Outlet</b> juga bermacam - macam sesuai lokasi nomor pelanggan sedang berada di zona mana, paket sama, lokasi nomor beda zona, beda harga. Di OtomaX, Anda dapat menjual <b>Pulsa Internet Bulk</b> Telkomsel dengan harga dinamis sesuai zona.
-      </p>
-
-      <p>
-        Tata caranya sama dengan menjual <b>Pulsa Reguler</b> dengan harga dinamis <a href="digipos-outlet.html#harga-dinamis" target="_blank">klik disini</a>, yaitu:
+        <p>
+          Keterangan:
         <ol>
-          <li>
-            Anda harus punya OtomaX edisi Ultimate; kalau belum punya, bisa beli dahulu <a href="purchase.html" target="_blank">klik disini</a>; apabila sudah punya tapi bukan edisi tersebut bisa upgrade dahulu <a href="bagaimana-upgrade-otomax.html" target="_blank">klik disini</a>; dan jika ingin membayar iuran tahunan OtomaX <a href="bagaimana-membayar-iuran-otomax.html" target="_blank">klik disini</a>.
+          <li>Ganti <span style="color: red;">&lt;spasi&gt;</span> dengan menekan tombol spasi di keyboard 1 kali .</li>
+          <li>Ganti <span style="color: red;">43.400,43.500,43.600,50.200,61.300</span> dengan harga yang Anda inginkan.
           </li>
-          <li>
-            Buat Kode Produk di <b>Administrasi</b> -> <b>Produk</b> seperti di atas, dan:
-            <ol type="a">
-              <li>Centang checkbox <b>Postpaid</b>.</li>
-              <li>Pastikan kolom <b>Hrg Beli</b> isi: 0.</li>
-              <li>Di kolom <b>Hrg Jual</b> isi jumlah laba yang Anda inginkan, contoh isi: 500.</li>
-            </ol>
-          </li>
-          <li>
-            Buat kelompok jawaban di <b>Administrasi</b> -> <b>Jawaban dari Provider</b> seperti di atas, dan:
-            <ol type="a">
-              <li>
-                Di baris penangkap jawaban dengan <b>Kata Kunci Harus Ada</b>: <span style="color: red;">Silakan Masukkan PIN :</span>, <b>Prioritas</b>: <span style="color: red;">0</span>, ubah menjadi seperti di bawah ini:
-                <!-- start table -->
-                <p>
-                  <div style="overflow-x: auto;">
-                    <table>
-                      <tr>
-                        <th>Kelompok</th>
-                        <th>Prioritas</th>
-                        <th>Kata Kunci Harus Ada</th>
-                        <th>Kata Kunci Tidak Boleh Ada</th>
-                        <th>Awalan Tujuan</th>
-                        <th>Akhiran Tujuan</th>
-                        <!-- <th>Awalan Nominal</th>
-                        <th>Akhiran Nominal</th> -->
-                        <th>Awalan SN/Ref</th>
-                        <th>Akhiran SN/Ref</th>
-                        <th>Status Trx</th>
-                        <th>Expresi Reguler</th>
-                        <th>Perintah</th>
-                        <th>Parameter Balasan</th>
-                        <th>Catatan</th>
-                      </tr>
-                      <tr>
-                        <td>DIPO-NEL</td>
-                        <td>0</td>
-                        <td>Silakan Masukkan PIN :</td> <!-- eligible -->
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <!-- <td></td>
-                        <td></td> -->
-                        <td></td>
-                        <td></td>
-                        <td>Menunggu Jawaban</td>
-                        <td>belian (?&lt;paket&gt;.+) dengan.*harga Rp. (?&lt;tagihan&gt;[,.\d]+) ke.*mor (?&lt;tujuan&gt;\d+)</td>
-                        <td>[pin]</td>
-                        <td>jawaban=Pembelian [paket] seharga Rp. [tagihan] ke [tujuan] sedang diproses</td>
-                        <td></td>
-                      </tr>
-                      <!-- space table bottom -->
-                      <tr>
-                        <td>DIPO-NEL</td>
-                        <td>0</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <!-- <td></td>
-                        <td></td> -->
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>DIPO-NEL</td>
-                        <td>0</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <!-- <td></td>
-                        <td></td> -->
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                      <tr>
-                        <td>DIPO-NEL</td>
-                        <td>0</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <!-- <td></td>
-                        <td></td> -->
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                      </tr>
-                    </table>
-                  </div>
-                </p>
-                <!-- end table -->
-              </li>
-              <li>
-                Hapus penangkap jawaban dengan <b>Kata Kunci Harus Ada</b>: <span style="color: red;">Silakan Masukkan PIN :</span>, <b>Prioritas</b>: <span style="color: red;">1</span>.
-              </li>
-            </ol>
-          </li>
-          <li>Buat modul <b>Dial</b> seperti di atas.</li>
-          <li>Buat parsing di <b>Parsing ke Provider</b> seperti di atas.</li>
-          <li>Selesai.</li>
         </ol>
-      </p>
+        </p>
+        </p>
+      </li>
 
-      <div class="bottom-content"></div>
-    </div>
+      <li>
+        Pilih <b>Dial</b> -> klik kanan -> klik <b>Tambah Dial...</b> -> klik <b>Page 1</b> -> di <b>Label</b> misal
+        isi: <b>DIPO-NEL</b>; <b>Terminal</b> pilih Terminal berisi chip <b>DigiPOS Outlet</b>; <b>Kelompok Jawaban</b>
+        pilih kelompok <b>DIPO-NEL</b>; <b>Parameter Parsing</b> isi: pin=1234 (ganti 1234 dengan pin chip Anda);
+        <b>ID/Nomor Sender/Pengirim Provider</b> isi: <b>TELKOMSEL</b>.
+        <p><img src="#" alt="dial page 1" width="55%"></p>
+        Klik <b>Page 2</b> -> di <b>Default Parsing/Command</b> isi: <b>*181*2*1#</b>.
+        <p><img src="#" alt="dial page 2" width="55%"></p>
+      </li>
+      <li>
+        Klik <b>Administrasi</b> -> klik <b>Parsing ke Provider</b> -> di <b>Modul</b> pilih <b>DIPO-NEL</b> ->
+        <b>Produk</b> isi misal: <b>DI31</b> -> di kolom <b>Perintah</b> kosongkan; terakhir klik tombol <b>Simpan</b>.
+        Perhatikan gambar di bawah ini:
+        <p><img src="#" alt="parsing ke provider" width="70%"></p>
+      </li>
+      <li>Selesai.</li>
+    </ol>
+    </p>
 
-    <div id="footer"></div>
-  </body>
+    <h2 id="harga-dinamis">Harga Dinamis Sesuai Zona</h2>
+
+    <p>
+      Sama halnya dengan <b>Pulsa Reguler</b> <a href="digipos-outlet.html#harga-dinamis" target="_blank">klik
+        disini</a>, harga <b>Pulsa Internet Bulk</b> (Paket Data) di <b>DigiPOS Outlet</b> juga bermacam - macam sesuai
+      lokasi nomor pelanggan sedang berada di zona mana, paket sama, lokasi nomor beda zona, beda harga. Di OtomaX, Anda
+      dapat menjual <b>Pulsa Internet Bulk</b> Telkomsel dengan harga dinamis sesuai zona.
+    </p>
+
+    <p>
+      Tata caranya sama dengan menjual <b>Pulsa Reguler</b> dengan harga dinamis <a
+        href="digipos-outlet.html#harga-dinamis" target="_blank">klik disini</a>, yaitu:
+    <ol>
+      <li>
+        Anda harus punya OtomaX edisi Ultimate; kalau belum punya, bisa beli dahulu <a href="purchase.html"
+          target="_blank">klik disini</a>; apabila sudah punya tapi bukan edisi tersebut bisa upgrade dahulu <a
+          href="bagaimana-upgrade-otomax.html" target="_blank">klik disini</a>; dan jika ingin membayar iuran tahunan
+        OtomaX <a href="bagaimana-membayar-iuran-otomax.html" target="_blank">klik disini</a>.
+      </li>
+      <li>
+        Buat Kode Produk di <b>Administrasi</b> -> <b>Produk</b> seperti di atas, dan:
+        <ol type="a">
+          <li>Centang checkbox <b>Postpaid</b>.</li>
+          <li>Pastikan kolom <b>Hrg Beli</b> isi: 0.</li>
+          <li>Di kolom <b>Hrg Jual</b> isi jumlah laba yang Anda inginkan, contoh isi: 500.</li>
+        </ol>
+      </li>
+      <li>
+        Buat kelompok jawaban di <b>Administrasi</b> -> <b>Jawaban dari Provider</b> seperti di atas, dan:
+        <ol type="a">
+          <li>
+            Di baris penangkap jawaban dengan <b>Kata Kunci Harus Ada</b>: <span style="color: red;">Silakan Masukkan
+              PIN :</span>, <b>Prioritas</b>: <span style="color: red;">0</span>, ubah menjadi seperti di bawah ini:
+            <!-- start table -->
+            <p>
+            <div style="overflow-x: auto;">
+              <table>
+                <tr>
+                  <th>Kelompok</th>
+                  <th>Prioritas</th>
+                  <th>Kata Kunci Harus Ada</th>
+                  <th>Kata Kunci Tidak Boleh Ada</th>
+                  <th>Awalan Tujuan</th>
+                  <th>Akhiran Tujuan</th>
+                  <!-- <th>Awalan Nominal</th>
+                        <th>Akhiran Nominal</th> -->
+                  <th>Awalan SN/Ref</th>
+                  <th>Akhiran SN/Ref</th>
+                  <th>Status Trx</th>
+                  <th>Expresi Reguler</th>
+                  <th>Perintah</th>
+                  <th>Parameter Balasan</th>
+                  <th>Catatan</th>
+                </tr>
+                <tr>
+                  <td>DIPO-NEL</td>
+                  <td>0</td>
+                  <td>Silakan Masukkan PIN :</td> <!-- eligible -->
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <!-- <td></td>
+                        <td></td> -->
+                  <td></td>
+                  <td></td>
+                  <td>Menunggu Jawaban</td>
+                  <td>belian (?&lt;paket&gt;.+) dengan.*harga Rp. (?&lt;tagihan&gt;[,.\d]+) ke.*mor (?&lt;tujuan&gt;\d+)
+                  </td>
+                  <td>[pin]</td>
+                  <td>jawaban=Pembelian [paket] seharga Rp. [tagihan] ke [tujuan] sedang diproses</td>
+                  <td></td>
+                </tr>
+                <!-- space table bottom -->
+                <tr>
+                  <td>DIPO-NEL</td>
+                  <td>0</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <!-- <td></td>
+                        <td></td> -->
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>DIPO-NEL</td>
+                  <td>0</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <!-- <td></td>
+                        <td></td> -->
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>DIPO-NEL</td>
+                  <td>0</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <!-- <td></td>
+                        <td></td> -->
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </table>
+            </div>
+            </p>
+            <!-- end table -->
+          </li>
+          <li>
+            Hapus penangkap jawaban dengan <b>Kata Kunci Harus Ada</b>: <span style="color: red;">Silakan Masukkan PIN
+              :</span>, <b>Prioritas</b>: <span style="color: red;">1</span>.
+          </li>
+        </ol>
+      </li>
+      <li>Buat modul <b>Dial</b> seperti di atas.</li>
+      <li>Buat parsing di <b>Parsing ke Provider</b> seperti di atas.</li>
+      <li>Selesai.</li>
+    </ol>
+    </p>
+
+    <div class="bottom-content"></div>
+  </div>
+
+  <div id="footer"></div>
+</body>
+
 </html>
